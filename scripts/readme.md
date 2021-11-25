@@ -1,0 +1,7 @@
+
+Initially, I started with 2,384 variables and 6,806 observations. I filtered out observations that were missing the variable PCTPELL, which will be used to create an indicator variable for either the Majority (greater than 50%) or Minority (50% or less) percentage of the institution's student population receives a Pell grant. I also filtered out observations that were not in one of the 50 states. This process left 5,879 observations.
+
+After finding the number of missing values for each column I dropped columns that was missing all of the values. 
+There was 801 variables left over, of which I dropped all debt variables thats name contained "PLUS_DEBT_ALL". These variables include all of the debt the students at that institutions has accumulated over all institutions. Since I am only using one school year, I dropped the variables thats name contained "POOLED" and "SUPP". The other variables I dropped were INSTURL, NPCURL, ALIAS, FEDSCHCD, CIPTITLE1, CIPTITLE2, CIPTITLE3, CIPTITLE4, CIPTITLE5, CIPTITLE6, CIPCODE1, CIPCODE2, CIPCODE3, CIPCODE4, CIPCODE5, and CIPCODE6 since they contain data that is not useful for this project.
+
+Next, I calculated the proportion of missing values and dropped the columns with 42.8% or more missing values. This process left 432 variables, of which 13 variables categorical or ordinal variables and 159 numeric variables needs to be imputed.

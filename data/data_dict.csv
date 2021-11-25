@@ -1,0 +1,457 @@
+Variable,n,nmiss,n_pct,nmiss_pct,miss_less_42.8%,Type,dev_cat,Definition
+UNITID,5879,0,100%,0%,1,character,root,Unit ID for institution
+OPEID,5879,0,100%,0%,1,character,root,8-digit OPE ID for institution
+OPEID6,5879,0,100%,0%,1,character,root,6-digit OPE ID for institution
+INSTNM,5879,0,100%,0%,1,character,school,Institution name
+CITY,5879,0,100%,0%,1,character,school,City
+STABBR,5879,0,100%,0%,1,character,school,State postcode
+ZIP,5879,0,100%,0%,1,character,school,ZIP code
+HCM2,5879,0,100%,0%,1,factor,school,Schools that are on Heightened Cash Monitoring 2 by the Department of Education
+MAIN,5879,0,100%,0%,1,factor,school,Flag for main campus
+NUMBRANCH,5879,0,100%,0%,1,integer,school,Number of branch campuses
+PREDDEG,5879,0,100%,0%,1,factor,school,"Predominant undergraduate degree awarded
+ 0 Not classified
+ 1 Predominantly certificate-degree granting
+ 2 Predominantly associate's-degree granting
+ 3 Predominantly bachelor's-degree granting
+ 4 Entirely graduate-degree granting"
+HIGHDEG,5879,0,100%,0%,1,factor,school,"Highest degree awarded
+ 0 Non-degree-granting
+ 1 Certificate degree
+ 2 Associate degree
+ 3 Bachelor's degree
+ 4 Graduate degree"
+CONTROL,5879,0,100%,0%,1,factor,school,Control of institution
+ST_FIPS,5879,0,100%,0%,1,factor,school,FIPS code for state
+REGION,5879,0,100%,0%,1,factor,school,Region (IPEDS)
+LOCALE,5879,0,100%,0%,1,factor,school,Locale of institution
+LATITUDE,5879,0,100%,0%,1,num,root,Latitude
+LONGITUDE,5879,0,100%,0%,1,num,root,Longitude
+CCBASIC,5879,0,100%,0%,1,factor,school,Carnegie Classification -- basic
+CCUGPROF,5879,0,100%,0%,1,factor,school,Carnegie Classification -- undergraduate profile
+CCSIZSET,5879,0,100%,0%,1,factor,school,Carnegie Classification -- size and setting
+MENONLY,5879,0,100%,0%,1,factor,school,Flag for men-only college
+WOMENONLY,5879,0,100%,0%,1,factor,school,Flag for women-only college
+PCIP01,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences."
+PCIP03,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Natural Resources And Conservation.
+PCIP04,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Architecture And Related Services.
+PCIP05,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies."
+PCIP09,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Communication, Journalism, And Related Programs."
+PCIP10,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.
+PCIP11,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Computer And Information Sciences And Support Services.
+PCIP12,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Personal And Culinary Services.
+PCIP13,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Education.
+PCIP14,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Engineering.
+PCIP15,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields.
+PCIP16,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics."
+PCIP19,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Family And Consumer Sciences/Human Sciences.
+PCIP22,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Legal Professions And Studies.
+PCIP23,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in English Language And Literature/Letters.
+PCIP24,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities."
+PCIP25,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Library Science.
+PCIP26,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Biological And Biomedical Sciences.
+PCIP27,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Mathematics And Statistics.
+PCIP29,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Military Technologies And Applied Sciences.
+PCIP30,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Multi/Interdisciplinary Studies.
+PCIP31,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies."
+PCIP38,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Philosophy And Religious Studies.
+PCIP39,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Theology And Religious Vocations.
+PCIP40,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Physical Sciences.
+PCIP41,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Science Technologies/Technicians.
+PCIP42,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Psychology.
+PCIP43,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+PCIP44,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Public Administration And Social Service Professions.
+PCIP45,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Social Sciences.
+PCIP46,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Construction Trades.
+PCIP47,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.
+PCIP48,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Precision Production.
+PCIP49,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Transportation And Materials Moving.
+PCIP50,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Visual And Performing Arts.
+PCIP51,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in Health Professions And Related Programs.
+PCIP52,5879,0,100%,0%,1,num,academics,"Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services."
+PCIP54,5879,0,100%,0%,1,num,academics,Percentage of degrees awarded in History.
+CIP01CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Agriculture, Agriculture Operations, And Related Sciences."
+CIP03CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Natural Resources And Conservation.
+CIP03CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Natural Resources And Conservation.
+CIP03ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Natural Resources And Conservation.
+CIP03CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Natural Resources And Conservation.
+CIP03BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Natural Resources And Conservation.
+CIP04CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Architecture And Related Services.
+CIP04CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Architecture And Related Services.
+CIP04ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Architecture And Related Services.
+CIP04CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Architecture And Related Services.
+CIP04BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Architecture And Related Services.
+CIP05CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP09CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Communication, Journalism, And Related Programs."
+CIP09CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Communication, Journalism, And Related Programs."
+CIP09ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Communication, Journalism, And Related Programs."
+CIP09CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Communication, Journalism, And Related Programs."
+CIP09BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Communication, Journalism, And Related Programs."
+CIP10CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Communications Technologies/Technicians And Support Services.
+CIP10CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Communications Technologies/Technicians And Support Services.
+CIP10ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Communications Technologies/Technicians And Support Services.
+CIP10CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Communications Technologies/Technicians And Support Services.
+CIP10BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Communications Technologies/Technicians And Support Services.
+CIP11CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Computer And Information Sciences And Support Services.
+CIP11CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Computer And Information Sciences And Support Services.
+CIP11ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Computer And Information Sciences And Support Services.
+CIP11CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Computer And Information Sciences And Support Services.
+CIP11BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Computer And Information Sciences And Support Services.
+CIP12CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Personal And Culinary Services.
+CIP12CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Personal And Culinary Services.
+CIP12ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Personal And Culinary Services.
+CIP12CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Personal And Culinary Services.
+CIP12BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Personal And Culinary Services.
+CIP13CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Education.
+CIP13CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Education.
+CIP13ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Education.
+CIP13CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Education.
+CIP13BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Education.
+CIP14CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Engineering.
+CIP14CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Engineering.
+CIP14ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Engineering.
+CIP14CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Engineering.
+CIP14BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Engineering.
+CIP15CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Engineering Technologies And Engineering-Related Fields.
+CIP15CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Engineering Technologies And Engineering-Related Fields.
+CIP15ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Engineering Technologies And Engineering-Related Fields.
+CIP15CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Engineering Technologies And Engineering-Related Fields.
+CIP15BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Engineering Technologies And Engineering-Related Fields.
+CIP16CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Foreign Languages, Literatures, And Linguistics."
+CIP16CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Foreign Languages, Literatures, And Linguistics."
+CIP16ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Foreign Languages, Literatures, And Linguistics."
+CIP16CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Foreign Languages, Literatures, And Linguistics."
+CIP16BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Foreign Languages, Literatures, And Linguistics."
+CIP19CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Family And Consumer Sciences/Human Sciences.
+CIP19CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Family And Consumer Sciences/Human Sciences.
+CIP19ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Family And Consumer Sciences/Human Sciences.
+CIP19CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Family And Consumer Sciences/Human Sciences.
+CIP19BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Family And Consumer Sciences/Human Sciences.
+CIP22CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Legal Professions And Studies.
+CIP22CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Legal Professions And Studies.
+CIP22ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Legal Professions And Studies.
+CIP22CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Legal Professions And Studies.
+CIP22BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Legal Professions And Studies.
+CIP23CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in English Language And Literature/Letters.
+CIP23CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in English Language And Literature/Letters.
+CIP23ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in English Language And Literature/Letters.
+CIP23CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in English Language And Literature/Letters.
+CIP23BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in English Language And Literature/Letters.
+CIP24CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Liberal Arts And Sciences, General Studies And Humanities."
+CIP25CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Library Science.
+CIP25CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Library Science.
+CIP25ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Library Science.
+CIP25CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Library Science.
+CIP25BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Library Science.
+CIP26CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Biological And Biomedical Sciences.
+CIP26CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Biological And Biomedical Sciences.
+CIP26ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Biological And Biomedical Sciences.
+CIP26CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Biological And Biomedical Sciences.
+CIP26BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Biological And Biomedical Sciences.
+CIP27CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Mathematics And Statistics.
+CIP27CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Mathematics And Statistics.
+CIP27ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Mathematics And Statistics.
+CIP27CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Mathematics And Statistics.
+CIP27BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Mathematics And Statistics.
+CIP29CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Military Technologies And Applied Sciences.
+CIP29CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Military Technologies And Applied Sciences.
+CIP29ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Military Technologies And Applied Sciences.
+CIP29CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Military Technologies And Applied Sciences.
+CIP29BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Military Technologies And Applied Sciences.
+CIP30CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Multi/Interdisciplinary Studies.
+CIP30CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Multi/Interdisciplinary Studies.
+CIP30ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Multi/Interdisciplinary Studies.
+CIP30CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Multi/Interdisciplinary Studies.
+CIP30BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Multi/Interdisciplinary Studies.
+CIP31CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Parks, Recreation, Leisure, And Fitness Studies."
+CIP38CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Philosophy And Religious Studies.
+CIP38CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Philosophy And Religious Studies.
+CIP38ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Philosophy And Religious Studies.
+CIP38CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Philosophy And Religious Studies.
+CIP38BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Philosophy And Religious Studies.
+CIP39CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Theology And Religious Vocations.
+CIP39CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Theology And Religious Vocations.
+CIP39ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Theology And Religious Vocations.
+CIP39CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Theology And Religious Vocations.
+CIP39BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Theology And Religious Vocations.
+CIP40CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Physical Sciences.
+CIP40CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Physical Sciences.
+CIP40ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Physical Sciences.
+CIP40CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Physical Sciences.
+CIP40BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Physical Sciences.
+CIP41CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Science Technologies/Technicians.
+CIP41CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Science Technologies/Technicians.
+CIP41ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Science Technologies/Technicians.
+CIP41CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Science Technologies/Technicians.
+CIP41BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Science Technologies/Technicians.
+CIP42CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Psychology.
+CIP42CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Psychology.
+CIP42ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Psychology.
+CIP42CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Psychology.
+CIP42BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Psychology.
+CIP43CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP44CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Public Administration And Social Service Professions.
+CIP44CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Public Administration And Social Service Professions.
+CIP44ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Public Administration And Social Service Professions.
+CIP44CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Public Administration And Social Service Professions.
+CIP44BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Public Administration And Social Service Professions.
+CIP45CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Social Sciences.
+CIP45CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Social Sciences.
+CIP45ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Social Sciences.
+CIP45CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Social Sciences.
+CIP45BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Social Sciences.
+CIP46CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Construction Trades.
+CIP46CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Construction Trades.
+CIP46ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Construction Trades.
+CIP46CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Construction Trades.
+CIP46BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Construction Trades.
+CIP47CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Mechanic And Repair Technologies/Technicians.
+CIP47CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Mechanic And Repair Technologies/Technicians.
+CIP47ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Mechanic And Repair Technologies/Technicians.
+CIP47CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Mechanic And Repair Technologies/Technicians.
+CIP47BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Mechanic And Repair Technologies/Technicians.
+CIP48CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Precision Production.
+CIP48CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Precision Production.
+CIP48ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Precision Production.
+CIP48CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Precision Production.
+CIP48BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Precision Production.
+CIP49CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Transportation And Materials Moving.
+CIP49CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Transportation And Materials Moving.
+CIP49ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Transportation And Materials Moving.
+CIP49CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Transportation And Materials Moving.
+CIP49BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Transportation And Materials Moving.
+CIP50CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Visual And Performing Arts.
+CIP50CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Visual And Performing Arts.
+CIP50ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Visual And Performing Arts.
+CIP50CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Visual And Performing Arts.
+CIP50BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Visual And Performing Arts.
+CIP51CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in Health Professions And Related Programs.
+CIP51CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in Health Professions And Related Programs.
+CIP51ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in Health Professions And Related Programs.
+CIP51CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in Health Professions And Related Programs.
+CIP51BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in Health Professions And Related Programs.
+CIP52CERT1,5879,0,100%,0%,1,factor,academics,"Certificate of less than one academic year in Business, Management, Marketing, And Related Support Services."
+CIP52CERT2,5879,0,100%,0%,1,factor,academics,"Certificate of at least one but less than two academic years in Business, Management, Marketing, And Related Support Services."
+CIP52ASSOC,5879,0,100%,0%,1,factor,academics,"Associate degree in Business, Management, Marketing, And Related Support Services."
+CIP52CERT4,5879,0,100%,0%,1,factor,academics,"Award of at least two but less than four academic years in Business, Management, Marketing, And Related Support Services."
+CIP52BACHL,5879,0,100%,0%,1,factor,academics,"Bachelor's degree in Business, Management, Marketing, And Related Support Services."
+CIP54CERT1,5879,0,100%,0%,1,factor,academics,Certificate of less than one academic year in History.
+CIP54CERT2,5879,0,100%,0%,1,factor,academics,Certificate of at least one but less than two academic years in History.
+CIP54ASSOC,5879,0,100%,0%,1,factor,academics,Associate degree in History.
+CIP54CERT4,5879,0,100%,0%,1,factor,academics,Award of at least two but less than four academic years in History.
+CIP54BACHL,5879,0,100%,0%,1,factor,academics,Bachelor's degree in History.
+DISTANCEONLY,5879,0,100%,0%,1,factor,school,Flag for distance-education-only education
+CURROPER,5879,0,100%,0%,1,factor,school,"Flag for currently operating institution, 0=closed, 1=operating"
+PCTPELL,5879,0,100%,0%,1,num,aid,Percentage of undergraduates who receive a Pell Grant
+PCTFLOAN,5879,0,100%,0%,1,num,aid,Percent of all undergraduate students receiving a federal student loan
+ICLEVEL,5879,0,100%,0%,1,factor,school,Level of institution
+D_PCTPELL_PCTFLOAN,5879,0,100%,0%,1,integer,student,Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)
+OPEFLAG,5879,0,100%,0%,1,factor,school,Title IV eligibility type
+SCUGFFN,5879,0,100%,0%,1,integer,student,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
+PELLCAT,5879,0,100%,0%,1,factor,created,NA
+UGDS,5878,1,99.98%,0.02%,1,integer,student,Enrollment of undergraduate certificate/degree-seeking students
+UGDS_WHITE,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are white
+UGDS_BLACK,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are black
+UGDS_HISP,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+UGDS_ASIAN,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are Asian
+UGDS_AIAN,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+UGDS_NHPI,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander
+UGDS_2MOR,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are two or more races
+UGDS_NRA,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens
+UGDS_UNKN,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students whose race is unknown
+UGDS_MEN,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are men
+UGDS_WOMEN,5878,1,99.98%,0.02%,1,num,student,Total share of enrollment of undergraduate degree-seeking students who are women
+T4APPROVALDATE,5878,1,99.98%,0.02%,1,character,school,Date that institution was first approved to participate in Title IV aid programs
+UG12MN,5876,3,99.95%,0.05%,1,integer,student,Unduplicated count of undergraduate students enrolled during a 12 month period
+HBCU,5875,4,99.93%,0.07%,1,factor,school,Flag for Historically Black College and University
+PBI,5875,4,99.93%,0.07%,1,factor,school,Flag for predominantly black institution
+ANNHI,5875,4,99.93%,0.07%,1,factor,school,Flag for Alaska Native Native Hawaiian serving institution
+TRIBAL,5875,4,99.93%,0.07%,1,factor,school,Flag for tribal college and university
+AANAPII,5875,4,99.93%,0.07%,1,factor,school,Flag for Asian American Native American Pacific Islander-serving institution
+HSI,5875,4,99.93%,0.07%,1,factor,school,Flag for Hispanic-serving institution
+NANTI,5875,4,99.93%,0.07%,1,factor,school,Flag for Native American non-tribal institution
+FEDSCHCD,5874,5,99.91%,0.09%,1,character,root,Federal School Code
+TUITFTE,5869,10,99.83%,0.17%,1,integer,school,Net tuition revenue per full-time equivalent student
+INEXPFTE,5869,10,99.83%,0.17%,1,integer,school,Instructional expenditures per full-time equivalent student
+PPTUG_EF,5865,14,99.76%,0.24%,1,num,student,"Share of undergraduate, degree-/certificate-seeking students who are part-time"
+OPENADMP,5728,151,97.43%,2.57%,1,factor,school,Open admissions policy indicator
+FTFTPCTPELL,5605,274,95.34%,4.66%,1,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant"
+FTFTPCTFLOAN,5605,274,95.34%,4.66%,1,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan"
+ACCREDAGENCY,5593,286,95.14%,4.86%,1,character,school,Accreditor for institution
+ACCREDCODE,5593,286,95.14%,4.86%,1,character,school,Code corresponding to accreditor (as captured from PEPS)
+SCHTYPE,5566,313,94.68%,5.32%,1,factor,school,"Control of institution, per PEPS"
+PFTFTUG1_EF,5561,318,94.59%,5.41%,1,num,student,"Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students"
+LPSTAFFORD_CNT,5559,320,94.56%,5.44%,1,integer,aid,Number of borrowers with outstanding federal Direct Loan balances
+LPSTAFFORD_AMT,5559,320,94.56%,5.44%,1,num,aid,Total outstanding federal Direct Loan balance
+DEBT_N,5297,582,90.10%,9.90%,1,integer,aid,The number of students in the median debt cohort
+PPLUS_PCT_LOW,5290,589,89.98%,10.02%,1,integer,aid,Lower bound of estimated percentage range of students whose parents took out a PLUS loan
+PPLUS_PCT_HIGH,5290,589,89.98%,10.02%,1,integer,aid,Upper bound of estimated percentage range of students whose parents took out a PLUS loan
+DEBT_MDN,5202,677,88.48%,11.52%,1,num,aid,The median original amount of the loan principal upon entering repayment
+DBRR1_FED_UG_N,5201,678,88.47%,11.53%,1,integer,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UG_NUM,5201,678,88.47%,11.53%,1,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UG_DEN,5201,678,88.47%,11.53%,1,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UG_RT,5201,678,88.47%,11.53%,1,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate
+BBRR2_FED_UG_N,5114,765,86.99%,13.01%,1,integer,repayment,Undergraduate federal student loan borrower-based 2-year borrower count
+CDR3,5093,786,86.63%,13.37%,1,num,repayment,Three-year cohort default rate
+CDR3_DENOM,5093,786,86.63%,13.37%,1,integer,repayment,Number of students in the cohort for the three-year cohort default rate
+DBRR4_FED_UG_N,5017,862,85.34%,14.66%,1,integer,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UG_NUM,5017,862,85.34%,14.66%,1,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UG_DEN,5017,862,85.34%,14.66%,1,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UG_RT,5017,862,85.34%,14.66%,1,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate
+LO_INC_DEBT_N,4966,913,84.47%,15.53%,1,integer,aid,"The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort"
+DBRR5_FED_UG_N,4960,919,84.37%,15.63%,1,integer,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate borrower count
+DBRR5_FED_UG_NUM,4960,919,84.37%,15.63%,1,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate numerator
+DBRR5_FED_UG_DEN,4960,919,84.37%,15.63%,1,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate denominator
+DBRR5_FED_UG_RT,4960,919,84.37%,15.63%,1,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate
+GRAD_DEBT_N,4882,997,83.04%,16.96%,1,integer,aid,The number of students in the median debt completers cohort
+WDRAW_DEBT_N,4882,997,83.04%,16.96%,1,integer,aid,The number of students in the median debt withdrawn cohort
+DEP_DEBT_N,4870,1009,82.84%,17.16%,1,integer,aid,The number of students in the median debt dependent students cohort
+IND_DEBT_N,4870,1009,82.84%,17.16%,1,integer,aid,The number of students in the median debt independent students cohort
+GRAD_DEBT_MDN,4786,1093,81.41%,18.59%,1,num,aid,The median debt for students who have completed
+GRAD_DEBT_MDN10YR,4786,1093,81.41%,18.59%,1,num,aid,Median loan debt of completers in monthly payments (10-year amortization plan)
+BBRR2_FED_UG_FBR,4761,1118,80.98%,19.02%,1,num,repayment,Percentage of undergraduate federal student loan borrowers in forbearance after 2 years
+DBRR4_FED_UGCOMP_N,4756,1123,80.90%,19.10%,1,integer,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGCOMP_NUM,4756,1123,80.90%,19.10%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGCOMP_DEN,4756,1123,80.90%,19.10%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGCOMP_RT,4756,1123,80.90%,19.10%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate
+BBRR2_FED_UG_NOPROG,4739,1140,80.61%,19.39%,1,num,repayment,Percentage of undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UG_MAKEPROG,4726,1153,80.39%,19.61%,1,num,repayment,Percentage of undergraduate federal student loan borrowers making progress after 2 years
+DBRR1_FED_UGCOMP_N,4713,1166,80.17%,19.83%,1,integer,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UGCOMP_NUM,4713,1166,80.17%,19.83%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UGCOMP_DEN,4713,1166,80.17%,19.83%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UGCOMP_RT,4713,1166,80.17%,19.83%,1,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate
+BBRR2_FED_UGCOMP_N,4709,1170,80.10%,19.90%,1,integer,repayment,Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count
+LO_INC_DEBT_MDN,4705,1174,80.03%,19.97%,1,num,aid,"The median debt for students with family income between $0-$30,000"
+PLUS_DEBT_ALL_N,4690,1189,79.78%,20.22%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed at all institutions
+PELL_DEBT_N,4685,1194,79.69%,20.31%,1,integer,aid,The number of students in the median debt Pell students cohort
+NOPELL_DEBT_N,4685,1194,79.69%,20.31%,1,integer,aid,The number of students in the median debt no-Pell students cohort
+WDRAW_DEBT_MDN,4637,1242,78.87%,21.13%,1,num,aid,The median debt for students who have not completed
+FIRSTGEN_DEBT_N,4613,1266,78.47%,21.53%,1,integer,aid,The number of students in the median debt first-generation students cohort
+NOTFIRSTGEN_DEBT_N,4613,1266,78.47%,21.53%,1,integer,aid,The number of students in the median debt not-first-generation students cohort
+DEP_DEBT_MDN,4539,1340,77.21%,22.79%,1,num,aid,The median debt for dependent students
+IND_DEBT_MDN,4539,1340,77.21%,22.79%,1,num,aid,The median debt for independent students
+LPPPLUS_CNT,4465,1414,75.95%,24.05%,1,integer,aid,Number of students associated with outstanding Parent PLUS Loan balances
+LPPPLUS_AMT,4465,1414,75.95%,24.05%,1,num,aid,Total outstanding Parent PLUS Loan balance
+DBRR10_FED_UG_N,4436,1443,75.46%,24.54%,1,integer,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate borrower count
+DBRR10_FED_UG_NUM,4436,1443,75.46%,24.54%,1,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate numerator
+DBRR10_FED_UG_DEN,4436,1443,75.46%,24.54%,1,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate denominator
+DBRR10_FED_UG_RT,4436,1443,75.46%,24.54%,1,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate
+FEMALE_DEBT_N,4401,1478,74.86%,25.14%,1,integer,aid,The number of students in the median debt female students cohort
+MALE_DEBT_N,4401,1478,74.86%,25.14%,1,integer,aid,The number of students in the median debt male students cohort
+MD_INC_DEBT_N,4382,1497,74.54%,25.46%,1,integer,aid,"The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
+HI_INC_DEBT_N,4379,1500,74.49%,25.51%,1,integer,aid,"The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort"
+PELL_DEBT_MDN,4360,1519,74.16%,25.84%,1,num,aid,The median debt for Pell students
+NOPELL_DEBT_MDN,4360,1519,74.16%,25.84%,1,num,aid,The median debt for no-Pell students
+DBRR4_FED_UGUNK_N,4358,1521,74.13%,25.87%,1,integer,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGUNK_NUM,4358,1521,74.13%,25.87%,1,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGUNK_DEN,4358,1521,74.13%,25.87%,1,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGUNK_RT,4358,1521,74.13%,25.87%,1,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+PLUS_DEBT_ALL_MD,4319,1560,73.46%,26.54%,1,integer,aid,Median PLUS loan debt disbursed at all institutions
+DBRR4_FED_UGNOCOMP_N,4302,1577,73.18%,26.82%,1,integer,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGNOCOMP_NUM,4302,1577,73.18%,26.82%,1,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGNOCOMP_DEN,4302,1577,73.18%,26.82%,1,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGNOCOMP_RT,4302,1577,73.18%,26.82%,1,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+FIRSTGEN_DEBT_MDN,4238,1641,72.09%,27.91%,1,num,aid,The median debt for first-generation students
+NOTFIRSTGEN_DEBT_MDN,4238,1641,72.09%,27.91%,1,num,aid,The median debt for not-first-generation students
+FEMALE_DEBT_MDN,4110,1769,69.91%,30.09%,1,num,aid,The median debt for female students
+MALE_DEBT_MDN,4110,1769,69.91%,30.09%,1,num,aid,The median debt for male students
+BBRR2_FED_UG_DFR,4051,1828,68.91%,31.09%,1,num,repayment,Percentage of undergraduate federal student loan borrowers in deferment after 2 years
+MD_INC_DEBT_MDN,3991,1888,67.89%,32.11%,1,num,aid,"The median debt for students with family income between $30,001-$75,000"
+HI_INC_DEBT_MDN,3985,1894,67.78%,32.22%,1,num,aid,"The median debt for students with family income $75,001+"
+DBRR20_FED_UG_N,3980,1899,67.70%,32.30%,1,integer,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate borrower count
+DBRR20_FED_UG_NUM,3980,1899,67.70%,32.30%,1,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate numerator
+DBRR20_FED_UG_DEN,3980,1899,67.70%,32.30%,1,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate denominator
+DBRR20_FED_UG_RT,3980,1899,67.70%,32.30%,1,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate
+PLUS_DEBT_ALL_PELL_N,3958,1921,67.32%,32.68%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_ALL_NOPELL_N,3958,1921,67.32%,32.68%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+PLUS_DEBT_ALL_COMP_N,3820,2059,64.98%,35.02%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_NOCOMP_N,3820,2059,64.98%,35.02%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions
+BBRR2_FED_UG_DFLT,3819,2060,64.96%,35.04%,1,num,repayment,Percentage of undergraduate federal student loan borrowers in default after 2 years
+PLUS_DEBT_INST_N,3776,2103,64.23%,35.77%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution
+BBRR2_FED_UGCOMP_NOPROG,3757,2122,63.91%,36.09%,1,num,repayment,Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years
+DBRR1_PP_UG_N,3708,2171,63.07%,36.93%,1,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UG_NUM,3708,2171,63.07%,36.93%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UG_DEN,3708,2171,63.07%,36.93%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UG_RT,3708,2171,63.07%,36.93%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate
+OMACHT6_FTFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_FTFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages)"
+OMACHT6_PTFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_PTFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages)"
+OMACHT6_FTNFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_FTNFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages)"
+OMACHT6_PTNFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_PTNFT,3675,2204,62.51%,37.49%,1,integer,completion,"Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages)"
+OMENRYP_ALL,3675,2204,62.51%,37.49%,1,num,completion,Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_ALL,3675,2204,62.51%,37.49%,1,num,completion,Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_ALL,3675,2204,62.51%,37.49%,1,num,completion,Percentage of all student receiving an award within 8 years of entry
+OMENRUP_ALL,3675,2204,62.51%,37.49%,1,num,completion,Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+AVGFACSAL,3674,2205,62.49%,37.51%,1,integer,school,Average faculty salary
+OMENRYP_FULLTIME,3656,2223,62.19%,37.81%,1,num,completion,Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FULLTIME,3656,2223,62.19%,37.81%,1,num,completion,Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FULLTIME,3656,2223,62.19%,37.81%,1,num,completion,Percentage of full-time student receiving an award within 8 years of entry
+OMENRUP_FULLTIME,3656,2223,62.19%,37.81%,1,num,completion,Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+NUM4_PRIV,3622,2257,61.61%,38.39%,1,integer,cost,Number of Title IV students (private for-profit and nonprofit institutions)
+NPT4_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,Average net price for Title IV institutions (private for-profit and nonprofit institutions)
+NUM41_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,"Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)"
+NUM42_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,"Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
+NUM43_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,"Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
+NUM44_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,"Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
+NUM45_PRIV,3621,2258,61.59%,38.41%,1,integer,cost,"Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)"
+BBRR2_FED_UGCOMP_FBR,3596,2283,61.17%,38.83%,1,num,repayment,Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years
+NPT4_048_PRIV,3592,2287,61.10%,38.90%,1,integer,cost,"Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)"
+PLUS_DEBT_ALL_MALE_N,3589,2290,61.05%,38.95%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to males at all institutions
+PLUS_DEBT_ALL_NOMALE_N,3589,2290,61.05%,38.95%,1,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-males at all institutions
+OMENRYP_FIRSTTIME,3573,2306,60.78%,39.22%,1,num,completion,Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FIRSTTIME,3573,2306,60.78%,39.22%,1,num,completion,Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FIRSTTIME,3573,2306,60.78%,39.22%,1,num,completion,Percentage of first-time student receiving an award within 8 years of entry
+OMENRUP_FIRSTTIME,3573,2306,60.78%,39.22%,1,num,completion,Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_NOTFIRSTTIME,3568,2311,60.69%,39.31%,1,num,completion,Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_NOTFIRSTTIME,3568,2311,60.69%,39.31%,1,num,completion,Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_NOTFIRSTTIME,3568,2311,60.69%,39.31%,1,num,completion,Percentage of not first-time student receiving an award within 8 years of entry
+OMENRUP_NOTFIRSTTIME,3568,2311,60.69%,39.31%,1,num,completion,Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+NPT41_PRIV,3555,2324,60.47%,39.53%,1,integer,cost,"Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)"
+OMAWDP6_FTFT,3541,2338,60.23%,39.77%,1,num,completion,"Percentage of full-time, first-time student receiving an award within 6 years of entry"
+OMAWDP8_FTFT,3541,2338,60.23%,39.77%,1,num,completion,"Percentage of full-time, first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTFT,3541,2338,60.23%,39.77%,1,num,completion,"Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTFT,3541,2338,60.23%,39.77%,1,num,completion,"Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTFT,3541,2338,60.23%,39.77%,1,num,completion,"Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+DBRR5_PP_UG_N,3541,2338,60.23%,39.77%,1,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate borrower count
+DBRR5_PP_UG_NUM,3541,2338,60.23%,39.77%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate numerator
+DBRR5_PP_UG_DEN,3541,2338,60.23%,39.77%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate denominator
+DBRR5_PP_UG_RT,3541,2338,60.23%,39.77%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate
+OMAWDP6_FTNFT,3538,2341,60.18%,39.82%,1,num,completion,"Percentage of full-time, not first-time student receiving an award within 6 years of entry"
+OMAWDP8_FTNFT,3538,2341,60.18%,39.82%,1,num,completion,"Percentage of full-time, not first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTNFT,3538,2341,60.18%,39.82%,1,num,completion,"Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTNFT,3538,2341,60.18%,39.82%,1,num,completion,"Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTNFT,3538,2341,60.18%,39.82%,1,num,completion,"Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+BBRR2_PP_UG_N,3525,2354,59.96%,40.04%,1,integer,repayment,Undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_FED_UGNOCOMP_N,3509,2370,59.69%,40.31%,1,integer,repayment,Undergraduate non-completer undergraduate federal student loan borrower-based 2-year borrower count
+PLUS_DEBT_ALL_PELL_MD,3498,2381,59.50%,40.50%,1,integer,aid,Median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_ALL_NOPELL_MD,3498,2381,59.50%,40.50%,1,integer,aid,Median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+DBRR4_PP_UG_N,3478,2401,59.16%,40.84%,1,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UG_NUM,3478,2401,59.16%,40.84%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UG_DEN,3478,2401,59.16%,40.84%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UG_RT,3478,2401,59.16%,40.84%,1,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate
+TUITIONFEE_IN,3452,2427,58.72%,41.28%,1,integer,cost,In-state tuition and fees
+TUITIONFEE_OUT,3452,2427,58.72%,41.28%,1,integer,cost,Out-of-state tuition and fees
+PLUS_DEBT_INST_MD,3364,2515,57.22%,42.78%,1,integer,aid,Median PLUS loan debt disbursed at this institution

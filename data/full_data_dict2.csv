@@ -1,0 +1,1060 @@
+dup_var_name,Type,dev-cat,CIP_code,VALUE,LABEL,developer-friendly name
+PELLCAT,factor,created,NA,0,Majority Pell institution (PCTPELL > 0.5),NA
+PELLCAT,factor,created,NA,1,Minority Pell institution (PCTPELL <= 0.5),NA
+UNITID,character,root,NA,NA,NA,id
+OPEID,character,root,NA,NA,NA,ope8_id
+OPEID6,character,root,NA,NA,NA,ope6_id
+INSTNM,character,school,NA,NA,NA,name
+CITY,character,school,NA,NA,NA,city
+STABBR,character,school,NA,NA,NA,state
+ZIP,character,school,NA,NA,NA,zip
+ACCREDAGENCY,character,school,NA,NA,NA,accreditor
+INSTURL,character,school,NA,NA,NA,school_url
+NPCURL,character,school,NA,NA,NA,price_calculator_url
+HCM2,factor,school,NA,1,HCM2,under_investigation
+MAIN,factor,school,NA,0,Not main campus,main_campus
+MAIN,factor,school,NA,1,Main campus,NA
+NUMBRANCH,integer,school,NA,NA,NA,branches
+PREDDEG,factor,school,NA,0,Not classified,degrees_awarded.predominant
+PREDDEG,factor,school,NA,1,Predominantly certificate-degree granting,NA
+PREDDEG,factor,school,NA,2,Predominantly associate's-degree granting,NA
+PREDDEG,factor,school,NA,3,Predominantly bachelor's-degree granting,NA
+PREDDEG,factor,school,NA,4,Entirely graduate-degree granting,NA
+HIGHDEG,factor,school,NA,0,Non-degree-granting,degrees_awarded.highest
+HIGHDEG,factor,school,NA,1,Certificate degree,NA
+HIGHDEG,factor,school,NA,2,Associate degree,NA
+HIGHDEG,factor,school,NA,3,Bachelor's degree,NA
+HIGHDEG,factor,school,NA,4,Graduate degree,NA
+CONTROL,factor,school,NA,1,Public,ownership
+CONTROL,factor,school,NA,2,Private nonprofit,NA
+CONTROL,factor,school,NA,3,Private for-profit,NA
+ST_FIPS,factor,school,NA,1,Alabama,state_fips
+ST_FIPS,factor,school,NA,2,Alaska,NA
+ST_FIPS,factor,school,NA,4,Arizona,NA
+ST_FIPS,factor,school,NA,5,Arkansas,NA
+ST_FIPS,factor,school,NA,6,California,NA
+ST_FIPS,factor,school,NA,8,Colorado,NA
+ST_FIPS,factor,school,NA,9,Connecticut,NA
+ST_FIPS,factor,school,NA,10,Delaware,NA
+ST_FIPS,factor,school,NA,11,District of Columbia,NA
+ST_FIPS,factor,school,NA,12,Florida,NA
+ST_FIPS,factor,school,NA,13,Georgia,NA
+ST_FIPS,factor,school,NA,15,Hawaii,NA
+ST_FIPS,factor,school,NA,16,Idaho,NA
+ST_FIPS,factor,school,NA,17,Illinois,NA
+ST_FIPS,factor,school,NA,18,Indiana,NA
+ST_FIPS,factor,school,NA,19,Iowa,NA
+ST_FIPS,factor,school,NA,20,Kansas,NA
+ST_FIPS,factor,school,NA,21,Kentucky,NA
+ST_FIPS,factor,school,NA,22,Louisiana,NA
+ST_FIPS,factor,school,NA,23,Maine,NA
+ST_FIPS,factor,school,NA,24,Maryland,NA
+ST_FIPS,factor,school,NA,25,Massachusetts,NA
+ST_FIPS,factor,school,NA,26,Michigan,NA
+ST_FIPS,factor,school,NA,27,Minnesota,NA
+ST_FIPS,factor,school,NA,28,Mississippi,NA
+ST_FIPS,factor,school,NA,29,Missouri,NA
+ST_FIPS,factor,school,NA,30,Montana,NA
+ST_FIPS,factor,school,NA,31,Nebraska,NA
+ST_FIPS,factor,school,NA,32,Nevada,NA
+ST_FIPS,factor,school,NA,33,New Hampshire,NA
+ST_FIPS,factor,school,NA,34,New Jersey,NA
+ST_FIPS,factor,school,NA,35,New Mexico,NA
+ST_FIPS,factor,school,NA,36,New York,NA
+ST_FIPS,factor,school,NA,37,North Carolina,NA
+ST_FIPS,factor,school,NA,38,North Dakota,NA
+ST_FIPS,factor,school,NA,39,Ohio,NA
+ST_FIPS,factor,school,NA,40,Oklahoma,NA
+ST_FIPS,factor,school,NA,41,Oregon,NA
+ST_FIPS,factor,school,NA,42,Pennsylvania,NA
+ST_FIPS,factor,school,NA,44,Rhode Island,NA
+ST_FIPS,factor,school,NA,45,South Carolina,NA
+ST_FIPS,factor,school,NA,46,South Dakota,NA
+ST_FIPS,factor,school,NA,47,Tennessee,NA
+ST_FIPS,factor,school,NA,48,Texas,NA
+ST_FIPS,factor,school,NA,49,Utah,NA
+ST_FIPS,factor,school,NA,50,Vermont,NA
+ST_FIPS,factor,school,NA,51,Virginia,NA
+ST_FIPS,factor,school,NA,53,Washington,NA
+ST_FIPS,factor,school,NA,54,West Virginia,NA
+ST_FIPS,factor,school,NA,55,Wisconsin,NA
+ST_FIPS,factor,school,NA,56,Wyoming,NA
+ST_FIPS,factor,school,NA,60,American Samoa,NA
+ST_FIPS,factor,school,NA,64,Federated States of Micronesia,NA
+ST_FIPS,factor,school,NA,66,Guam,NA
+ST_FIPS,factor,school,NA,69,Northern Mariana Islands,NA
+ST_FIPS,factor,school,NA,70,Palau,NA
+ST_FIPS,factor,school,NA,72,Puerto Rico,NA
+ST_FIPS,factor,school,NA,78,Virgin Islands,NA
+REGION,factor,school,NA,0,U.S. Service Schools,region_id
+REGION,factor,school,NA,1,"New England (CT, ME, MA, NH, RI, VT)",NA
+REGION,factor,school,NA,2,"Mid East (DE, DC, MD, NJ, NY, PA)",NA
+REGION,factor,school,NA,3,"Great Lakes (IL, IN, MI, OH, WI)",NA
+REGION,factor,school,NA,4,"Plains (IA, KS, MN, MO, NE, ND, SD)",NA
+REGION,factor,school,NA,5,"Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV)",NA
+REGION,factor,school,NA,6,"Southwest (AZ, NM, OK, TX)",NA
+REGION,factor,school,NA,7,"Rocky Mountains (CO, ID, MT, UT, WY)",NA
+REGION,factor,school,NA,8,"Far West (AK, CA, HI, NV, OR, WA)",NA
+REGION,factor,school,NA,9,"Outlying Areas (AS, FM, GU, MH, MP, PR, PW, VI)",NA
+LOCALE,factor,school,NA,11,"City: Large (population of 250,000 or more)",locale
+LOCALE,factor,school,NA,12,"City: Midsize (population of at least 100,000 but less than 250,000)",NA
+LOCALE,factor,school,NA,13,"City: Small (population less than 100,000)",NA
+LOCALE,factor,school,NA,21,"Suburb: Large (outside principal city, in urbanized area with population of 250,000 or more)",NA
+LOCALE,factor,school,NA,22,"Suburb: Midsize (outside principal city, in urbanized area with population of at least 100,000 but less than 250,000)",NA
+LOCALE,factor,school,NA,23,"Suburb: Small (outside principal city, in urbanized area with population less than 100,000)",NA
+LOCALE,factor,school,NA,31,Town: Fringe (in urban cluster up to 10 miles from an urbanized area),NA
+LOCALE,factor,school,NA,32,Town: Distant (in urban cluster more than 10 miles and up to 35 miles from an urbanized area),NA
+LOCALE,factor,school,NA,33,Town: Remote (in urban cluster more than 35 miles from an urbanized area),NA
+LOCALE,factor,school,NA,41,Rural: Fringe (rural territory up to 5 miles from an urbanized area or up to 2.5 miles from an urban cluster),NA
+LOCALE,factor,school,NA,42,Rural: Distant (rural territory more than 5 miles but up to 25 miles from an urbanized area or more than 2.5 and up to 10 miles from an urban cluster),NA
+LOCALE,factor,school,NA,43,Rural: Remote (rural territory more than 25 miles from an urbanized area and more than 10 miles from an urban cluster),NA
+LOCALE,factor,school,NA,2,"Mid-Size City (a central city of a CMSA or MSA, with the city having a population less than 250,000)",NA
+LOCALE,factor,school,NA,3,Urban Fringe of a Large City (any territory within a CMSA or MSA of a Large City and defined as urban by the Census Bureau),NA
+LOCALE,factor,school,NA,4,Urban Fringe of a Mid-Size City (any territory within a CMSA or MSA of a Mid-Size City and defined as urban by the Census Bureau),NA
+LOCALE,factor,school,NA,5,"Large Town (an incorporated place or Census-designated place with a population greater than or equal to 25,000 and located outside a CMSA or MSA)",NA
+LOCALE,factor,school,NA,6,"Small Town (an incorporated place or Census-designated place with a population less than 25,000 and greater than or equal to 2,500 and located outside a CMSA or MSA)",NA
+LOCALE,factor,school,NA,7,"Rural, Outside MSA (any territory designated as rural by the Census Bureau that is outside a CMSA or MSA of a Large or Mid-Size City)",NA
+LOCALE,factor,school,NA,8,"Rural, Inside MSA (any territory designated as rural by the Census Bureau that is within a CMSA or MSA of a Large or Mid-Size City)",NA
+LATITUDE,num,root,NA,NA,NA,location.lat
+LONGITUDE,num,root,NA,NA,NA,location.lon
+CCBASIC,factor,school,NA,-2,Not applicable,carnegie_basic
+CCBASIC,factor,school,NA,0,(Not classified),NA
+CCBASIC,factor,school,NA,1,Associate's Colleges: High Transfer-High Traditional,NA
+CCBASIC,factor,school,NA,2,Associate's Colleges: High Transfer-Mixed Traditional/Nontraditional,NA
+CCBASIC,factor,school,NA,3,Associate's Colleges: High Transfer-High Nontraditional,NA
+CCBASIC,factor,school,NA,4,Associate's Colleges: Mixed Transfer/Career & Technical-High Traditional,NA
+CCBASIC,factor,school,NA,5,Associate's Colleges: Mixed Transfer/Career & Technical-Mixed Traditional/Nontraditional,NA
+CCBASIC,factor,school,NA,6,Associate's Colleges: Mixed Transfer/Career & Technical-High Nontraditional,NA
+CCBASIC,factor,school,NA,7,Associate's Colleges: High Career & Technical-High Traditional,NA
+CCBASIC,factor,school,NA,8,Associate's Colleges: High Career & Technical-Mixed Traditional/Nontraditional,NA
+CCBASIC,factor,school,NA,9,Associate's Colleges: High Career & Technical-High Nontraditional,NA
+CCBASIC,factor,school,NA,10,Special Focus Two-Year: Health Professions,NA
+CCBASIC,factor,school,NA,11,Special Focus Two-Year: Technical Professions,NA
+CCBASIC,factor,school,NA,12,Special Focus Two-Year: Arts & Design,NA
+CCBASIC,factor,school,NA,13,Special Focus Two-Year: Other Fields,NA
+CCBASIC,factor,school,NA,14,Baccalaureate/Associate's Colleges: Associate's Dominant,NA
+CCBASIC,factor,school,NA,15,Doctoral Universities: Very High Research Activity,NA
+CCBASIC,factor,school,NA,16,Doctoral Universities: High Research Activity,NA
+CCBASIC,factor,school,NA,17,Doctoral/Professional Universities,NA
+CCBASIC,factor,school,NA,18,Master's Colleges & Universities: Larger Programs,NA
+CCBASIC,factor,school,NA,19,Master's Colleges & Universities: Medium Programs,NA
+CCBASIC,factor,school,NA,20,Master's Colleges & Universities: Small Programs,NA
+CCBASIC,factor,school,NA,21,Baccalaureate Colleges: Arts & Sciences Focus,NA
+CCBASIC,factor,school,NA,22,Baccalaureate Colleges: Diverse Fields,NA
+CCBASIC,factor,school,NA,23,Baccalaureate/Associate's Colleges: Mixed Baccalaureate/Associate's,NA
+CCBASIC,factor,school,NA,24,Special Focus Four-Year: Faith-Related Institutions,NA
+CCBASIC,factor,school,NA,25,Special Focus Four-Year: Medical Schools & Centers,NA
+CCBASIC,factor,school,NA,26,Special Focus Four-Year: Other Health Professions Schools,NA
+CCBASIC,factor,school,NA,27,Special Focus Four-Year: Engineering Schools,NA
+CCBASIC,factor,school,NA,28,Special Focus Four-Year: Other Technology-Related Schools,NA
+CCBASIC,factor,school,NA,29,Special Focus Four-Year: Business & Management Schools,NA
+CCBASIC,factor,school,NA,30,"Special Focus Four-Year: Arts, Music & Design Schools",NA
+CCBASIC,factor,school,NA,31,Special Focus Four-Year: Law Schools,NA
+CCBASIC,factor,school,NA,32,Special Focus Four-Year: Other Special Focus Institutions,NA
+CCBASIC,factor,school,NA,33,Tribal Colleges,NA
+CCUGPROF,factor,school,NA,-2,Not applicable,carnegie_undergrad
+CCUGPROF,factor,school,NA,0,Not classified (Exclusively Graduate),NA
+CCUGPROF,factor,school,NA,1,"Two-year, higher part-time",NA
+CCUGPROF,factor,school,NA,2,"Two-year, mixed part/full-time",NA
+CCUGPROF,factor,school,NA,3,"Two-year, medium full-time",NA
+CCUGPROF,factor,school,NA,4,"Two-year, higher full-time",NA
+CCUGPROF,factor,school,NA,5,"Four-year, higher part-time",NA
+CCUGPROF,factor,school,NA,6,"Four-year, medium full-time, inclusive, lower transfer-in",NA
+CCUGPROF,factor,school,NA,7,"Four-year, medium full-time, inclusive, higher transfer-in",NA
+CCUGPROF,factor,school,NA,8,"Four-year, medium full-time, selective, lower transfer-in",NA
+CCUGPROF,factor,school,NA,9,"Four-year, medium full-time , selective, higher transfer-in",NA
+CCUGPROF,factor,school,NA,10,"Four-year, full-time, inclusive, lower transfer-in",NA
+CCUGPROF,factor,school,NA,11,"Four-year, full-time, inclusive, higher transfer-in",NA
+CCUGPROF,factor,school,NA,12,"Four-year, full-time, selective, lower transfer-in",NA
+CCUGPROF,factor,school,NA,13,"Four-year, full-time, selective, higher transfer-in",NA
+CCUGPROF,factor,school,NA,14,"Four-year, full-time, more selective, lower transfer-in",NA
+CCUGPROF,factor,school,NA,15,"Four-year, full-time, more selective, higher transfer-in",NA
+CCSIZSET,factor,school,NA,-2,Not applicable,carnegie_size_setting
+CCSIZSET,factor,school,NA,0,(Not classified),NA
+CCSIZSET,factor,school,NA,1,"Two-year, very small",NA
+CCSIZSET,factor,school,NA,2,"Two-year, small",NA
+CCSIZSET,factor,school,NA,3,"Two-year, medium",NA
+CCSIZSET,factor,school,NA,4,"Two-year, large",NA
+CCSIZSET,factor,school,NA,5,"Two-year, very large",NA
+CCSIZSET,factor,school,NA,6,"Four-year, very small, primarily nonresidential",NA
+CCSIZSET,factor,school,NA,7,"Four-year, very small, primarily residential",NA
+CCSIZSET,factor,school,NA,8,"Four-year, very small, highly residential",NA
+CCSIZSET,factor,school,NA,9,"Four-year, small, primarily nonresidential",NA
+CCSIZSET,factor,school,NA,10,"Four-year, small, primarily residential",NA
+CCSIZSET,factor,school,NA,11,"Four-year, small, highly residential",NA
+CCSIZSET,factor,school,NA,12,"Four-year, medium, primarily nonresidential",NA
+CCSIZSET,factor,school,NA,13,"Four-year, medium, primarily residential",NA
+CCSIZSET,factor,school,NA,14,"Four-year, medium, highly residential",NA
+CCSIZSET,factor,school,NA,15,"Four-year, large, primarily nonresidential",NA
+CCSIZSET,factor,school,NA,16,"Four-year, large, primarily residential",NA
+CCSIZSET,factor,school,NA,17,"Four-year, large, highly residential",NA
+CCSIZSET,factor,school,NA,18,Exclusively graduate/professional,NA
+HBCU,factor,school,NA,0,No,minority_serving.historically_black
+HBCU,factor,school,NA,1,Yes,NA
+PBI,factor,school,NA,0,No,minority_serving.predominantly_black
+PBI,factor,school,NA,1,Yes,NA
+ANNHI,factor,school,NA,0,No,minority_serving.annh
+ANNHI,factor,school,NA,1,Yes,NA
+TRIBAL,factor,school,NA,0,No,minority_serving.tribal
+TRIBAL,factor,school,NA,1,Yes,NA
+AANAPII,factor,school,NA,0,No,minority_serving.aanipi
+AANAPII,factor,school,NA,1,Yes,NA
+HSI,factor,school,NA,0,No,minority_serving.hispanic
+HSI,factor,school,NA,1,Yes,NA
+"NANTI",factor,school,NA,0,No,minority_serving.nant
+"NANTI",factor,school,NA,1,Yes,NA
+MENONLY,factor,school,NA,0,No,men_only
+MENONLY,factor,school,NA,1,Yes,NA
+WOMENONLY,factor,school,NA,0,No,women_only
+WOMENONLY,factor,school,NA,1,Yes,NA
+RELAFFIL,factor,school,NA,-1,Not reported,religious_affiliation
+RELAFFIL,factor,school,NA,-2,Not applicable,NA
+RELAFFIL,factor,school,NA,22,American Evangelical Lutheran Church,NA
+RELAFFIL,factor,school,NA,24,African Methodist Episcopal Zion Church,NA
+RELAFFIL,factor,school,NA,27,Assemblies of God Church,NA
+RELAFFIL,factor,school,NA,28,Brethren Church,NA
+RELAFFIL,factor,school,NA,30,Roman Catholic,NA
+RELAFFIL,factor,school,NA,33,Wisconsin Evangelical Lutheran Synod,NA
+RELAFFIL,factor,school,NA,34,Christ and Missionary Alliance Church,NA
+RELAFFIL,factor,school,NA,35,Christian Reformed Church,NA
+RELAFFIL,factor,school,NA,36,Evangelical Congregational Church,NA
+RELAFFIL,factor,school,NA,37,Evangelical Covenant Church of America,NA
+RELAFFIL,factor,school,NA,38,Evangelical Free Church of America,NA
+RELAFFIL,factor,school,NA,39,Evangelical Lutheran Church,NA
+RELAFFIL,factor,school,NA,40,International United Pentecostal Church,NA
+RELAFFIL,factor,school,NA,41,Free Will Baptist Church,NA
+RELAFFIL,factor,school,NA,42,Interdenominational,NA
+RELAFFIL,factor,school,NA,43,Mennonite Brethren Church,NA
+RELAFFIL,factor,school,NA,44,Moravian Church,NA
+RELAFFIL,factor,school,NA,45,North American Baptist,NA
+RELAFFIL,factor,school,NA,47,Pentecostal Holiness Church,NA
+RELAFFIL,factor,school,NA,48,Christian Churches and Churches of Christ,NA
+RELAFFIL,factor,school,NA,49,Reformed Church in America,NA
+RELAFFIL,factor,school,NA,50,"Episcopal Church, Reformed",NA
+RELAFFIL,factor,school,NA,51,African Methodist Episcopal,NA
+RELAFFIL,factor,school,NA,52,American Baptist,NA
+RELAFFIL,factor,school,NA,53,American Lutheran,NA
+RELAFFIL,factor,school,NA,54,Baptist,NA
+RELAFFIL,factor,school,NA,55,Christian Methodist Episcopal,NA
+RELAFFIL,factor,school,NA,57,Church of God,NA
+RELAFFIL,factor,school,NA,58,Church of Brethren,NA
+RELAFFIL,factor,school,NA,59,Church of the Nazarene,NA
+RELAFFIL,factor,school,NA,60,Cumberland Presbyterian,NA
+RELAFFIL,factor,school,NA,61,Christian Church (Disciples of Christ),NA
+RELAFFIL,factor,school,NA,64,Free Methodist,NA
+RELAFFIL,factor,school,NA,65,Friends,NA
+RELAFFIL,factor,school,NA,66,Presbyterian Church (USA),NA
+RELAFFIL,factor,school,NA,67,Lutheran Church in America,NA
+RELAFFIL,factor,school,NA,68,Lutheran Church - Missouri Synod,NA
+RELAFFIL,factor,school,NA,69,Mennonite Church,NA
+RELAFFIL,factor,school,NA,71,United Methodist,NA
+RELAFFIL,factor,school,NA,73,Protestant Episcopal,NA
+RELAFFIL,factor,school,NA,74,Churches of Christ,NA
+RELAFFIL,factor,school,NA,75,Southern Baptist,NA
+RELAFFIL,factor,school,NA,76,United Church of Christ,NA
+RELAFFIL,factor,school,NA,77,"Protestant, not specified",NA
+RELAFFIL,factor,school,NA,78,Multiple Protestant Denomination,NA
+RELAFFIL,factor,school,NA,79,Other Protestant,NA
+RELAFFIL,factor,school,NA,80,Jewish,NA
+RELAFFIL,factor,school,NA,81,Reformed Presbyterian Church,NA
+RELAFFIL,factor,school,NA,84,United Brethren Church,NA
+RELAFFIL,factor,school,NA,87,Missionary Church Inc,NA
+RELAFFIL,factor,school,NA,88,Undenominational,NA
+RELAFFIL,factor,school,NA,89,Wesleyan,NA
+RELAFFIL,factor,school,NA,91,Greek Orthodox,NA
+RELAFFIL,factor,school,NA,92,Russian Orthodox,NA
+RELAFFIL,factor,school,NA,93,Unitarian Universalist,NA
+RELAFFIL,factor,school,NA,94,Latter Day Saints (Mormon Church),NA
+RELAFFIL,factor,school,NA,95,Seventh Day Adventists,NA
+RELAFFIL,factor,school,NA,97,The Presbyterian Church in America,NA
+RELAFFIL,factor,school,NA,99,Other (none of the above),NA
+RELAFFIL,factor,school,NA,100,Original Free Will Baptist,NA
+RELAFFIL,factor,school,NA,101,Ecumenical Christian,NA
+RELAFFIL,factor,school,NA,102,Evangelical Christian,NA
+RELAFFIL,factor,school,NA,103,Presbyterian,NA
+RELAFFIL,factor,school,NA,105,General Baptist,NA
+RELAFFIL,factor,school,NA,106,Muslim,NA
+RELAFFIL,factor,school,NA,107,Plymouth Brethren,NA
+ADM_RATE,num,admissions,NA,NA,NA,admission_rate.overall
+ADM_RATE_ALL,num,admissions,NA,NA,NA,admission_rate.by_ope_id
+SATVR25,num,admissions,NA,NA,NA,sat_scores.25th_percentile.critical_reading
+SATVR75,num,admissions,NA,NA,NA,sat_scores.75th_percentile.critical_reading
+SATMT25,num,admissions,NA,NA,NA,sat_scores.25th_percentile.math
+SATMT75,num,admissions,NA,NA,NA,sat_scores.75th_percentile.math
+SATVRMID,num,admissions,NA,NA,NA,sat_scores.midpoint.critical_reading
+SATMTMID,num,admissions,NA,NA,NA,sat_scores.midpoint.math
+ACTCM25,num,admissions,NA,NA,NA,act_scores.25th_percentile.cumulative
+ACTCM75,num,admissions,NA,NA,NA,act_scores.75th_percentile.cumulative
+ACTEN25,num,admissions,NA,NA,NA,act_scores.25th_percentile.english
+ACTEN75,num,admissions,NA,NA,NA,act_scores.75th_percentile.english
+ACTMT25,num,admissions,NA,NA,NA,act_scores.25th_percentile.math
+ACTMT75,num,admissions,NA,NA,NA,act_scores.75th_percentile.math
+ACTCMMID,num,admissions,NA,NA,NA,act_scores.midpoint.cumulative
+ACTENMID,num,admissions,NA,NA,NA,act_scores.midpoint.english
+ACTMTMID,num,admissions,NA,NA,NA,act_scores.midpoint.math
+SAT_AVG,num,admissions,NA,NA,NA,sat_scores.average.overall
+SAT_AVG_ALL,num,admissions,NA,NA,NA,sat_scores.average.by_ope_id
+PCIP01,num,academics,1,NA,"Agriculture, Agriculture Operations, and Related Sciences",program_percentage.agriculture
+PCIP03,num,academics,3,NA,Natural Resources and Conservation,program_percentage.resources
+PCIP04,num,academics,4,NA,Architecture and Related Services,program_percentage.architecture
+PCIP05,num,academics,5,NA,"Area, Ethnic, Cultural, Gender, and Group Studies",program_percentage.ethnic_cultural_gender
+PCIP09,num,academics,9,NA,"Communication, Journalism, and Related Programs",program_percentage.communication
+PCIP10,num,academics,10,NA,Communications Technologies/Technicians and Support Services,program_percentage.communications_technology
+PCIP11,num,academics,11,NA,Computer and Information Sciences and Support Services,program_percentage.computer
+PCIP12,num,academics,12,NA,Personal and Culinary Services,program_percentage.personal_culinary
+PCIP13,num,academics,13,NA,Education,program_percentage.education
+PCIP14,num,academics,14,NA,Engineering,program_percentage.engineering
+PCIP15,num,academics,15,NA,Engineering Technologies and Engineering-Related Fields,program_percentage.engineering_technology
+PCIP16,num,academics,16,NA,"Foreign Languages, Literatures, and Linguistics",program_percentage.language
+PCIP19,num,academics,19,NA,Family and Consumer Sciences/Human Sciences,program_percentage.family_consumer_science
+PCIP22,num,academics,22,NA,Legal Professions and Studies,program_percentage.legal
+PCIP23,num,academics,23,NA,English Language and Literature/Letters,program_percentage.english
+PCIP24,num,academics,24,NA,"Liberal Arts and Sciences, General Studies and Humanities",program_percentage.humanities
+PCIP25,num,academics,25,NA,Library Science,program_percentage.library
+PCIP26,num,academics,26,NA,Biological and Biomedical Sciences,program_percentage.biological
+PCIP27,num,academics,27,NA,Mathematics and Statistics,program_percentage.mathematics
+PCIP29,num,academics,29,NA,Military Technologies and Applied Sciences,program_percentage.military
+PCIP30,num,academics,30,NA,Multi/Interdisciplinary Studies,program_percentage.multidiscipline
+PCIP31,num,academics,31,NA,"Parks, Recreation, Leisure, and Fitness Studies",program_percentage.parks_recreation_fitness
+PCIP38,num,academics,38,NA,Philosophy and Religious Studies,program_percentage.philosophy_religious
+PCIP39,num,academics,39,NA,Theology and Religious Vocations,program_percentage.theology_religious_vocation
+PCIP40,num,academics,40,NA,Physical Sciences,program_percentage.physical_science
+PCIP41,num,academics,41,NA,Science Technologies/Technicians,program_percentage.science_technology
+PCIP42,num,academics,42,NA,Psychology,program_percentage.psychology
+PCIP43,num,academics,43,NA,"Homeland Security, Law Enforcement, Firefighting and Related Protective Services",program_percentage.security_law_enforcement
+PCIP44,num,academics,44,NA,Public Administration and Social Service Professions,program_percentage.public_administration_social_service
+PCIP45,num,academics,45,NA,Social Sciences,program_percentage.social_science
+PCIP46,num,academics,46,NA,Construction Trades,program_percentage.construction
+PCIP47,num,academics,47,NA,Mechanic and Repair Technologies/Technicians,program_percentage.mechanic_repair_technology
+PCIP48,num,academics,48,NA,Precision Production,program_percentage.precision_production
+PCIP49,num,academics,49,NA,Transportation and Materials Moving,program_percentage.transportation
+PCIP50,num,academics,50,NA,Visual and Performing Arts,program_percentage.visual_performing
+PCIP51,num,academics,51,NA,Health Professions and Related Programs,program_percentage.health
+PCIP52,num,academics,52,NA,"Business, Management, Marketing, and Related Support Services",program_percentage.business_marketing
+PCIP54,num,academics,54,NA,History,program_percentage.history
+CIP01CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.agriculture
+CIP01CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.agriculture
+CIP01ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.agriculture
+CIP01CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.agriculture
+CIP01BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.agriculture
+CIP03CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.resources
+CIP03CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.resources
+CIP03ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.resources
+CIP03CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.resources
+CIP03BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.resources
+CIP04CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.architecture
+CIP04CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.architecture
+CIP04ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.architecture
+CIP04CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.architecture
+CIP04BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.architecture
+CIP05CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.ethnic_cultural_gender
+CIP05CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.ethnic_cultural_gender
+CIP05ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.ethnic_cultural_gender
+CIP05CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.ethnic_cultural_gender
+CIP05BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.ethnic_cultural_gender
+CIP09CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.communication
+CIP09CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.communication
+CIP09ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.communication
+CIP09CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.communication
+CIP09BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.communication
+CIP10CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.communications_technology
+CIP10CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.communications_technology
+CIP10ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.communications_technology
+CIP10CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.communications_technology
+CIP10BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.communications_technology
+CIP11CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.computer
+CIP11CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.computer
+CIP11ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.computer
+CIP11CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.computer
+CIP11BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.computer
+CIP12CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.personal_culinary
+CIP12CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.personal_culinary
+CIP12ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.personal_culinary
+CIP12CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.personal_culinary
+CIP12BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.personal_culinary
+CIP13CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.education
+CIP13CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.education
+CIP13ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.education
+CIP13CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.education
+CIP13BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.education
+CIP14CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.engineering
+CIP14CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.engineering
+CIP14ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.engineering
+CIP14CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.engineering
+CIP14BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.engineering
+CIP15CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.engineering_technology
+CIP15CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.engineering_technology
+CIP15ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.engineering_technology
+CIP15CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.engineering_technology
+CIP15BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.engineering_technology
+CIP16CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.language
+CIP16CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.language
+CIP16ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.language
+CIP16CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.language
+CIP16BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.language
+CIP19CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.family_consumer_science
+CIP19CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.family_consumer_science
+CIP19ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.family_consumer_science
+CIP19CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.family_consumer_science
+CIP19BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.family_consumer_science
+CIP22CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.legal
+CIP22CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.legal
+CIP22ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.legal
+CIP22CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.legal
+CIP22BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.legal
+CIP23CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.english
+CIP23CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.english
+CIP23ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.english
+CIP23CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.english
+CIP23BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.english
+CIP24CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.humanities
+CIP24CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.humanities
+CIP24ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.humanities
+CIP24CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.humanities
+CIP24BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.humanities
+CIP25CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.library
+CIP25CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.library
+CIP25ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.library
+CIP25CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.library
+CIP25BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.library
+CIP26CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.biological
+CIP26CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.biological
+CIP26ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.biological
+CIP26CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.biological
+CIP26BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.biological
+CIP27CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.mathematics
+CIP27CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.mathematics
+CIP27ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.mathematics
+CIP27CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.mathematics
+CIP27BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.mathematics
+CIP29CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.military
+CIP29CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.military
+CIP29ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.military
+CIP29CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.military
+CIP29BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.military
+CIP30CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.multidiscipline
+CIP30CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.multidiscipline
+CIP30ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.multidiscipline
+CIP30CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.multidiscipline
+CIP30BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.multidiscipline
+CIP31CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.parks_recreation_fitness
+CIP31CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.parks_recreation_fitness
+CIP31ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.parks_recreation_fitness
+CIP31CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.parks_recreation_fitness
+CIP31BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.parks_recreation_fitness
+CIP38CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.philosophy_religious
+CIP38CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.philosophy_religious
+CIP38ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.philosophy_religious
+CIP38CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.philosophy_religious
+CIP38BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.philosophy_religious
+CIP39CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.theology_religious_vocation
+CIP39CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.theology_religious_vocation
+CIP39ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.theology_religious_vocation
+CIP39CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.theology_religious_vocation
+CIP39BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.theology_religious_vocation
+CIP40CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.physical_science
+CIP40CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.physical_science
+CIP40ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.physical_science
+CIP40CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.physical_science
+CIP40BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.physical_science
+CIP41CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.science_technology
+CIP41CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.science_technology
+CIP41ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.science_technology
+CIP41CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.science_technology
+CIP41BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.science_technology
+CIP42CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.psychology
+CIP42CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.psychology
+CIP42ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.psychology
+CIP42CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.psychology
+CIP42BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.psychology
+CIP43CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.security_law_enforcement
+CIP43CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.security_law_enforcement
+CIP43ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.security_law_enforcement
+CIP43CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.security_law_enforcement
+CIP43BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.security_law_enforcement
+CIP44CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.public_administration_social_service
+CIP44CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.public_administration_social_service
+CIP44ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.public_administration_social_service
+CIP44CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.public_administration_social_service
+CIP44BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.public_administration_social_service
+CIP45CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.social_science
+CIP45CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.social_science
+CIP45ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.social_science
+CIP45CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.social_science
+CIP45BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.social_science
+CIP46CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.construction
+CIP46CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.construction
+CIP46ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.construction
+CIP46CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.construction
+CIP46BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.construction
+CIP47CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.mechanic_repair_technology
+CIP47CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.mechanic_repair_technology
+CIP47ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.mechanic_repair_technology
+CIP47CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.mechanic_repair_technology
+CIP47BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.mechanic_repair_technology
+CIP48CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.precision_production
+CIP48CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.precision_production
+CIP48ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.precision_production
+CIP48CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.precision_production
+CIP48BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.precision_production
+CIP49CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.transportation
+CIP49CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.transportation
+CIP49ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.transportation
+CIP49CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.transportation
+CIP49BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.transportation
+CIP50CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.visual_performing
+CIP50CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.visual_performing
+CIP50ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.visual_performing
+CIP50CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.visual_performing
+CIP50BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.visual_performing
+CIP51CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.health
+CIP51CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.health
+CIP51ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.health
+CIP51CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.health
+CIP51BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.health
+CIP52CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.business_marketing
+CIP52CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.business_marketing
+CIP52ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.business_marketing
+CIP52CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.business_marketing
+CIP52BACHL,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.business_marketing
+CIP54CERT1,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_1_yr.history
+CIP54CERT2,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_2_yr.history
+CIP54ASSOC,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.assoc.history
+CIP54CERT4,factor,academics,NA,"0, 1, 2","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.certificate_lt_4_yr.history
+CIP54BACHL,factor,academics,NA,"0, 1, 3","Program not offered, Program offered, Program offered through an exclusively distance-education program",program.bachelors.history
+DISTANCEONLY,factor,school,NA,0,"Not distance-ed only,",online_only
+DISTANCEONLY,factor,school,NA,1,Distance-education only,NA
+UGDS,integer,student,NA,NA,NA,size
+UGDS_WHITE,num,student,NA,NA,NA,demographics.race_ethnicity.white
+UGDS_BLACK,num,student,NA,NA,NA,demographics.race_ethnicity.black
+UGDS_HISP,num,student,NA,NA,NA,demographics.race_ethnicity.hispanic
+UGDS_ASIAN,num,student,NA,NA,NA,demographics.race_ethnicity.asian
+UGDS_AIAN,num,student,NA,NA,NA,demographics.race_ethnicity.aian
+UGDS_NHPI,num,student,NA,NA,NA,demographics.race_ethnicity.nhpi
+UGDS_2MOR,num,student,NA,NA,NA,demographics.race_ethnicity.two_or_more
+UGDS_NRA,num,student,NA,NA,NA,demographics.race_ethnicity.non_resident_alien
+UGDS_UNKN,num,student,NA,NA,NA,demographics.race_ethnicity.unknown
+PPTUG_EF,num,student,NA,NA,NA,part_time_share
+CURROPER,factor,school,NA,0,Not currently certified as an operating institution,operating
+CURROPER,factor,school,NA,1,Currently certified as operating,NA
+NPT4_PUB,integer,cost,NA,NA,NA,avg_net_price.public
+NPT4_PRIV,integer,cost,NA,NA,NA,avg_net_price.private
+NPT41_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.0-30000
+NPT42_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.30001-48000
+NPT43_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.48001-75000
+NPT44_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.75001-110000
+NPT45_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.110001-plus
+NPT41_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.0-30000
+NPT42_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.30001-48000
+NPT43_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.48001-75000
+NPT44_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.75001-110000
+NPT45_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.110001-plus
+NPT4_048_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.0-48000
+NPT4_048_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.0-48000
+NPT4_3075_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.30001-75000
+NPT4_3075_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.30001-75000
+NPT4_75UP_PUB,integer,cost,NA,NA,NA,net_price.public.by_income_level.75000-plus
+NPT4_75UP_PRIV,integer,cost,NA,NA,NA,net_price.private.by_income_level.75000-plus
+NUM4_PUB,integer,cost,NA,NA,NA,title_iv.public.all
+NUM4_PRIV,integer,cost,NA,NA,NA,title_iv.private.all
+NUM41_PUB,integer,cost,NA,NA,NA,title_iv.public.by_income_level.0-30000
+NUM42_PUB,integer,cost,NA,NA,NA,title_iv.public.by_income_level.30001-48000
+NUM43_PUB,integer,cost,NA,NA,NA,title_iv.public.by_income_level.48001-75000
+NUM44_PUB,integer,cost,NA,NA,NA,title_iv.public.by_income_level.75001-110000
+NUM45_PUB,integer,cost,NA,NA,NA,title_iv.public.by_income_level.110001-plus
+NUM41_PRIV,integer,cost,NA,NA,NA,title_iv.private.by_income_level.0-30000
+NUM42_PRIV,integer,cost,NA,NA,NA,title_iv.private.by_income_level.30001-48000
+NUM43_PRIV,integer,cost,NA,NA,NA,title_iv.private.by_income_level.48001-75000
+NUM44_PRIV,integer,cost,NA,NA,NA,title_iv.private.by_income_level.75001-110000
+NUM45_PRIV,integer,cost,NA,NA,NA,title_iv.private.by_income_level.110001-plus
+COSTT4_A,integer,cost,NA,NA,NA,attendance.academic_year
+COSTT4_P,integer,cost,NA,NA,NA,attendance.program_year
+TUITIONFEE_IN,integer,cost,NA,NA,NA,tuition.in_state
+TUITIONFEE_OUT,integer,cost,NA,NA,NA,tuition.out_of_state
+TUITIONFEE_PROG,integer,cost,NA,NA,NA,tuition.program_year
+TUITFTE,integer,school,NA,NA,NA,tuition_revenue_per_fte
+INEXPFTE,integer,school,NA,NA,NA,instructional_expenditure_per_fte
+AVGFACSAL,integer,school,NA,NA,NA,faculty_salary
+PFTFAC,num,school,NA,NA,NA,ft_faculty_rate
+PCTPELL,num,aid,NA,NA,NA,pell_grant_rate
+C150_4,num,completion,NA,NA,NA,completion_rate_4yr_150nt
+C150_L4,num,completion,NA,NA,NA,completion_rate_less_than_4yr_150nt
+PFTFTUG1_EF,num,student,NA,NA,NA,share_first.time_full.time
+D150_4,integer,completion,NA,NA,NA,completion_cohort_4yr_150nt
+D150_L4,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150nt
+C150_4_WHITE,num,completion,NA,NA,NA,completion_rate_4yr_150_white
+C150_4_BLACK,num,completion,NA,NA,NA,completion_rate_4yr_150_black
+C150_4_HISP,num,completion,NA,NA,NA,completion_rate_4yr_150_hispanic
+C150_4_ASIAN,num,completion,NA,NA,NA,completion_rate_4yr_150_asian
+C150_4_AIAN,num,completion,NA,NA,NA,completion_rate_4yr_150_aian
+C150_4_NHPI,num,completion,NA,NA,NA,completion_rate_4yr_150_nhpi
+C150_4_2MOR,num,completion,NA,NA,NA,completion_rate_4yr_150_2ormore
+C150_4_NRA,num,completion,NA,NA,NA,completion_rate_4yr_150_nonresident.alien
+C150_4_UNKN,num,completion,NA,NA,NA,completion_rate_4yr_150_race.unknown
+C150_L4_WHITE,num,completion,NA,NA,NA,completion_rate_l4yr_150_white
+C150_L4_BLACK,num,completion,NA,NA,NA,completion_rate_l4yr_150_black
+C150_L4_HISP,num,completion,NA,NA,NA,completion_rate_l4yr_150_hispanic
+C150_L4_ASIAN,num,completion,NA,NA,NA,completion_rate_l4yr_150_asian
+C150_L4_AIAN,num,completion,NA,NA,NA,completion_rate_l4yr_150_aian
+C150_L4_NHPI,num,completion,NA,NA,NA,completion_rate_l4yr_150_nhpi
+C150_L4_2MOR,num,completion,NA,NA,NA,completion_rate_l4yr_150_2ormore
+C150_L4_NRA,num,completion,NA,NA,NA,completion_rate_l4yr_150_nonresident.alien
+C150_L4_UNKN,num,completion,NA,NA,NA,completion_rate_l4yr_150_race.unknown
+C200_4,num,completion,NA,NA,NA,completion_rate_4yr_200nt
+C200_L4,num,completion,NA,NA,NA,completion_rate_less_than_4yr_200nt
+D200_4,num,completion,NA,NA,NA,completion_cohort_4yr_200nt
+D200_L4,num,completion,NA,NA,NA,completion_cohort_less_than_4yr_200nt
+RET_FT4,num,student,NA,NA,NA,retention_rate.four_year.full_time
+RET_FTL4,num,student,NA,NA,NA,retention_rate.lt_four_year.full_time
+RET_PT4,num,student,NA,NA,NA,retention_rate.four_year.part_time
+RET_PTL4,num,student,NA,NA,NA,retention_rate.lt_four_year.part_time
+PCTFLOAN,num,aid,NA,NA,NA,federal_loan_rate
+CDR3,num,repayment,NA,NA,NA,3_yr_default_rate
+DEBT_MDN,num,aid,NA,NA,NA,loan_principal
+GRAD_DEBT_MDN,num,aid,NA,NA,NA,median_debt.completers.overall
+WDRAW_DEBT_MDN,num,aid,NA,NA,NA,median_debt.noncompleters
+LO_INC_DEBT_MDN,num,aid,NA,NA,NA,median_debt.income.0_30000
+MD_INC_DEBT_MDN,num,aid,NA,NA,NA,median_debt.income.30001_75000
+HI_INC_DEBT_MDN,num,aid,NA,NA,NA,median_debt.income.greater_than_75000
+DEP_DEBT_MDN,num,aid,NA,NA,NA,median_debt.dependent_students
+IND_DEBT_MDN,num,aid,NA,NA,NA,median_debt.independent_students
+PELL_DEBT_MDN,num,aid,NA,NA,NA,median_debt.pell_grant
+NOPELL_DEBT_MDN,num,aid,NA,NA,NA,median_debt.no_pell_grant
+FEMALE_DEBT_MDN,num,aid,NA,NA,NA,median_debt.female_students
+MALE_DEBT_MDN,num,aid,NA,NA,NA,median_debt.male_students
+FIRSTGEN_DEBT_MDN,num,aid,NA,NA,NA,median_debt.first_generation_students
+NOTFIRSTGEN_DEBT_MDN,num,aid,NA,NA,NA,median_debt.non_first_generation_students
+DEBT_N,integer,aid,NA,NA,NA,median_debt.number.overall
+GRAD_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.completers
+WDRAW_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.noncompleters
+LO_INC_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.income.0_30000
+MD_INC_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.income.30001_75000
+HI_INC_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.income.greater_than_75000
+DEP_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.dependent_students
+IND_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.independent_students
+PELL_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.pell_grant
+NOPELL_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.no_pell_grant
+FEMALE_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.female_students
+MALE_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.male_students
+FIRSTGEN_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.first_generation_students
+NOTFIRSTGEN_DEBT_N,integer,aid,NA,NA,NA,median_debt.number.non_first_generation_students
+GRAD_DEBT_MDN10YR,num,aid,NA,NA,NA,median_debt.completers.monthly_payments
+ALIAS,character,school,NA,NA,NA,alias
+C100_4,num,completion,NA,NA,NA,completion_rate_4yr_100nt
+D100_4,integer,completion,NA,NA,NA,completion_cohort_4yr_100nt
+C100_L4,num,completion,NA,NA,NA,completion_rate_less_than_4yr_100nt
+D100_L4,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_100nt
+TRANS_4,num,completion,NA,NA,NA,transfer_rate.4yr.full_time
+DTRANS_4,integer,completion,NA,NA,NA,transfer_rate.cohort_4yr.full_time
+TRANS_L4,num,completion,NA,NA,NA,transfer_rate.less_than_4yr.full_time
+DTRANS_L4,integer,completion,NA,NA,NA,transfer_rate.cohort_less_than_4yr.full_time
+ICLEVEL,factor,school,NA,1,4-year,institutional_characteristics.level
+ICLEVEL,factor,school,NA,2,2-year,NA
+ICLEVEL,factor,school,NA,3,Less-than-2-year,NA
+UGDS_MEN,num,student,NA,NA,NA,demographics.men
+UGDS_WOMEN,num,student,NA,NA,NA,demographics.women
+CDR3_DENOM,integer,repayment,NA,NA,NA,3_yr_default_rate_denom
+OPENADMP,factor,school,NA,1,Yes,open_admissions_policy
+OPENADMP,factor,school,NA,2,No,NA
+OPENADMP,factor,school,NA,3,Does not enroll first-time students,NA
+D_PCTPELL_PCTFLOAN,integer,student,NA,NA,NA,undergrads_with_pell_grant_or_federal_student_loan
+UGNONDS,integer,student,NA,NA,NA,undergrads_non_degree_seeking
+GRADS,integer,student,NA,NA,NA,grad_students
+D150_4_WHITE,integer,completion,NA,NA,NA,completion_cohort_4yr_150_white
+D150_4_BLACK,integer,completion,NA,NA,NA,completion_cohort_4yr_150_black
+D150_4_HISP,integer,completion,NA,NA,NA,completion_cohort_4yr_150_hispanic
+D150_4_ASIAN,integer,completion,NA,NA,NA,completion_cohort_4yr_150_asian
+D150_4_AIAN,integer,completion,NA,NA,NA,completion_cohort_4yr_150_aian
+D150_4_NHPI,integer,completion,NA,NA,NA,completion_cohort_4yr_150_nhpi
+D150_4_2MOR,integer,completion,NA,NA,NA,completion_cohort_4yr_150_2ormore
+D150_4_NRA,integer,completion,NA,NA,NA,completion_cohort_4yr_150_nonresident.alien
+D150_4_UNKN,integer,completion,NA,NA,NA,completion_cohort_4yr_150_race.unknown
+D150_L4_WHITE,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_white
+D150_L4_BLACK,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_black
+D150_L4_HISP,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_hispanic
+D150_L4_ASIAN,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_asian
+D150_L4_AIAN,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_aian
+D150_L4_NHPI,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_nhpi
+D150_L4_2MOR,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_2ormore
+D150_L4_NRA,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_nonresident.alien
+D150_L4_UNKN,integer,completion,NA,NA,NA,completion_cohort_less_than_4yr_150_race.unknown
+ACCREDCODE,character,school,NA,NA,NA,accreditor_code
+T4APPROVALDATE,character,school,NA,NA,NA,title_iv.approval_date
+OMACHT6_FTFT,integer,completion,NA,NA,NA,outcome_cohort.full_time.first_time.6yr
+OMAWDP6_FTFT,num,completion,NA,NA,NA,outcome_percentage.full_time.first_time.6yr.award
+OMACHT8_FTFT,integer,completion,NA,NA,NA,outcome_cohort.full_time.first_time.8yr
+OMAWDP8_FTFT,num,completion,NA,NA,NA,outcome_percentage.full_time.first_time.8yr.award
+OMENRYP8_FTFT,num,completion,NA,NA,NA,outcome_percentage.full_time.first_time.8yr.still_enrolled
+OMENRAP8_FTFT,num,completion,NA,NA,NA,outcome_percentage.full_time.first_time.8yr.transfer
+OMENRUP8_FTFT,num,completion,NA,NA,NA,outcome_percentage.full_time.first_time.8yr.unknown
+OMACHT6_PTFT,integer,completion,NA,NA,NA,outcome_cohort.part_time.first_time.6yr
+OMAWDP6_PTFT,num,completion,NA,NA,NA,outcome_percentage.part_time.first_time.6yr.award
+OMACHT8_PTFT,integer,completion,NA,NA,NA,outcome_cohort.part_time.first_time.8yr
+OMAWDP8_PTFT,num,completion,NA,NA,NA,outcome_percentage.part_time.first_time.8yr.award
+OMENRYP8_PTFT,num,completion,NA,NA,NA,outcome_percentage.part_time.first_time.8yr.still_enrolled
+OMENRAP8_PTFT,num,completion,NA,NA,NA,outcome_percentage.part_time.first_time.8yr.transfer
+OMENRUP8_PTFT,num,completion,NA,NA,NA,outcome_percentage.part_time.first_time.8yr.unknown
+OMACHT6_FTNFT,integer,completion,NA,NA,NA,outcome_cohort.full_time.not_first_time.6yr
+OMAWDP6_FTNFT,num,completion,NA,NA,NA,outcome_percentage.full_time.not_first_time.6yr.award
+OMACHT8_FTNFT,integer,completion,NA,NA,NA,outcome_cohort.full_time.not_first_time.8yr
+OMAWDP8_FTNFT,num,completion,NA,NA,NA,outcome_percentage.full_time.not_first_time.8yr.award
+OMENRYP8_FTNFT,num,completion,NA,NA,NA,outcome_percentage.full_time.not_first_time.8yr.still_enrolled
+OMENRAP8_FTNFT,num,completion,NA,NA,NA,outcome_percentage.full_time.not_first_time.8yr.transfer
+OMENRUP8_FTNFT,num,completion,NA,NA,NA,outcome_percentage.full_time.not_first_time.8yr.unknown
+OMACHT6_PTNFT,integer,completion,NA,NA,NA,outcome_cohort.part_time.not_first_time.6yr
+OMAWDP6_PTNFT,num,completion,NA,NA,NA,outcome_percentage.part_time.not_first_time.6yr.award
+OMACHT8_PTNFT,integer,completion,NA,NA,NA,outcome_cohort.part_time.not_first_time.8yr
+OMAWDP8_PTNFT,num,completion,NA,NA,NA,outcome_percentage.part_time.not_first_time.8yr.award
+OMENRYP8_PTNFT,num,completion,NA,NA,NA,outcome_percentage.part_time.not_first_time.8yr.still_enrolled
+OMENRAP8_PTNFT,num,completion,NA,NA,NA,outcome_percentage.part_time.not_first_time.8yr.transfer
+OMENRUP8_PTNFT,num,completion,NA,NA,NA,outcome_percentage.part_time.not_first_time.8yr.unknown
+C150_4_PELL,num,completion,NA,NA,NA,completion_rate_four_year_150_pell
+D150_4_PELL,integer,completion,NA,NA,NA,completion_cohort_four_year_150_pell
+C150_L4_PELL,num,completion,NA,NA,NA,completion_rate_lt_four_year_150_pell
+D150_L4_PELL,integer,completion,NA,NA,NA,completion_cohort_lt_four_year_150_pell
+C150_4_LOANNOPELL,num,completion,NA,NA,NA,completion_rate_four_year_150_loan_nopell
+D150_4_LOANNOPELL,integer,completion,NA,NA,NA,completion_cohort_four_year_150_loan_nopell
+C150_L4_LOANNOPELL,num,completion,NA,NA,NA,completion_rate_lt_four_year_150_loan_nopell
+D150_L4_LOANNOPELL,integer,completion,NA,NA,NA,completion_cohort_lt_four_year_150_loan_nopell
+C150_4_NOLOANNOPELL,num,completion,NA,NA,NA,completion_rate_four_year_150_noloan_nopell
+D150_4_NOLOANNOPELL,integer,completion,NA,NA,NA,completion_cohort_four_year_150_noloan_nopell
+C150_L4_NOLOANNOPELL,num,completion,NA,NA,NA,completion_rate_lt_four_year_150_noloan_nopell
+D150_L4_NOLOANNOPELL,integer,completion,NA,NA,NA,completion_cohort_lt_four_year_150_noloan_nopell
+SCHTYPE,factor,school,NA,1,Public,ownership_peps
+SCHTYPE,factor,school,NA,2,"Private, Nonprofit",NA
+SCHTYPE,factor,school,NA,3,Proprietary,NA
+OPEFLAG,factor,school,NA,NULL,unknown,title_iv.eligibility_type
+OPEFLAG,factor,school,NA,1,Participates in Title IV federal financial aid programs,NA
+OPEFLAG,factor,school,NA,2,Branch campus of a main campus that participates in Title IV,NA
+OPEFLAG,factor,school,NA,3,Deferment only - limited participation,NA
+OPEFLAG,factor,school,NA,5,"Not currently participating in Title IV, has an OPE ID number",NA
+OPEFLAG,factor,school,NA,6,"Not currently participating in Title IV, does not have OPE ID number",NA
+OPEFLAG,factor,school,NA,7,Stopped participating during the collection year,NA
+OPEFLAG,factor,school,NA,8,New participants (became eligible during the collection year),NA
+OPEFLAG,factor,school,NA,19,Not eligible,NA
+PRGMOFR,integer,academics,NA,NA,NA,program_reporter.programs_offered
+CIPCODE1,character,academics,NA,NA,NA,program_reporter.program_1.cip_6_digit.code
+CIPCODE2,character,academics,NA,NA,NA,program_reporter.program_2.cip_6_digit.code
+CIPCODE3,character,academics,NA,NA,NA,program_reporter.program_3.cip_6_digit.code
+CIPCODE4,character,academics,NA,NA,NA,program_reporter.program_4.cip_6_digit.code
+CIPCODE5,character,academics,NA,NA,NA,program_reporter.program_5.cip_6_digit.code
+CIPCODE6,character,academics,NA,NA,NA,program_reporter.program_6.cip_6_digit.code
+CIPTITLE1,character,academics,NA,NA,NA,program_reporter.program_1.cip_6_digit.title
+CIPTITLE2,character,academics,NA,NA,NA,program_reporter.program_2.cip_6_digit.title
+CIPTITLE3,character,academics,NA,NA,NA,program_reporter.program_3.cip_6_digit.title
+CIPTITLE4,character,academics,NA,NA,NA,program_reporter.program_4.cip_6_digit.title
+CIPTITLE5,character,academics,NA,NA,NA,program_reporter.program_5.cip_6_digit.title
+CIPTITLE6,character,academics,NA,NA,NA,program_reporter.program_6.cip_6_digit.title
+CIPTFBS1,integer,cost,NA,NA,NA,program_reporter.program_1.cip_6_digit.full_program
+CIPTFBS2,integer,cost,NA,NA,NA,program_reporter.program_2.cip_6_digit.full_program
+CIPTFBS3,integer,cost,NA,NA,NA,program_reporter.program_3.cip_6_digit.full_program
+CIPTFBS4,integer,cost,NA,NA,NA,program_reporter.program_4.cip_6_digit.full_program
+CIPTFBS5,integer,cost,NA,NA,NA,program_reporter.program_5.cip_6_digit.full_program
+CIPTFBS6,integer,cost,NA,NA,NA,program_reporter.program_6.cip_6_digit.full_program
+CIPTFBSANNUAL1,integer,cost,NA,NA,NA,program_reporter.program_1.cip_6_digit.annualized
+CIPTFBSANNUAL2,integer,cost,NA,NA,NA,program_reporter.program_2.cip_6_digit.annualized
+CIPTFBSANNUAL3,integer,cost,NA,NA,NA,program_reporter.program_3.cip_6_digit.annualized
+CIPTFBSANNUAL4,integer,cost,NA,NA,NA,program_reporter.program_4.cip_6_digit.annualized
+CIPTFBSANNUAL5,integer,cost,NA,NA,NA,program_reporter.program_5.cip_6_digit.annualized
+CIPTFBSANNUAL6,integer,cost,NA,NA,NA,program_reporter.program_6.cip_6_digit.annualized
+MTHCMP1,integer,academics,NA,NA,NA,program_reporter.program_1.cip_6_digit.avg_month_completion
+MTHCMP2,integer,academics,NA,NA,NA,program_reporter.program_2.cip_6_digit.avg_month_completion
+MTHCMP3,integer,academics,NA,NA,NA,program_reporter.program_3.cip_6_digit.avg_month_completion
+MTHCMP4,integer,academics,NA,NA,NA,program_reporter.program_4.cip_6_digit.avg_month_completion
+MTHCMP5,integer,academics,NA,NA,NA,program_reporter.program_5.cip_6_digit.avg_month_completion
+MTHCMP6,integer,academics,NA,NA,NA,program_reporter.program_6.cip_6_digit.avg_month_completion
+OMENRYP_ALL,num,completion,NA,NA,NA,outcome_percentage.all_students.8yr.still_enrolled
+OMENRAP_ALL,num,completion,NA,NA,NA,outcome_percentage.all_students.8yr.transfer
+OMAWDP8_ALL,num,completion,NA,NA,NA,outcome_percentage.all_students.8yr.award
+OMENRUP_ALL,num,completion,NA,NA,NA,outcome_percentage.all_students.8yr.unknown
+OMENRYP_FIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.first_time.8yr.still_enrolled
+OMENRAP_FIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.first_time.8yr.transfer
+OMAWDP8_FIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.first_time.8yr.award
+OMENRUP_FIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.first_time.8yr.unknown
+OMENRYP_NOTFIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.not_first_time.8yr.still_enrolled
+OMENRAP_NOTFIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.not_first_time.8yr.transfer
+OMAWDP8_NOTFIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.not_first_time.8yr.award
+OMENRUP_NOTFIRSTTIME,num,completion,NA,NA,NA,outcome_percentage.not_first_time.8yr.unknown
+OMENRYP_FULLTIME,num,completion,NA,NA,NA,outcome_percentage.full_time.8yr.still_enrolled
+OMENRAP_FULLTIME,num,completion,NA,NA,NA,outcome_percentage.full_time.8yr.transfer
+OMAWDP8_FULLTIME,num,completion,NA,NA,NA,outcome_percentage.full_time.8yr.award
+OMENRUP_FULLTIME,num,completion,NA,NA,NA,outcome_percentage.full_time.8yr.unknown
+OMENRYP_PARTTIME,num,completion,NA,NA,NA,outcome_percentage.part_time.8yr.still_enrolled
+OMENRAP_PARTTIME,num,completion,NA,NA,NA,outcome_percentage.part_time.8yr.transfer
+OMAWDP8_PARTTIME,num,completion,NA,NA,NA,outcome_percentage.part_time.8yr.award
+OMENRUP_PARTTIME,num,completion,NA,NA,NA,outcome_percentage.part_time.8yr.unknown
+FTFTPCTPELL,num,aid,NA,NA,NA,ftft_pell_grant_rate
+FTFTPCTFLOAN,num,aid,NA,NA,NA,ftft_federal_loan_rate
+UG12MN,integer,student,NA,NA,NA,enrollment.undergrad_12_month
+G12MN,integer,student,NA,NA,NA,enrollment.grad_12_month
+SCUGFFN,integer,student,NA,NA,NA,ftft_undergrads_with_pell_grant_or_federal_student_loan
+PPLUS_PCT_LOW,integer,aid,NA,NA,NA,plus_loan_pct_lower
+PPLUS_PCT_HIGH,integer,aid,NA,NA,NA,plus_loan_pct_upper
+PLUS_DEBT_INST_N,integer,aid,NA,NA,NA,plus_debt.all.eval_inst.count
+PLUS_DEBT_INST_MD,integer,aid,NA,NA,NA,plus_debt.all.eval_inst.median
+PLUS_DEBT_ALL_N,integer,aid,NA,NA,NA,plus_debt.all.all_inst.count
+PLUS_DEBT_ALL_MD,integer,aid,NA,NA,NA,plus_debt.all.all_inst.median
+PLUS_DEBT_INST_COMP_N,integer,aid,NA,NA,NA,plus_debt.completers.eval_inst.count
+PLUS_DEBT_INST_COMP_MD,integer,aid,NA,NA,NA,plus_debt.completers.eval_inst.median
+PLUS_DEBT_INST_COMP_MDPAY10,num,aid,NA,NA,NA,plus_debt.completers.eval_inst.median_payment
+PLUS_DEBT_ALL_COMP_N,integer,aid,NA,NA,NA,plus_debt.completers.all_inst.count
+PLUS_DEBT_ALL_COMP_MD,integer,aid,NA,NA,NA,plus_debt.completers.all_inst.median
+PLUS_DEBT_ALL_COMP_MDPAY10,num,aid,NA,NA,NA,plus_debt.completers.all_inst.median_payment
+PLUS_DEBT_INST_NOCOMP_N,integer,aid,NA,NA,NA,plus_debt.noncompleters.eval_inst.count
+PLUS_DEBT_INST_NOCOMP_MD,integer,aid,NA,NA,NA,plus_debt.noncompleters.eval_inst.median
+PLUS_DEBT_ALL_NOCOMP_N,integer,aid,NA,NA,NA,plus_debt.noncompleters.all_inst.count
+PLUS_DEBT_ALL_NOCOMP_MD,integer,aid,NA,NA,NA,plus_debt.noncompleters.all_inst.median
+PLUS_DEBT_INST_MALE_N,integer,aid,NA,NA,NA,plus_debt.male.eval_inst.count
+PLUS_DEBT_INST_MALE_MD,integer,aid,NA,NA,NA,plus_debt.male.eval_inst.median
+PLUS_DEBT_ALL_MALE_N,integer,aid,NA,NA,NA,plus_debt.male.all_inst.count
+PLUS_DEBT_ALL_MALE_MD,integer,aid,NA,NA,NA,plus_debt.male.all_inst.median
+PLUS_DEBT_INST_NOMALE_N,integer,aid,NA,NA,NA,plus_debt.not_male.eval_inst.count
+PLUS_DEBT_INST_NOMALE_MD,integer,aid,NA,NA,NA,plus_debt.not_male.eval_inst.median
+PLUS_DEBT_ALL_NOMALE_N,integer,aid,NA,NA,NA,plus_debt.not_male.all_inst.count
+PLUS_DEBT_ALL_NOMALE_MD,integer,aid,NA,NA,NA,plus_debt.not_male.all_inst.median
+PLUS_DEBT_INST_PELL_N,integer,aid,NA,NA,NA,plus_debt.pell.eval_inst.count
+PLUS_DEBT_INST_PELL_MD,integer,aid,NA,NA,NA,plus_debt.pell.eval_inst.median
+PLUS_DEBT_ALL_PELL_N,integer,aid,NA,NA,NA,plus_debt.pell.all_inst.count
+PLUS_DEBT_ALL_PELL_MD,integer,aid,NA,NA,NA,plus_debt.pell.all_inst.median
+PLUS_DEBT_INST_NOPELL_N,integer,aid,NA,NA,NA,plus_debt.not_pell.eval_inst.count
+PLUS_DEBT_INST_NOPELL_MD,integer,aid,NA,NA,NA,plus_debt.not_pell.eval_inst.median
+PLUS_DEBT_ALL_NOPELL_N,integer,aid,NA,NA,NA,plus_debt.not_pell.all_inst.count
+PLUS_DEBT_ALL_NOPELL_MD,integer,aid,NA,NA,NA,plus_debt.not_pell.all_inst.median
+PLUS_DEBT_INST_STAFFTHIS_N,integer,aid,NA,NA,NA,plus_debt.stafford_this_school.eval_inst.count
+PLUS_DEBT_INST_STAFFTHIS_MD,integer,aid,NA,NA,NA,plus_debt.stafford_this_school.eval_inst.median
+PLUS_DEBT_ALL_STAFFTHIS_N,integer,aid,NA,NA,NA,plus_debt.stafford_this_school.all_inst.count
+PLUS_DEBT_ALL_STAFFTHIS_MD,integer,aid,NA,NA,NA,plus_debt.stafford_this_school.all_inst.median
+PLUS_DEBT_INST_NOSTAFFTHIS_N,integer,aid,NA,NA,NA,plus_debt.nostafford_this_school.eval_inst.count
+PLUS_DEBT_INST_NOSTAFFTHIS_MD,integer,aid,NA,NA,NA,plus_debt.nostafford_this_school.eval_inst.median
+PLUS_DEBT_ALL_NOSTAFFTHIS_N,integer,aid,NA,NA,NA,plus_debt.nostafford_this_school.all_inst.count
+PLUS_DEBT_ALL_NOSTAFFTHIS_MD,integer,aid,NA,NA,NA,plus_debt.nostafford_this_school.all_inst.median
+PLUS_DEBT_INST_STAFFANY_N,integer,aid,NA,NA,NA,plus_debt.stafford_any_school.eval_inst.count
+PLUS_DEBT_INST_STAFFANY_MD,integer,aid,NA,NA,NA,plus_debt.stafford_any_school.eval_inst.median
+PLUS_DEBT_ALL_STAFFANY_N,integer,aid,NA,NA,NA,plus_debt.stafford_any_school.all_inst.count
+PLUS_DEBT_ALL_STAFFANY_MD,integer,aid,NA,NA,NA,plus_debt.stafford_any_school.all_inst.median
+PLUS_DEBT_INST_NOSTAFFANY_N,integer,aid,NA,NA,NA,plus_debt.nostafford_any_school.eval_inst.count
+PLUS_DEBT_INST_NOSTAFFANY_MD,integer,aid,NA,NA,NA,plus_debt.nostafford_any_school.eval_inst.median
+PLUS_DEBT_ALL_NOSTAFFANY_N,integer,aid,NA,NA,NA,plus_debt.nostafford_any_school.all_inst.count
+PLUS_DEBT_ALL_NOSTAFFANY_MD,integer,aid,NA,NA,NA,plus_debt.nostafford_any_school.all_inst.median
+DBRR1_FED_UG_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug.count
+DBRR1_FED_UG_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug.numerator
+DBRR1_FED_UG_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug.denominator
+DBRR1_FED_UG_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug.rate
+DBRR1_FED_GR_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr.count
+DBRR1_FED_GR_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr.numerator
+DBRR1_FED_GR_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr.denominator
+DBRR1_FED_GR_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr.rate
+DBRR1_FED_UGCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer.count
+DBRR1_FED_UGCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer.numerator
+DBRR1_FED_UGCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer.denominator
+DBRR1_FED_UGCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer.rate
+DBRR1_FED_UGNOCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_noncompleter.count
+DBRR1_FED_UGNOCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_noncompleter.numerator
+DBRR1_FED_UGNOCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_noncompleter.denominator
+DBRR1_FED_UGNOCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_noncompleter.rate
+DBRR1_FED_UGUNK_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer_unknown.count
+DBRR1_FED_UGUNK_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer_unknown.numerator
+DBRR1_FED_UGUNK_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer_unknown.denominator
+DBRR1_FED_UGUNK_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.ug_completer_unknown.rate
+DBRR1_FED_GRCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_completer.count
+DBRR1_FED_GRCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_completer.numerator
+DBRR1_FED_GRCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_completer.denominator
+DBRR1_FED_GRCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_completer.rate
+DBRR1_FED_GRNOCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_noncompleter.count
+DBRR1_FED_GRNOCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_noncompleter.numerator
+DBRR1_FED_GRNOCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_noncompleter.denominator
+DBRR1_FED_GRNOCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_fed_repayment.gr_noncompleter.rate
+DBRR4_FED_UG_N,integer,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug.count
+DBRR4_FED_UG_NUM,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug.numerator
+DBRR4_FED_UG_DEN,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug.denominator
+DBRR4_FED_UG_RT,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug.rate
+DBRR4_FED_GR_N,integer,repayment,NA,NA,NA,4_yr_db_fed_repayment.gr.count
+DBRR4_FED_GR_NUM,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.gr.numerator
+DBRR4_FED_GR_DEN,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.gr.denominator
+DBRR4_FED_GR_RT,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.gr.rate
+DBRR4_FED_UGCOMP_N,integer,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer.count
+DBRR4_FED_UGCOMP_NUM,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer.numerator
+DBRR4_FED_UGCOMP_DEN,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer.denominator
+DBRR4_FED_UGCOMP_RT,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer.rate
+DBRR4_FED_UGNOCOMP_N,integer,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_noncompleter.count
+DBRR4_FED_UGNOCOMP_NUM,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_noncompleter.numerator
+DBRR4_FED_UGNOCOMP_DEN,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_noncompleter.denominator
+DBRR4_FED_UGNOCOMP_RT,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_noncompleter.rate
+DBRR4_FED_UGUNK_N,integer,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer_unknown.count
+DBRR4_FED_UGUNK_NUM,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer_unknown.numerator
+DBRR4_FED_UGUNK_DEN,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer_unknown.denominator
+DBRR4_FED_UGUNK_RT,num,repayment,NA,NA,NA,4_yr_db_fed_repayment.ug_completer_unknown.rate
+DBRR5_FED_UG_N,integer,repayment,NA,NA,NA,5_yr_db_fed_repayment.ug.count
+DBRR5_FED_UG_NUM,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.ug.numerator
+DBRR5_FED_UG_DEN,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.ug.denominator
+DBRR5_FED_UG_RT,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.ug.rate
+DBRR5_FED_GR_N,integer,repayment,NA,NA,NA,5_yr_db_fed_repayment.gr.count
+DBRR5_FED_GR_NUM,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.gr.numerator
+DBRR5_FED_GR_DEN,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.gr.denominator
+DBRR5_FED_GR_RT,num,repayment,NA,NA,NA,5_yr_db_fed_repayment.gr.rate
+DBRR10_FED_UG_N,integer,repayment,NA,NA,NA,10_yr_db_fed_repayment.ug.count
+DBRR10_FED_UG_NUM,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.ug.numerator
+DBRR10_FED_UG_DEN,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.ug.denominator
+DBRR10_FED_UG_RT,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.ug.rate
+DBRR10_FED_GR_N,integer,repayment,NA,NA,NA,10_yr_db_fed_repayment.gr.count
+DBRR10_FED_GR_NUM,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.gr.numerator
+DBRR10_FED_GR_DEN,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.gr.denominator
+DBRR10_FED_GR_RT,num,repayment,NA,NA,NA,10_yr_db_fed_repayment.gr.rate
+DBRR20_FED_UG_N,integer,repayment,NA,NA,NA,20_yr_db_fed_repayment.ug.count
+DBRR20_FED_UG_NUM,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.ug.numerator
+DBRR20_FED_UG_DEN,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.ug.denominator
+DBRR20_FED_UG_RT,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.ug.rate
+DBRR20_FED_GR_N,integer,repayment,NA,NA,NA,20_yr_db_fed_repayment.gr.count
+DBRR20_FED_GR_NUM,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.gr.numerator
+DBRR20_FED_GR_DEN,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.gr.denominator
+DBRR20_FED_GR_RT,num,repayment,NA,NA,NA,20_yr_db_fed_repayment.gr.rate
+DBRR1_PP_UG_N,integer,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug.count
+DBRR1_PP_UG_NUM,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug.numerator
+DBRR1_PP_UG_DEN,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug.denominator
+DBRR1_PP_UG_RT,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug.rate
+DBRR1_PP_UGCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer.count
+DBRR1_PP_UGCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer.numerator
+DBRR1_PP_UGCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer.denominator
+DBRR1_PP_UGCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer.rate
+DBRR1_PP_UGNOCOMP_N,integer,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_noncompleter.count
+DBRR1_PP_UGNOCOMP_NUM,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_noncompleter.numerator
+DBRR1_PP_UGNOCOMP_DEN,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_noncompleter.denominator
+DBRR1_PP_UGNOCOMP_RT,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_noncompleter.rate
+DBRR1_PP_UGUNK_N,integer,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer_unknown.count
+DBRR1_PP_UGUNK_NUM,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer_unknown.numerator
+DBRR1_PP_UGUNK_DEN,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer_unknown.denominator
+DBRR1_PP_UGUNK_RT,num,repayment,NA,NA,NA,1_yr_db_pp_repayment.ug_completer_unknown.rate
+DBRR4_PP_UG_N,integer,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug.count
+DBRR4_PP_UG_NUM,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug.numerator
+DBRR4_PP_UG_DEN,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug.denominator
+DBRR4_PP_UG_RT,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug.rate
+DBRR4_PP_UGCOMP_N,integer,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer.count
+DBRR4_PP_UGCOMP_NUM,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer.numerator
+DBRR4_PP_UGCOMP_DEN,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer.denominator
+DBRR4_PP_UGCOMP_RT,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer.rate
+DBRR4_PP_UGNOCOMP_N,integer,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_noncompleter.count
+DBRR4_PP_UGNOCOMP_NUM,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_noncompleter.numerator
+DBRR4_PP_UGNOCOMP_DEN,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_noncompleter.denominator
+DBRR4_PP_UGNOCOMP_RT,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_noncompleter.rate
+DBRR4_PP_UGUNK_N,integer,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer_unknown.count
+DBRR4_PP_UGUNK_NUM,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer_unknown.numerator
+DBRR4_PP_UGUNK_DEN,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer_unknown.denominator
+DBRR4_PP_UGUNK_RT,num,repayment,NA,NA,NA,4_yr_db_pp_repayment.ug_completer_unknown.rate
+DBRR5_PP_UG_N,integer,repayment,NA,NA,NA,5_yr_db_pp_repayment.ug.count
+DBRR5_PP_UG_NUM,num,repayment,NA,NA,NA,5_yr_db_pp_repayment.ug.numerator
+DBRR5_PP_UG_DEN,num,repayment,NA,NA,NA,5_yr_db_pp_repayment.ug.denominator
+DBRR5_PP_UG_RT,num,repayment,NA,NA,NA,5_yr_db_pp_repayment.ug.rate
+DBRR10_PP_UG_N,integer,repayment,NA,NA,NA,10_yr_db_pp_repayment.ug.count
+DBRR10_PP_UG_NUM,num,repayment,NA,NA,NA,10_yr_db_pp_repayment.ug.numerator
+DBRR10_PP_UG_DEN,num,repayment,NA,NA,NA,10_yr_db_pp_repayment.ug.denominator
+DBRR10_PP_UG_RT,num,repayment,NA,NA,NA,10_yr_db_pp_repayment.ug.rate
+DBRR20_PP_UG_N,integer,repayment,NA,NA,NA,20_yr_db_pp_repayment.ug.count
+DBRR20_PP_UG_NUM,num,repayment,NA,NA,NA,20_yr_db_pp_repayment.ug.numerator
+DBRR20_PP_UG_DEN,num,repayment,NA,NA,NA,20_yr_db_pp_repayment.ug.denominator
+DBRR20_PP_UG_RT,num,repayment,NA,NA,NA,20_yr_db_pp_repayment.ug.rate
+BBRR2_FED_UG_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.count
+BBRR2_FED_UG_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.default
+BBRR2_FED_UG_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.delinquent
+BBRR2_FED_UG_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.forbearance
+BBRR2_FED_UG_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.deferment
+BBRR2_FED_UG_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.noprogress
+BBRR2_FED_UG_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.makingprogress
+BBRR2_FED_UG_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.fullypaid
+BBRR2_FED_UG_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ug.discharge
+BBRR2_FED_UGCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.count
+BBRR2_FED_UGCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.default
+BBRR2_FED_UGCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.delinquent
+BBRR2_FED_UGCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.forbearance
+BBRR2_FED_UGCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.deferment
+BBRR2_FED_UGCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.noprogress
+BBRR2_FED_UGCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.makingprogress
+BBRR2_FED_UGCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.fullypaid
+BBRR2_FED_UGCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugcomp.discharge
+BBRR2_FED_UGNOCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.count
+BBRR2_FED_UGNOCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.default
+BBRR2_FED_UGNOCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.delinquent
+BBRR2_FED_UGNOCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.forbearance
+BBRR2_FED_UGNOCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.deferment
+BBRR2_FED_UGNOCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.noprogress
+BBRR2_FED_UGNOCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.makingprogress
+BBRR2_FED_UGNOCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.fullypaid
+BBRR2_FED_UGNOCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugnocomp.discharge
+BBRR2_FED_UGUNK_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.count
+BBRR2_FED_UGUNK_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.default
+BBRR2_FED_UGUNK_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.delinquent
+BBRR2_FED_UGUNK_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.forbearance
+BBRR2_FED_UGUNK_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.deferment
+BBRR2_FED_UGUNK_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.noprogress
+BBRR2_FED_UGUNK_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.makingprogress
+BBRR2_FED_UGUNK_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.fullypaid
+BBRR2_FED_UGUNK_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.ugunkcomp.discharge
+BBRR2_FED_GR_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.count
+BBRR2_FED_GR_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.default
+BBRR2_FED_GR_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.delinquent
+BBRR2_FED_GR_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.forbearance
+BBRR2_FED_GR_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.deferment
+BBRR2_FED_GR_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.noprogress
+BBRR2_FED_GR_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.makingprogress
+BBRR2_FED_GR_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.fullypaid
+BBRR2_FED_GR_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.gr.discharge
+BBRR2_FED_GRCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.count
+BBRR2_FED_GRCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.default
+BBRR2_FED_GRCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.delinquent
+BBRR2_FED_GRCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.forbearance
+BBRR2_FED_GRCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.deferment
+BBRR2_FED_GRCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.noprogress
+BBRR2_FED_GRCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.makingprogress
+BBRR2_FED_GRCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.fullypaid
+BBRR2_FED_GRCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grcomp.discharge
+BBRR2_FED_GRNOCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.count
+BBRR2_FED_GRNOCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.default
+BBRR2_FED_GRNOCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.delinquent
+BBRR2_FED_GRNOCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.forbearance
+BBRR2_FED_GRNOCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.deferment
+BBRR2_FED_GRNOCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.noprogress
+BBRR2_FED_GRNOCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.makingprogress
+BBRR2_FED_GRNOCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.fullypaid
+BBRR2_FED_GRNOCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_fed_repayment.grnocomp.discharge
+BBRR2_PP_UG_N,integer,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.count
+BBRR2_PP_UG_DFLT,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.default
+BBRR2_PP_UG_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.delinquent
+BBRR2_PP_UG_FBR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.forbearance
+BBRR2_PP_UG_DFR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.deferment
+BBRR2_PP_UG_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.noprogress
+BBRR2_PP_UG_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.makingprogress
+BBRR2_PP_UG_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.fullypaid
+BBRR2_PP_UG_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ug.discharge
+BBRR2_PP_UGCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.count
+BBRR2_PP_UGCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.default
+BBRR2_PP_UGCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.delinquent
+BBRR2_PP_UGCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.forbearance
+BBRR2_PP_UGCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.deferment
+BBRR2_PP_UGCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.noprogress
+BBRR2_PP_UGCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.makingprogress
+BBRR2_PP_UGCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.fullypaid
+BBRR2_PP_UGCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugcomp.discharge
+BBRR2_PP_UGNOCOMP_N,integer,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.count
+BBRR2_PP_UGNOCOMP_DFLT,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.default
+BBRR2_PP_UGNOCOMP_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.delinquent
+BBRR2_PP_UGNOCOMP_FBR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.forbearance
+BBRR2_PP_UGNOCOMP_DFR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.deferment
+BBRR2_PP_UGNOCOMP_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.noprogress
+BBRR2_PP_UGNOCOMP_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.makingprogress
+BBRR2_PP_UGNOCOMP_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.fullypaid
+BBRR2_PP_UGNOCOMP_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugnocomp.discharge
+BBRR2_PP_UGUNK_N,integer,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.count
+BBRR2_PP_UGUNK_DFLT,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.default
+BBRR2_PP_UGUNK_DLNQ,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.delinquent
+BBRR2_PP_UGUNK_FBR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.forbearance
+BBRR2_PP_UGUNK_DFR,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.deferment
+BBRR2_PP_UGUNK_NOPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.noprogress
+BBRR2_PP_UGUNK_MAKEPROG,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.makingprogress
+BBRR2_PP_UGUNK_PAIDINFULL,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.fullypaid
+BBRR2_PP_UGUNK_DISCHARGE,num,repayment,NA,NA,NA,2_yr_bb_pp_repayment.ugunkcomp.discharge
+LPSTAFFORD_CNT,integer,aid,NA,NA,NA,portfolio.direct_loans.count
+LPSTAFFORD_AMT,num,aid,NA,NA,NA,portfolio.direct_loans.amount
+LPPPLUS_CNT,integer,aid,NA,NA,NA,portfolio.parent_plus.count
+LPPPLUS_AMT,num,aid,NA,NA,NA,portfolio.parent_plus.amount
+LPGPLUS_CNT,integer,aid,NA,NA,NA,portfolio.grad_plus.count
+LPGPLUS_AMT,num,aid,NA,NA,NA,portfolio.grad_plus.amount
+FEDSCHCD,character,root,NA,NA,NA,fed_sch_cd

@@ -1,0 +1,961 @@
+﻿Variable,Count,pct,pct_miss,Definition
+UNITID,6154,100,0,Unit ID for institution
+INSTNM,6154,100,0,Institution name
+CITY,6154,100,0,City
+STABBR,6154,100,0,State postcode
+REGION,6154,100,0,Region (IPEDS)
+LATITUDE,6154,100,0,Latitude
+LONGITUDE,6154,100,0,Longitude
+CURROPER,6154,100,0,"Flag for currently operating institution, 0=closed, 1=operating"
+MAIN,6154,100,0,Flag for main campus
+CONTROL,6154,100,0,Control of institution
+ICLEVEL,6154,100,0,Level of institution
+HIGHDEG,6154,100,0,"Highest degree awarded
+ 0 Non-degree-granting
+ 1 Certificate degree
+ 2 Associate degree
+ 3 Bachelor's degree
+ 4 Graduate degree"
+PREDDEG,6154,100,0,"Predominant undergraduate degree awarded
+ 0 Not classified
+ 1 Predominantly certificate-degree granting
+ 2 Predominantly associate's-degree granting
+ 3 Predominantly bachelor's-degree granting
+ 4 Entirely graduate-degree granting"
+OPENADMP,5711,92.80142996,7.198570036,Open admissions policy indicator
+PCTPELL,5848,95.02762431,4.972375691,Percentage of undergraduates who receive a Pell Grant
+PCTFLOAN,5848,95.02762431,4.972375691,Percent of all undergraduate students receiving a federal student loan
+OPEID,6154,100,0,8-digit OPE ID for institution
+OPEID6,6154,100,0,6-digit OPE ID for institution
+ZIP,6154,100,0,ZIP code
+ACCREDAGENCY,5859,95.20636984,4.793630159,Accreditor for institution
+INSTURL,6151,99.95125122,0.048748781,URL for institution's homepage
+NPCURL,6100,99.12252194,0.877478063,URL for institution's net price calculator
+HCM2,6154,100,0,Schools that are on Heightened Cash Monitoring 2 by the Department of Education
+NUMBRANCH,6154,100,0,Number of branch campuses
+ST_FIPS,6154,100,0,FIPS code for state
+LOCALE,6154,100,0,Locale of institution
+CCBASIC,6154,100,0,Carnegie Classification -- basic
+CCUGPROF,6154,100,0,Carnegie Classification -- undergraduate profile
+CCSIZSET,6154,100,0,Carnegie Classification -- size and setting
+HBCU,6148,99.90250244,0.097497563,Flag for Historically Black College and University
+PBI,6148,99.90250244,0.097497563,Flag for predominantly black institution
+ANNHI,6148,99.90250244,0.097497563,Flag for Alaska Native Native Hawaiian serving institution
+TRIBAL,6148,99.90250244,0.097497563,Flag for tribal college and university
+AANAPII,6148,99.90250244,0.097497563,Flag for Asian American Native American Pacific Islander-serving institution
+HSI,6148,99.90250244,0.097497563,Flag for Hispanic-serving institution
+NANTI,6148,99.90250244,0.097497563,Flag for Native American non-tribal institution
+MENONLY,6154,100,0,Flag for men-only college
+WOMENONLY,6154,100,0,Flag for women-only college
+RELAFFIL,895,14.54338642,85.45661358,Religous affiliation of the institution
+ADM_RATE,1947,31.63795905,68.36204095,Admission rate
+ADM_RATE_ALL,2048,33.27916802,66.72083198,Admission rate for all campuses rolled up to the 6-digit OPE ID
+SATVR25,1229,19.97075073,80.02924927,25th percentile of SAT scores at the institution (critical reading)
+SATVR75,1229,19.97075073,80.02924927,75th percentile of SAT scores at the institution (critical reading)
+SATMT25,1232,20.01949951,79.98050049,25th percentile of SAT scores at the institution (math)
+SATMT75,1232,20.01949951,79.98050049,75th percentile of SAT scores at the institution (math)
+SATVRMID,1229,19.97075073,80.02924927,Midpoint of SAT scores at the institution (critical reading)
+SATMTMID,1232,20.01949951,79.98050049,Midpoint of SAT scores at the institution (math)
+ACTCM25,1266,20.5719857,79.4280143,25th percentile of the ACT cumulative score
+ACTCM75,1266,20.5719857,79.4280143,75th percentile of the ACT cumulative score
+ACTEN25,1192,19.36951576,80.63048424,25th percentile of the ACT English score
+ACTEN75,1192,19.36951576,80.63048424,75th percentile of the ACT English score
+ACTMT25,1192,19.36951576,80.63048424,25th percentile of the ACT math score
+ACTMT75,1192,19.36951576,80.63048424,75th percentile of the ACT math score
+ACTCMMID,1266,20.5719857,79.4280143,Midpoint of the ACT cumulative score
+ACTENMID,1192,19.36951576,80.63048424,Midpoint of the ACT English score
+ACTMTMID,1192,19.36951576,80.63048424,Midpoint of the ACT math score
+SAT_AVG,1288,20.92947676,79.07052324,Average SAT equivalent score of students admitted
+SAT_AVG_ALL,1365,22.18069548,77.81930452,Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID
+PCIP01,5866,95.320117,4.679883003,"Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences."
+PCIP03,5866,95.320117,4.679883003,Percentage of degrees awarded in Natural Resources And Conservation.
+PCIP04,5866,95.320117,4.679883003,Percentage of degrees awarded in Architecture And Related Services.
+PCIP05,5866,95.320117,4.679883003,"Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies."
+PCIP09,5866,95.320117,4.679883003,"Percentage of degrees awarded in Communication, Journalism, And Related Programs."
+PCIP10,5866,95.320117,4.679883003,Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.
+PCIP11,5866,95.320117,4.679883003,Percentage of degrees awarded in Computer And Information Sciences And Support Services.
+PCIP12,5866,95.320117,4.679883003,Percentage of degrees awarded in Personal And Culinary Services.
+PCIP13,5866,95.320117,4.679883003,Percentage of degrees awarded in Education.
+PCIP14,5866,95.320117,4.679883003,Percentage of degrees awarded in Engineering.
+PCIP15,5866,95.320117,4.679883003,Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields.
+PCIP16,5866,95.320117,4.679883003,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics."
+PCIP19,5866,95.320117,4.679883003,Percentage of degrees awarded in Family And Consumer Sciences/Human Sciences.
+PCIP22,5866,95.320117,4.679883003,Percentage of degrees awarded in Legal Professions And Studies.
+PCIP23,5866,95.320117,4.679883003,Percentage of degrees awarded in English Language And Literature/Letters.
+PCIP24,5866,95.320117,4.679883003,"Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities."
+PCIP25,5866,95.320117,4.679883003,Percentage of degrees awarded in Library Science.
+PCIP26,5866,95.320117,4.679883003,Percentage of degrees awarded in Biological And Biomedical Sciences.
+PCIP27,5866,95.320117,4.679883003,Percentage of degrees awarded in Mathematics And Statistics.
+PCIP29,5866,95.320117,4.679883003,Percentage of degrees awarded in Military Technologies And Applied Sciences.
+PCIP30,5866,95.320117,4.679883003,Percentage of degrees awarded in Multi/Interdisciplinary Studies.
+PCIP31,5866,95.320117,4.679883003,"Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies."
+PCIP38,5866,95.320117,4.679883003,Percentage of degrees awarded in Philosophy And Religious Studies.
+PCIP39,5866,95.320117,4.679883003,Percentage of degrees awarded in Theology And Religious Vocations.
+PCIP40,5866,95.320117,4.679883003,Percentage of degrees awarded in Physical Sciences.
+PCIP41,5866,95.320117,4.679883003,Percentage of degrees awarded in Science Technologies/Technicians.
+PCIP42,5866,95.320117,4.679883003,Percentage of degrees awarded in Psychology.
+PCIP43,5866,95.320117,4.679883003,"Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+PCIP44,5866,95.320117,4.679883003,Percentage of degrees awarded in Public Administration And Social Service Professions.
+PCIP45,5866,95.320117,4.679883003,Percentage of degrees awarded in Social Sciences.
+PCIP46,5866,95.320117,4.679883003,Percentage of degrees awarded in Construction Trades.
+PCIP47,5866,95.320117,4.679883003,Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.
+PCIP48,5866,95.320117,4.679883003,Percentage of degrees awarded in Precision Production.
+PCIP49,5866,95.320117,4.679883003,Percentage of degrees awarded in Transportation And Materials Moving.
+PCIP50,5866,95.320117,4.679883003,Percentage of degrees awarded in Visual And Performing Arts.
+PCIP51,5866,95.320117,4.679883003,Percentage of degrees awarded in Health Professions And Related Programs.
+PCIP52,5866,95.320117,4.679883003,"Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services."
+PCIP54,5866,95.320117,4.679883003,Percentage of degrees awarded in History.
+CIP01CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01ASSOC,6149,99.91875203,0.081247969,"Associate degree in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Agriculture, Agriculture Operations, And Related Sciences."
+CIP01BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Agriculture, Agriculture Operations, And Related Sciences."
+CIP03CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Natural Resources And Conservation.
+CIP03CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Natural Resources And Conservation.
+CIP03ASSOC,6149,99.91875203,0.081247969,Associate degree in Natural Resources And Conservation.
+CIP03CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Natural Resources And Conservation.
+CIP03BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Natural Resources And Conservation.
+CIP04CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Architecture And Related Services.
+CIP04CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Architecture And Related Services.
+CIP04ASSOC,6149,99.91875203,0.081247969,Associate degree in Architecture And Related Services.
+CIP04CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Architecture And Related Services.
+CIP04BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Architecture And Related Services.
+CIP05CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05ASSOC,6149,99.91875203,0.081247969,"Associate degree in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP05BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Area, Ethnic, Cultural, Gender, And Group Studies."
+CIP09CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Communication, Journalism, And Related Programs."
+CIP09CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Communication, Journalism, And Related Programs."
+CIP09ASSOC,6149,99.91875203,0.081247969,"Associate degree in Communication, Journalism, And Related Programs."
+CIP09CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Communication, Journalism, And Related Programs."
+CIP09BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Communication, Journalism, And Related Programs."
+CIP10CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Communications Technologies/Technicians And Support Services.
+CIP10CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Communications Technologies/Technicians And Support Services.
+CIP10ASSOC,6149,99.91875203,0.081247969,Associate degree in Communications Technologies/Technicians And Support Services.
+CIP10CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Communications Technologies/Technicians And Support Services.
+CIP10BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Communications Technologies/Technicians And Support Services.
+CIP11CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Computer And Information Sciences And Support Services.
+CIP11CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Computer And Information Sciences And Support Services.
+CIP11ASSOC,6149,99.91875203,0.081247969,Associate degree in Computer And Information Sciences And Support Services.
+CIP11CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Computer And Information Sciences And Support Services.
+CIP11BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Computer And Information Sciences And Support Services.
+CIP12CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Personal And Culinary Services.
+CIP12CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Personal And Culinary Services.
+CIP12ASSOC,6149,99.91875203,0.081247969,Associate degree in Personal And Culinary Services.
+CIP12CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Personal And Culinary Services.
+CIP12BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Personal And Culinary Services.
+CIP13CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Education.
+CIP13CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Education.
+CIP13ASSOC,6149,99.91875203,0.081247969,Associate degree in Education.
+CIP13CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Education.
+CIP13BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Education.
+CIP14CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Engineering.
+CIP14CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Engineering.
+CIP14ASSOC,6149,99.91875203,0.081247969,Associate degree in Engineering.
+CIP14CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Engineering.
+CIP14BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Engineering.
+CIP15CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Engineering Technologies And Engineering-Related Fields.
+CIP15CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Engineering Technologies And Engineering-Related Fields.
+CIP15ASSOC,6149,99.91875203,0.081247969,Associate degree in Engineering Technologies And Engineering-Related Fields.
+CIP15CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Engineering Technologies And Engineering-Related Fields.
+CIP15BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Engineering Technologies And Engineering-Related Fields.
+CIP16CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Foreign Languages, Literatures, And Linguistics."
+CIP16CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Foreign Languages, Literatures, And Linguistics."
+CIP16ASSOC,6149,99.91875203,0.081247969,"Associate degree in Foreign Languages, Literatures, And Linguistics."
+CIP16CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Foreign Languages, Literatures, And Linguistics."
+CIP16BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Foreign Languages, Literatures, And Linguistics."
+CIP19CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Family And Consumer Sciences/Human Sciences.
+CIP19CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Family And Consumer Sciences/Human Sciences.
+CIP19ASSOC,6149,99.91875203,0.081247969,Associate degree in Family And Consumer Sciences/Human Sciences.
+CIP19CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Family And Consumer Sciences/Human Sciences.
+CIP19BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Family And Consumer Sciences/Human Sciences.
+CIP22CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Legal Professions And Studies.
+CIP22CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Legal Professions And Studies.
+CIP22ASSOC,6149,99.91875203,0.081247969,Associate degree in Legal Professions And Studies.
+CIP22CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Legal Professions And Studies.
+CIP22BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Legal Professions And Studies.
+CIP23CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in English Language And Literature/Letters.
+CIP23CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in English Language And Literature/Letters.
+CIP23ASSOC,6149,99.91875203,0.081247969,Associate degree in English Language And Literature/Letters.
+CIP23CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in English Language And Literature/Letters.
+CIP23BACHL,6149,99.91875203,0.081247969,Bachelor's degree in English Language And Literature/Letters.
+CIP24CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24ASSOC,6149,99.91875203,0.081247969,"Associate degree in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Liberal Arts And Sciences, General Studies And Humanities."
+CIP24BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Liberal Arts And Sciences, General Studies And Humanities."
+CIP25CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Library Science.
+CIP25CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Library Science.
+CIP25ASSOC,6149,99.91875203,0.081247969,Associate degree in Library Science.
+CIP25CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Library Science.
+CIP25BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Library Science.
+CIP26CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Biological And Biomedical Sciences.
+CIP26CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Biological And Biomedical Sciences.
+CIP26ASSOC,6149,99.91875203,0.081247969,Associate degree in Biological And Biomedical Sciences.
+CIP26CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Biological And Biomedical Sciences.
+CIP26BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Biological And Biomedical Sciences.
+CIP27CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Mathematics And Statistics.
+CIP27CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Mathematics And Statistics.
+CIP27ASSOC,6149,99.91875203,0.081247969,Associate degree in Mathematics And Statistics.
+CIP27CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Mathematics And Statistics.
+CIP27BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Mathematics And Statistics.
+CIP29CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Military Technologies And Applied Sciences.
+CIP29CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Military Technologies And Applied Sciences.
+CIP29ASSOC,6149,99.91875203,0.081247969,Associate degree in Military Technologies And Applied Sciences.
+CIP29CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Military Technologies And Applied Sciences.
+CIP29BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Military Technologies And Applied Sciences.
+CIP30CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Multi/Interdisciplinary Studies.
+CIP30CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Multi/Interdisciplinary Studies.
+CIP30ASSOC,6149,99.91875203,0.081247969,Associate degree in Multi/Interdisciplinary Studies.
+CIP30CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Multi/Interdisciplinary Studies.
+CIP30BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Multi/Interdisciplinary Studies.
+CIP31CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31ASSOC,6149,99.91875203,0.081247969,"Associate degree in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Parks, Recreation, Leisure, And Fitness Studies."
+CIP31BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Parks, Recreation, Leisure, And Fitness Studies."
+CIP38CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Philosophy And Religious Studies.
+CIP38CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Philosophy And Religious Studies.
+CIP38ASSOC,6149,99.91875203,0.081247969,Associate degree in Philosophy And Religious Studies.
+CIP38CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Philosophy And Religious Studies.
+CIP38BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Philosophy And Religious Studies.
+CIP39CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Theology And Religious Vocations.
+CIP39CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Theology And Religious Vocations.
+CIP39ASSOC,6149,99.91875203,0.081247969,Associate degree in Theology And Religious Vocations.
+CIP39CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Theology And Religious Vocations.
+CIP39BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Theology And Religious Vocations.
+CIP40CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Physical Sciences.
+CIP40CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Physical Sciences.
+CIP40ASSOC,6149,99.91875203,0.081247969,Associate degree in Physical Sciences.
+CIP40CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Physical Sciences.
+CIP40BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Physical Sciences.
+CIP41CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Science Technologies/Technicians.
+CIP41CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Science Technologies/Technicians.
+CIP41ASSOC,6149,99.91875203,0.081247969,Associate degree in Science Technologies/Technicians.
+CIP41CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Science Technologies/Technicians.
+CIP41BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Science Technologies/Technicians.
+CIP42CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Psychology.
+CIP42CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Psychology.
+CIP42ASSOC,6149,99.91875203,0.081247969,Associate degree in Psychology.
+CIP42CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Psychology.
+CIP42BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Psychology.
+CIP43CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43ASSOC,6149,99.91875203,0.081247969,"Associate degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP43BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
+CIP44CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Public Administration And Social Service Professions.
+CIP44CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Public Administration And Social Service Professions.
+CIP44ASSOC,6149,99.91875203,0.081247969,Associate degree in Public Administration And Social Service Professions.
+CIP44CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Public Administration And Social Service Professions.
+CIP44BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Public Administration And Social Service Professions.
+CIP45CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Social Sciences.
+CIP45CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Social Sciences.
+CIP45ASSOC,6149,99.91875203,0.081247969,Associate degree in Social Sciences.
+CIP45CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Social Sciences.
+CIP45BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Social Sciences.
+CIP46CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Construction Trades.
+CIP46CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Construction Trades.
+CIP46ASSOC,6149,99.91875203,0.081247969,Associate degree in Construction Trades.
+CIP46CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Construction Trades.
+CIP46BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Construction Trades.
+CIP47CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Mechanic And Repair Technologies/Technicians.
+CIP47CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Mechanic And Repair Technologies/Technicians.
+CIP47ASSOC,6149,99.91875203,0.081247969,Associate degree in Mechanic And Repair Technologies/Technicians.
+CIP47CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Mechanic And Repair Technologies/Technicians.
+CIP47BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Mechanic And Repair Technologies/Technicians.
+CIP48CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Precision Production.
+CIP48CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Precision Production.
+CIP48ASSOC,6149,99.91875203,0.081247969,Associate degree in Precision Production.
+CIP48CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Precision Production.
+CIP48BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Precision Production.
+CIP49CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Transportation And Materials Moving.
+CIP49CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Transportation And Materials Moving.
+CIP49ASSOC,6149,99.91875203,0.081247969,Associate degree in Transportation And Materials Moving.
+CIP49CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Transportation And Materials Moving.
+CIP49BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Transportation And Materials Moving.
+CIP50CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Visual And Performing Arts.
+CIP50CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Visual And Performing Arts.
+CIP50ASSOC,6149,99.91875203,0.081247969,Associate degree in Visual And Performing Arts.
+CIP50CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Visual And Performing Arts.
+CIP50BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Visual And Performing Arts.
+CIP51CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in Health Professions And Related Programs.
+CIP51CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in Health Professions And Related Programs.
+CIP51ASSOC,6149,99.91875203,0.081247969,Associate degree in Health Professions And Related Programs.
+CIP51CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in Health Professions And Related Programs.
+CIP51BACHL,6149,99.91875203,0.081247969,Bachelor's degree in Health Professions And Related Programs.
+CIP52CERT1,6149,99.91875203,0.081247969,"Certificate of less than one academic year in Business, Management, Marketing, And Related Support Services."
+CIP52CERT2,6149,99.91875203,0.081247969,"Certificate of at least one but less than two academic years in Business, Management, Marketing, And Related Support Services."
+CIP52ASSOC,6149,99.91875203,0.081247969,"Associate degree in Business, Management, Marketing, And Related Support Services."
+CIP52CERT4,6149,99.91875203,0.081247969,"Award of at least two but less than four academic years in Business, Management, Marketing, And Related Support Services."
+CIP52BACHL,6149,99.91875203,0.081247969,"Bachelor's degree in Business, Management, Marketing, And Related Support Services."
+CIP54CERT1,6149,99.91875203,0.081247969,Certificate of less than one academic year in History.
+CIP54CERT2,6149,99.91875203,0.081247969,Certificate of at least one but less than two academic years in History.
+CIP54ASSOC,6149,99.91875203,0.081247969,Associate degree in History.
+CIP54CERT4,6149,99.91875203,0.081247969,Award of at least two but less than four academic years in History.
+CIP54BACHL,6149,99.91875203,0.081247969,Bachelor's degree in History.
+DISTANCEONLY,6154,100,0,Flag for distance-education-only education
+UGDS,5871,95.40136497,4.598635034,Enrollment of undergraduate certificate/degree-seeking students
+UGDS_WHITE,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are white
+UGDS_BLACK,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are black
+UGDS_HISP,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+UGDS_ASIAN,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are Asian
+UGDS_AIAN,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+UGDS_NHPI,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander
+UGDS_2MOR,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are two or more races
+UGDS_NRA,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens
+UGDS_UNKN,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students whose race is unknown
+PPTUG_EF,5845,94.97887553,5.021124472,"Share of undergraduate, degree-/certificate-seeking students who are part-time"
+NPT4_PUB,1837,29.85050374,70.14949626,Average net price for Title IV institutions (public institutions)
+NPT4_PRIV,3606,58.5960351,41.4039649,Average net price for Title IV institutions (private for-profit and nonprofit institutions)
+NPT41_PUB,1828,29.70425739,70.29574261,"Average net price for $0-$30,000 family income (public institutions)"
+NPT42_PUB,1755,28.51803705,71.48196295,"Average net price for $30,001-$48,000 family income (public institutions)"
+NPT43_PUB,1707,27.73805655,72.26194345,"Average net price for $48,001-$75,000 family income (public institutions)"
+NPT44_PUB,1531,24.87812805,75.12187195,"Average net price for $75,001-$110,000 family income (public institutions)"
+NPT45_PUB,1320,21.44946376,78.55053624,"Average net price for $110,000+ family income (public institutions)"
+NPT41_PRIV,3540,57.52356191,42.47643809,"Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)"
+NPT42_PRIV,2853,46.360091,53.639909,"Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
+NPT43_PRIV,2597,42.200195,57.799805,"Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
+NPT44_PRIV,2147,34.8878778,65.1121222,"Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
+NPT45_PRIV,1796,29.18427039,70.81572961,"Average net price for $110,000+ family income (private for-profit and nonprofit institutions)"
+NPT4_048_PUB,1834,29.80175496,70.19824504,"Average net price for $0-$48,000 family income (public institutions)"
+NPT4_048_PRIV,3577,58.12479688,41.87520312,"Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)"
+NPT4_3075_PUB,1778,28.89177771,71.10822229,"Average net price for $30,001-$75,000 family income (public institutions)"
+NPT4_3075_PRIV,2988,48.55378616,51.44621384,"Average net price for $30,001-$75,000 family income (private for-profit and nonprofit institutions)"
+NPT4_75UP_PUB,1559,25.33311667,74.66688333,"Average net price for $75,000+ family income (public institutions)"
+NPT4_75UP_PRIV,2300,37.37406565,62.62593435,"Average net price for $75,000+ family income (private for-profit and nonprofit institutions)"
+NUM4_PUB,1837,29.85050374,70.14949626,Number of Title IV students (public institutions)
+NUM4_PRIV,3607,58.61228469,41.38771531,Number of Title IV students (private for-profit and nonprofit institutions)
+NUM41_PUB,1837,29.85050374,70.14949626,"Number of Title IV students, $0-$30,000 family income (public institutions)"
+NUM42_PUB,1837,29.85050374,70.14949626,"Number of Title IV students, $30,001-$48,000 family income (public institutions)"
+NUM43_PUB,1837,29.85050374,70.14949626,"Number of Title IV students, $48,001-$75,000 family income (public institutions)"
+NUM44_PUB,1837,29.85050374,70.14949626,"Number of Title IV students, $75,001-$110,000 family income (public institutions)"
+NUM45_PUB,1837,29.85050374,70.14949626,"Number of Title IV students, $110,000+ family income (public institutions)"
+NUM41_PRIV,3606,58.5960351,41.4039649,"Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)"
+NUM42_PRIV,3606,58.5960351,41.4039649,"Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
+NUM43_PRIV,3606,58.5960351,41.4039649,"Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
+NUM44_PRIV,3606,58.5960351,41.4039649,"Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
+NUM45_PRIV,3606,58.5960351,41.4039649,"Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)"
+COSTT4_A,3311,53.80240494,46.19759506,Average cost of attendance (academic year institutions)
+COSTT4_P,2132,34.6441339,65.3558661,Average cost of attendance (program-year institutions)
+TUITIONFEE_IN,3431,55.75235619,44.24764381,In-state tuition and fees
+TUITIONFEE_OUT,3431,55.75235619,44.24764381,Out-of-state tuition and fees
+TUITIONFEE_PROG,2236,36.33409165,63.66590835,Tuition and fees for program-year institutions
+TUITFTE,6128,99.57751056,0.422489438,Net tuition revenue per full-time equivalent student
+INEXPFTE,6128,99.57751056,0.422489438,Instructional expenditures per full-time equivalent student
+AVGFACSAL,3900,63.37341566,36.62658434,Average faculty salary
+PFTFAC,3518,57.16607085,42.83392915,Proportion of faculty that is full-time
+C150_4,2217,36.02534937,63.97465063,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion)"
+C150_L4,3239,52.63243419,47.36756581,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
+C150_4_POOLED,2235,36.31784205,63.68215795,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion), pooled for two year rolling averages"
+C150_L4_POOLED,3272,53.16867078,46.83132922,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion), pooled for two year rolling averages"
+POOLYRS,5507,89.48651284,10.51348716,Years used for rolling averages of completion rate C150_[4/L4]_POOLED and transfer rate TRANS_[4/L4]_POOLED
+PFTFTUG1_EF,5542,90.05524862,9.944751381,"Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students"
+D150_4,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate)
+D150_L4,3239,52.63243419,47.36756581,Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate)
+D150_4_POOLED,2235,36.31784205,63.68215795,"Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
+D150_L4_POOLED,3272,53.16867078,46.83132922,"Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
+C150_4_WHITE,2149,34.92037699,65.07962301,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for white students"
+C150_4_BLACK,1996,32.43418915,67.56581085,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for black students"
+C150_4_HISP,1969,31.99545011,68.00454989,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Hispanic students"
+C150_4_ASIAN,1721,27.96555086,72.03444914,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Asian students"
+C150_4_AIAN,1397,22.70068248,77.29931752,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
+C150_4_NHPI,874,14.20214495,85.79785505,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students"
+C150_4_2MOR,1706,27.72180695,72.27819305,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students of two-or-more-races"
+C150_4_NRA,1553,25.23561911,74.76438089,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for non-resident alien students"
+C150_4_UNKN,1674,27.20181995,72.79818005,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students whose race is unknown"
+C150_L4_WHITE,1605,26.08059799,73.91940201,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for white students"
+C150_L4_BLACK,1476,23.98440039,76.01559961,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for black students"
+C150_L4_HISP,1470,23.88690283,76.11309717,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Hispanic students"
+C150_L4_ASIAN,1148,18.65453364,81.34546636,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Asian students"
+C150_L4_AIAN,977,15.8758531,84.1241469,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
+C150_L4_NHPI,631,10.25349366,89.74650634,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students"
+C150_L4_2MOR,1209,19.64575886,80.35424114,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students of two-or-more-races"
+C150_L4_NRA,630,10.23724407,89.76275593,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for non-resident alien students"
+C150_L4_UNKN,1066,17.32206695,82.67793305,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students whose race is unknown"
+C200_4,1920,31.19922002,68.80077998,"Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion)"
+C200_L4,3160,51.34871628,48.65128372,"Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion)"
+D200_4,1920,31.19922002,68.80077998,Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate)
+D200_L4,3160,51.34871628,48.65128372,Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate)
+RET_FT4,2019,32.8079298,67.1920702,"First-time, full-time student retention rate at four-year institutions"
+RET_FTL4,3116,50.63373416,49.36626584,"First-time, full-time student retention rate at less-than-four-year institutions"
+RET_PT4,1258,20.44198895,79.55801105,"First-time, part-time student retention rate at four-year institutions"
+RET_PTL4,1771,28.77803055,71.22196945,"First-time, part-time student retention rate at less-than-four-year institutions"
+C200_4_POOLED,1957,31.80045499,68.19954501,"Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion), pooled for two year rolling averages"
+C200_L4_POOLED,3200,51.99870003,48.00129997,"Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled for two year rolling averages"
+POOLYRS200,5157,83.79915502,16.20084498,Years used for rolling averages of completion rate C200_[4/L4]_POOLED
+D200_4_POOLED,1957,31.80045499,68.19954501,"Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages"
+D200_L4_POOLED,3200,51.99870003,48.00129997,"Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages"
+CDR3,5326,86.54533637,13.45466363,Three-year cohort default rate
+DEBT_MDN,5213,84.70913227,15.29086773,The median original amount of the loan principal upon entering repayment
+GRAD_DEBT_MDN,4793,77.88430289,22.11569711,The median debt for students who have completed
+WDRAW_DEBT_MDN,4644,75.46311342,24.53688658,The median debt for students who have not completed
+LO_INC_DEBT_MDN,4713,76.58433539,23.41566461,"The median debt for students with family income between $0-$30,000"
+MD_INC_DEBT_MDN,4001,65.01462463,34.98537537,"The median debt for students with family income between $30,001-$75,000"
+HI_INC_DEBT_MDN,3995,64.91712707,35.08287293,"The median debt for students with family income $75,001+"
+DEP_DEBT_MDN,4546,73.87065323,26.12934677,The median debt for dependent students
+IND_DEBT_MDN,4546,73.87065323,26.12934677,The median debt for independent students
+PELL_DEBT_MDN,4368,70.97822554,29.02177446,The median debt for Pell students
+NOPELL_DEBT_MDN,4368,70.97822554,29.02177446,The median debt for no-Pell students
+FEMALE_DEBT_MDN,4118,66.9158271,33.0841729,The median debt for female students
+MALE_DEBT_MDN,4118,66.9158271,33.0841729,The median debt for male students
+FIRSTGEN_DEBT_MDN,4250,69.06077348,30.93922652,The median debt for first-generation students
+NOTFIRSTGEN_DEBT_MDN,4250,69.06077348,30.93922652,The median debt for not-first-generation students
+DEBT_N,5309,86.26909327,13.73090673,The number of students in the median debt cohort
+GRAD_DEBT_N,4888,79.4280143,20.5719857,The number of students in the median debt completers cohort
+WDRAW_DEBT_N,4888,79.4280143,20.5719857,The number of students in the median debt withdrawn cohort
+LO_INC_DEBT_N,4975,80.84172896,19.15827104,"The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort"
+MD_INC_DEBT_N,4392,71.36821579,28.63178421,"The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
+HI_INC_DEBT_N,4389,71.31946701,28.68053299,"The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort"
+DEP_DEBT_N,4876,79.23301917,20.76698083,The number of students in the median debt dependent students cohort
+IND_DEBT_N,4876,79.23301917,20.76698083,The number of students in the median debt independent students cohort
+PELL_DEBT_N,4695,76.2918427,23.7081573,The number of students in the median debt Pell students cohort
+NOPELL_DEBT_N,4695,76.2918427,23.7081573,The number of students in the median debt no-Pell students cohort
+FEMALE_DEBT_N,4411,71.67695808,28.32304192,The number of students in the median debt female students cohort
+MALE_DEBT_N,4411,71.67695808,28.32304192,The number of students in the median debt male students cohort
+FIRSTGEN_DEBT_N,4623,75.12187195,24.87812805,The number of students in the median debt first-generation students cohort
+NOTFIRSTGEN_DEBT_N,4623,75.12187195,24.87812805,The number of students in the median debt not-first-generation students cohort
+GRAD_DEBT_MDN10YR,4793,77.88430289,22.11569711,Median loan debt of completers in monthly payments (10-year amortization plan)
+DEBT_MDN_SUPP,5092,82.74293143,17.25706857,"Median debt, suppressed for n=30"
+GRAD_DEBT_MDN_SUPP,4675,75.96685083,24.03314917,"Median debt of completers, suppressed for n=30"
+GRAD_DEBT_MDN10YR_SUPP,4675,75.96685083,24.03314917,"Median debt of completers expressed in 10-year monthly payments, suppressed for n=30"
+C150_L4_POOLED_SUPP,3095,50.29249269,49.70750731,"Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size"
+C150_4_POOLED_SUPP,2116,34.3841404,65.6158596,"Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size."
+C200_L4_POOLED_SUPP,3040,49.39876503,50.60123497,"Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size. "
+C200_4_POOLED_SUPP,1815,29.49301267,70.50698733,"Completion rate for first-time, full-time students at four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size"
+ALIAS,2293,37.26031849,62.73968151,Institution name aliases
+C100_4,1976,32.10919727,67.89080273,"Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion)"
+D100_4,1976,32.10919727,67.89080273,Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate)
+C100_L4,3237,52.599935,47.400065,"Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion)"
+D100_L4,3237,52.599935,47.400065,Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate)
+TRANS_4,2217,36.02534937,63.97465063,"Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
+DTRANS_4,2217,36.02534937,63.97465063,Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)
+TRANS_L4,3239,52.63243419,47.36756581,"Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
+DTRANS_L4,3239,52.63243419,47.36756581,Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)
+UGDS_MEN,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are men
+UGDS_WOMEN,5871,95.40136497,4.598635034,Total share of enrollment of undergraduate degree-seeking students who are women
+CDR3_DENOM,5326,86.54533637,13.45466363,Number of students in the cohort for the three-year cohort default rate
+T4APPROVALDATE,6151,99.95125122,0.048748781,Date that institution was first approved to participate in Title IV aid programs
+D150_4_WHITE,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of White students at four-year institutions (denominator of 150% completion rate)
+D150_4_BLACK,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of Black/African American students at four-year institutions (denominator of 150% completion rate)
+D150_4_HISP,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of Hispanic students at four-year institutions (denominator of 150% completion rate)
+D150_4_ASIAN,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of Asian students at four-year institutions (denominator of 150% completion rate)
+D150_4_AIAN,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of American Indian/Alaska Native students at four-year institutions (denominator of 150% completion rate)
+D150_4_NHPI,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at four-year institutions (denominator of 150% completion rate)
+D150_4_2MOR,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of students of Two or More Races at four-year institutions (denominator of 150% completion rate)
+D150_4_NRA,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of Nonresident Alien students at four-year institutions (denominator of 150% completion rate)
+D150_4_UNKN,2217,36.02534937,63.97465063,Adjusted cohort count for completion rate of students of Unknown race at four-year institutions (denominator of 150% completion rate)
+D150_L4_WHITE,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of White students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_BLACK,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of Black/African American students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_HISP,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_ASIAN,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of Asian students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_AIAN,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of American Indian/Alaska Native students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_NHPI,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_2MOR,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of students of Two or More Races at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_NRA,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of Nonresident Alien students at less-than-four-year institutions (denominator of 150% completion rate)
+D150_L4_UNKN,1636,26.58433539,73.41566461,Adjusted cohort count for completion rate of students of Unknown race at less-than-four-year institutions (denominator of 150% completion rate)
+D_PCTPELL_PCTFLOAN,5848,95.02762431,4.972375691,Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)
+UGNONDS,2801,45.51511212,54.48488788,Number of non-degree-seeking undergraduate students
+GRADS,2011,32.67793305,67.32206695,Number of graduate students
+ACCREDCODE,5859,95.20636984,4.793630159,Code corresponding to accreditor (as captured from PEPS)
+OMACHT6_FTFT,3659,59.45726357,40.54273643,"Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMAWDP6_FTFT,3521,57.21481963,42.78518037,"Percentage of full-time, first-time student receiving an award within 6 years of entry"
+OMACHT8_FTFT,3659,59.45726357,40.54273643,"Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages)"
+OMAWDP8_FTFT,3521,57.21481963,42.78518037,"Percentage of full-time, first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTFT,3521,57.21481963,42.78518037,"Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTFT,3521,57.21481963,42.78518037,"Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTFT,3521,57.21481963,42.78518037,"Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+OMACHT6_PTFT,3659,59.45726357,40.54273643,"Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMAWDP6_PTFT,2716,44.13389665,55.86610335,"Percentage of part-time, first-time student receiving an award within 6 years of entry"
+OMACHT8_PTFT,3659,59.45726357,40.54273643,"Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages)"
+OMAWDP8_PTFT,2716,44.13389665,55.86610335,"Percentage of part-time, first-time student receiving an award within 8 years of entry"
+OMENRYP8_PTFT,2716,44.13389665,55.86610335,"Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_PTFT,2716,44.13389665,55.86610335,"Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_PTFT,2716,44.13389665,55.86610335,"Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+OMACHT6_FTNFT,3659,59.45726357,40.54273643,"Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMAWDP6_FTNFT,3518,57.16607085,42.83392915,"Percentage of full-time, not first-time student receiving an award within 6 years of entry"
+OMACHT8_FTNFT,3659,59.45726357,40.54273643,"Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages)"
+OMAWDP8_FTNFT,3518,57.16607085,42.83392915,"Percentage of full-time, not first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTNFT,3518,57.16607085,42.83392915,"Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTNFT,3518,57.16607085,42.83392915,"Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTNFT,3518,57.16607085,42.83392915,"Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+OMACHT6_PTNFT,3659,59.45726357,40.54273643,"Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMAWDP6_PTNFT,2921,47.46506337,52.53493663,"Percentage of part-time, not first-time student receiving an award within 6 years of entry"
+OMACHT8_PTNFT,3659,59.45726357,40.54273643,"Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages)"
+OMAWDP8_PTNFT,2921,47.46506337,52.53493663,"Percentage of part-time, not first-time student receiving an award within 8 years of entry"
+OMENRYP8_PTNFT,2921,47.46506337,52.53493663,"Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_PTNFT,2921,47.46506337,52.53493663,"Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_PTNFT,2921,47.46506337,52.53493663,"Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+RET_FT4_POOLED,2119,34.43288918,65.56711082,"First-time, full-time student retention rate at four-year institutions"
+RET_FTL4_POOLED,3173,51.559961,48.440039,"First-time, full-time student retention rate at less-than-four-year institutions"
+RET_PT4_POOLED,1553,25.23561911,74.76438089,"First-time, part-time student retention rate at four-year institutions"
+RET_PTL4_POOLED,1905,30.95547611,69.04452389,"First-time, part-time student retention rate at less-than-four-year institutions"
+RET_FT_DEN4_POOLED,2332,37.89405265,62.10594735,"Adjusted cohort count for the first-time, full-time student retention rate at four-year institutions (denominator of the retention rate)"
+RET_FT_DENL4_POOLED,3212,52.19369516,47.80630484,"Adjusted cohort count for the first-time, full-time student retention rate at less-than-four-year institutions (denominator of the retention rate)"
+RET_PT_DEN4_POOLED,1928,31.32921677,68.67078323,"Adjusted cohort count for the first-time, part-time student retention rate at four-year institutions (denominator of the retention rate)"
+RET_PT_DENL4_POOLED,1986,32.27169321,67.72830679,"Adjusted cohort count for the first-time, part-time student retention rate at less-than-four-year institutions (denominator of the retention rate)"
+POOLYRSRET_FT,5544,90.08774781,9.912252194,Years used for rolling averages of full-time retention rate RET_FT[4/L4]_POOLED
+POOLYRSRET_PT,3914,63.60090998,36.39909002,Years used for rolling averages of part-time retention rate RET_PT[4/L4]_POOLED
+RET_FT4_POOLED_SUPP,1892,30.74423139,69.25576861,"First-time, full-time student retention rate at four-year institutions"
+RET_FTL4_POOLED_SUPP,2866,46.57133572,53.42866428,"First-time, full-time student retention rate at less-than-four-year institutions"
+RET_PT4_POOLED_SUPP,647,10.51348716,89.48651284,"First-time, part-time student retention rate at four-year institutions"
+RET_PTL4_POOLED_SUPP,1421,23.09067273,76.90932727,"First-time, part-time student retention rate at less-than-four-year institutions"
+TRANS_4_POOLED,2235,36.31784205,63.68215795,"Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
+TRANS_L4_POOLED,3272,53.16867078,46.83132922,"Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
+DTRANS_4_POOLED,2235,36.31784205,63.68215795,Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)
+DTRANS_L4_POOLED,3272,53.16867078,46.83132922,Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)
+TRANS_4_POOLED_SUPP,2116,34.3841404,65.6158596,"Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
+TRANS_L4_POOLED_SUPP,3095,50.29249269,49.70750731,"Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
+C100_4_POOLED,2009,32.64543386,67.35456614,"Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages"
+C100_L4_POOLED,3270,53.1361716,46.8638284,"Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages"
+D100_4_POOLED,2009,32.64543386,67.35456614,"Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate), pooled for rolling averages"
+D100_L4_POOLED,3270,53.1361716,46.8638284,"Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate), pooled for rolling averages"
+POOLYRS100,5279,85.78160546,14.21839454,Years used for rolling averages of completion rate C100_[4/L4]_POOLED
+C100_4_POOLED_SUPP,1839,29.88300292,70.11699708,"Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size."
+C100_L4_POOLED_SUPP,3093,50.2599935,49.7400065,"Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size."
+C150_4_PELL,2140,34.77413065,65.22586935,"Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
+D150_4_PELL,2140,34.77413065,65.22586935,Adjusted cohort count for Pell Grant recipient completion rate at four-year institutions (denominator of 150% Pell Grant recipient completion rate)
+C150_L4_PELL,3122,50.73123172,49.26876828,"Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
+D150_L4_PELL,3122,50.73123172,49.26876828,Adjusted cohort count for Pell Grant recipient completion rate at less-than-four-year institutions (denominator of 150% Pell Grant recipient completion rate)
+C150_4_LOANNOPELL,1954,31.75170621,68.24829379,"Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
+D150_4_LOANNOPELL,1954,31.75170621,68.24829379,Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)
+C150_L4_LOANNOPELL,2366,38.44653884,61.55346116,"Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
+D150_L4_LOANNOPELL,2366,38.44653884,61.55346116,Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)
+C150_4_NOLOANNOPELL,2149,34.92037699,65.07962301,"Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
+D150_4_NOLOANNOPELL,2149,34.92037699,65.07962301,Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)
+C150_L4_NOLOANNOPELL,2872,46.66883328,53.33116672,"Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
+D150_L4_NOLOANNOPELL,2872,46.66883328,53.33116672,Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)
+OMACHT6_FTFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
+OMAWDP6_FTFT_POOLED,3552,57.71855704,42.28144296,"Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages."
+OMACHT8_FTFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years."
+OMAWDP8_FTFT_POOLED,3552,57.71855704,42.28144296,"Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages."
+OMENRYP8_FTFT_POOLED,3552,57.71855704,42.28144296,"Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
+OMENRAP8_FTFT_POOLED,3552,57.71855704,42.28144296,"Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMENRUP8_FTFT_POOLED,3552,57.71855704,42.28144296,"Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMACHT6_PTFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
+OMAWDP6_PTFT_POOLED,2931,47.62755931,52.37244069,"Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages."
+OMACHT8_PTFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years."
+OMAWDP8_PTFT_POOLED,2931,47.62755931,52.37244069,"Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages."
+OMENRYP8_PTFT_POOLED,2931,47.62755931,52.37244069,"Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
+OMENRAP8_PTFT_POOLED,2931,47.62755931,52.37244069,"Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMENRUP8_PTFT_POOLED,2931,47.62755931,52.37244069,"Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMACHT6_FTNFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
+OMAWDP6_FTNFT_POOLED,3579,58.15729607,41.84270393,"Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages."
+OMACHT8_FTNFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years."
+OMAWDP8_FTNFT_POOLED,3579,58.15729607,41.84270393,"Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages."
+OMENRYP8_FTNFT_POOLED,3579,58.15729607,41.84270393,"Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
+OMENRAP8_FTNFT_POOLED,3579,58.15729607,41.84270393,"Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMENRUP8_FTNFT_POOLED,3579,58.15729607,41.84270393,"Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMACHT6_PTNFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
+OMAWDP6_PTNFT_POOLED,3067,49.83750406,50.16249594,"Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages."
+OMACHT8_PTNFT_POOLED,3675,59.71725707,40.28274293,"Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years."
+OMAWDP8_PTNFT_POOLED,3067,49.83750406,50.16249594,"Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages."
+OMENRYP8_PTNFT_POOLED,3067,49.83750406,50.16249594,"Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
+OMENRAP8_PTNFT_POOLED,3067,49.83750406,50.16249594,"Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
+OMENRUP8_PTNFT_POOLED,3067,49.83750406,50.16249594,"Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
+POOLYRSOM_FTFT,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTFT_POOLED
+POOLYRSOM_PTFT,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTFT_POOLED
+POOLYRSOM_FTNFT,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTNFT_POOLED
+POOLYRSOM_PTNFT,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTNFT_POOLED
+OMAWDP6_FTFT_POOLED_SUPP,3408,55.37861553,44.62138447,"Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_FTFT_POOLED_SUPP,3408,55.37861553,44.62138447,"Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP8_FTFT_POOLED_SUPP,3408,55.37861553,44.62138447,"Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP8_FTFT_POOLED_SUPP,3408,55.37861553,44.62138447,"Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP8_FTFT_POOLED_SUPP,3408,55.37861553,44.62138447,"Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP6_PTFT_POOLED_SUPP,2123,34.49788755,65.50211245,"Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_PTFT_POOLED_SUPP,2123,34.49788755,65.50211245,"Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP8_PTFT_POOLED_SUPP,2123,34.49788755,65.50211245,"Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP8_PTFT_POOLED_SUPP,2123,34.49788755,65.50211245,"Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP8_PTFT_POOLED_SUPP,2123,34.49788755,65.50211245,"Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP6_FTNFT_POOLED_SUPP,3392,55.11862203,44.88137797,"Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_FTNFT_POOLED_SUPP,3392,55.11862203,44.88137797,"Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP8_FTNFT_POOLED_SUPP,3392,55.11862203,44.88137797,"Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP8_FTNFT_POOLED_SUPP,3392,55.11862203,44.88137797,"Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP8_FTNFT_POOLED_SUPP,3392,55.11862203,44.88137797,"Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP6_PTNFT_POOLED_SUPP,2567,41.71270718,58.28729282,"Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_PTNFT_POOLED_SUPP,2567,41.71270718,58.28729282,"Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP8_PTNFT_POOLED_SUPP,2567,41.71270718,58.28729282,"Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP8_PTNFT_POOLED_SUPP,2567,41.71270718,58.28729282,"Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP8_PTNFT_POOLED_SUPP,2567,41.71270718,58.28729282,"Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+SCHTYPE,5833,94.7838804,5.216119597,"Control of institution, per PEPS"
+OPEFLAG,6154,100,0,Title IV eligibility type
+PRGMOFR,2277,37.00032499,62.99967501,Number of programs offered
+CIPCODE1,2277,37.00032499,62.99967501,CIP code of largest program
+CIPCODE2,1867,30.33799155,69.66200845,CIP code of program #2
+CIPCODE3,1477,24.00064998,75.99935002,CIP code of program #3
+CIPCODE4,1125,18.28079298,81.71920702,CIP code of program #4
+CIPCODE5,808,13.12967176,86.87032824,CIP code of program #5
+CIPCODE6,611,9.928501787,90.07149821,CIP code of program #6
+CIPTITLE1,2277,37.00032499,62.99967501,CIP text description of largest program
+CIPTITLE2,1867,30.33799155,69.66200845,CIP text description of program #2
+CIPTITLE3,1477,24.00064998,75.99935002,CIP text description of program #3
+CIPTITLE4,1125,18.28079298,81.71920702,CIP text description of program #4
+CIPTITLE5,808,13.12967176,86.87032824,CIP text description of program #5
+CIPTITLE6,611,9.928501787,90.07149821,CIP text description of program #6
+CIPTFBS1,2277,37.00032499,62.99967501,"Tuition, fees, books, and supply charges for largest program (full program)"
+CIPTFBS2,1865,30.30549236,69.69450764,"Tuition, fees, books, and supply charges for program #2 (full program)"
+CIPTFBS3,1476,23.98440039,76.01559961,"Tuition, fees, books, and supply charges for program #3 (full program)"
+CIPTFBS4,1124,18.26454339,81.73545661,"Tuition, fees, books, and supply charges for program #4 (full program)"
+CIPTFBS5,808,13.12967176,86.87032824,"Tuition, fees, books, and supply charges for program #5 (full program)"
+CIPTFBS6,611,9.928501787,90.07149821,"Tuition, fees, books, and supply charges for program #6 (full program)"
+CIPTFBSANNUAL1,2277,37.00032499,62.99967501,"Tuition, fees, books, and supply charges for largest program (annualized based on institution's academic year)"
+CIPTFBSANNUAL2,1865,30.30549236,69.69450764,"Tuition, fees, books, and supply charges for program #2 (annualized based on institution's academic year)"
+CIPTFBSANNUAL3,1476,23.98440039,76.01559961,"Tuition, fees, books, and supply charges for program #3 (annualized based on institution's academic year)"
+CIPTFBSANNUAL4,1124,18.26454339,81.73545661,"Tuition, fees, books, and supply charges for program #4 (annualized based on institution's academic year)"
+CIPTFBSANNUAL5,808,13.12967176,86.87032824,"Tuition, fees, books, and supply charges for program #5 (annualized based on institution's academic year)"
+CIPTFBSANNUAL6,611,9.928501787,90.07149821,"Tuition, fees, books, and supply charges for program #6 (annualized based on institution's academic year)"
+MTHCMP1,2277,37.00032499,62.99967501,Average number of months needed to complete largest program
+MTHCMP2,1867,30.33799155,69.66200845,Average number of months needed to complete program #2
+MTHCMP3,1477,24.00064998,75.99935002,Average number of months needed to complete program #3
+MTHCMP4,1125,18.28079298,81.71920702,Average number of months needed to complete program #4
+MTHCMP5,808,13.12967176,86.87032824,Average number of months needed to complete program #5
+MTHCMP6,611,9.928501787,90.07149821,Average number of months needed to complete program #6
+POOLYRSOM_ALL,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_ALL_POOLED
+POOLYRSOM_FIRSTTIME,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FIRSTTIME_POOLED
+POOLYRSOM_NOTFIRSTTIME,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_NOTFIRSTTIME_POOLED
+POOLYRSOM_FULLTIME,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FULLTIME_POOLED
+POOLYRSOM_PARTTIME,3675,59.71725707,40.28274293,Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PARTTIME_POOLED
+OMENRYP_ALL,3659,59.45726357,40.54273643,Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_ALL,3659,59.45726357,40.54273643,Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_ALL,3659,59.45726357,40.54273643,Percentage of all student receiving an award within 8 years of entry
+OMENRUP_ALL,3659,59.45726357,40.54273643,Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_FIRSTTIME,3553,57.73480663,42.26519337,Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FIRSTTIME,3553,57.73480663,42.26519337,Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FIRSTTIME,3553,57.73480663,42.26519337,Percentage of first-time student receiving an award within 8 years of entry
+OMENRUP_FIRSTTIME,3553,57.73480663,42.26519337,Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_NOTFIRSTTIME,3548,57.65355866,42.34644134,Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_NOTFIRSTTIME,3548,57.65355866,42.34644134,Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_NOTFIRSTTIME,3548,57.65355866,42.34644134,Percentage of not first-time student receiving an award within 8 years of entry
+OMENRUP_NOTFIRSTTIME,3548,57.65355866,42.34644134,Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_FULLTIME,3640,59.14852129,40.85147871,Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FULLTIME,3640,59.14852129,40.85147871,Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FULLTIME,3640,59.14852129,40.85147871,Percentage of full-time student receiving an award within 8 years of entry
+OMENRUP_FULLTIME,3640,59.14852129,40.85147871,Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_PARTTIME,3020,49.07377316,50.92622684,Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_PARTTIME,3020,49.07377316,50.92622684,Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_PARTTIME,3020,49.07377316,50.92622684,Percentage of part-time student receiving an award within 8 years of entry
+OMENRUP_PARTTIME,3020,49.07377316,50.92622684,Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_ALL_POOLED_SUPP,3630,58.98602535,41.01397465,"Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP_ALL_POOLED_SUPP,3630,58.98602535,41.01397465,"Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_ALL_POOLED_SUPP,3630,58.98602535,41.01397465,"Percentage of all student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP_ALL_POOLED_SUPP,3630,58.98602535,41.01397465,"Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP_FIRSTTIME_POOLED_SUPP,3471,56.40233994,43.59766006,"Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP_FIRSTTIME_POOLED_SUPP,3471,56.40233994,43.59766006,"Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_FIRSTTIME_POOLED_SUPP,3471,56.40233994,43.59766006,"Percentage of first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP_FIRSTTIME_POOLED_SUPP,3471,56.40233994,43.59766006,"Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP_NOTFIRSTTIME_POOLED_SUPP,3458,56.19109522,43.80890478,"Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP_NOTFIRSTTIME_POOLED_SUPP,3458,56.19109522,43.80890478,"Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_NOTFIRSTTIME_POOLED_SUPP,3458,56.19109522,43.80890478,"Percentage of not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP_NOTFIRSTTIME_POOLED_SUPP,3458,56.19109522,43.80890478,"Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP_FULLTIME_POOLED_SUPP,3575,58.09229769,41.90770231,"Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP_FULLTIME_POOLED_SUPP,3575,58.09229769,41.90770231,"Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_FULLTIME_POOLED_SUPP,3575,58.09229769,41.90770231,"Percentage of full-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP_FULLTIME_POOLED_SUPP,3575,58.09229769,41.90770231,"Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRYP_PARTTIME_POOLED_SUPP,2752,44.71888203,55.28111797,"Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
+OMENRAP_PARTTIME_POOLED_SUPP,2752,44.71888203,55.28111797,"Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMAWDP8_PARTTIME_POOLED_SUPP,2752,44.71888203,55.28111797,"Percentage of part-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+OMENRUP_PARTTIME_POOLED_SUPP,2752,44.71888203,55.28111797,"Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
+FTFTPCTPELL,5575,90.59148521,9.408514787,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant"
+FTFTPCTFLOAN,5575,90.59148521,9.408514787,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan"
+UG12MN,5861,95.23886903,4.761130972,Unduplicated count of undergraduate students enrolled during a 12 month period
+G12MN,2010,32.66168346,67.33831654,Unduplicated count of graduate students enrolled during a 12 month period
+SCUGFFN,5856,95.15762106,4.842378941,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
+POOLYRS_FTFTAIDPCT,5864,95.28761781,4.71238219,Years used for rolling averages of FTFTPCTPELL_POOLED_SUPP and FTFTPCTFLOAN_POOLED_SUPP
+FTFTPCTPELL_POOLED_SUPP,5291,85.97660058,14.02339942,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size"
+FTFTPCTFLOAN_POOLED_SUPP,5291,85.97660058,14.02339942,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size"
+SCUGFFN_POOLED,5864,95.28761781,4.71238219,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages"
+PPLUS_PCT_LOW,5297,86.07409815,13.92590185,Lower bound of estimated percentage range of students whose parents took out a PLUS loan
+PPLUS_PCT_HIGH,5297,86.07409815,13.92590185,Upper bound of estimated percentage range of students whose parents took out a PLUS loan
+PPLUS_PCT_LOW_POOLED_SUPP,5320,86.4478388,13.5521612,"Lower bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size"
+PPLUS_PCT_HIGH_POOLED_SUPP,5320,86.4478388,13.5521612,"Upper bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size"
+POOLYRS_PLUSPCT,5894,95.77510562,4.224894378,Years used for rolling averages of PPLUS_PCT_LOW_POOLED_SUPP and PPLUS_PCT_HIGH_POOLED_SUPP
+PLUS_DEBT_INST_N,3787,61.53721157,38.46278843,Student recipient count for median PLUS loan debt disbursed at this institution
+PLUS_DEBT_INST_MD,3374,54.82612935,45.17387065,Median PLUS loan debt disbursed at this institution
+PLUS_DEBT_ALL_N,4843,78.69678258,21.30321742,Student recipient count for median PLUS loan debt disbursed at all institutions
+PLUS_DEBT_ALL_MD,4437,72.09944751,27.90055249,Median PLUS loan debt disbursed at all institutions
+PLUS_DEBT_INST_COMP_N,2795,45.41761456,54.58238544,Student recipient count for median PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_INST_COMP_MD,2437,39.60025999,60.39974001,Median PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_INST_COMP_MDPAY10,2437,39.60025999,60.39974001,Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_INST_COMP_MD_SUPP,2327,37.81280468,62.18719532,"Median PLUS loan debt disbursed to completers at this institution, suppressed for n=30"
+PLUS_DEBT_INST_COMP_MDPAY10_SUPP,2327,37.81280468,62.18719532,"Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution, suppressed for n=30"
+PLUS_DEBT_ALL_COMP_N,3903,63.42216445,36.57783555,Student recipient count for median PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_COMP_MD,3416,55.50861228,44.49138772,Median PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_COMP_MDPAY10,3416,55.50861228,44.49138772,Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_COMP_MD_SUPP,3210,52.16119597,47.83880403,"Median PLUS loan debt disbursed to completers at all institutions, suppressed for n=30"
+PLUS_DEBT_ALL_COMP_MDPAY10_SUPP,3210,52.16119597,47.83880403,"Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions, suppressed for n=30"
+PLUS_DEBT_INST_NOCOMP_N,2795,45.41761456,54.58238544,Student recipient count for median PLUS loan debt disbursed to non-completers at this institution
+PLUS_DEBT_INST_NOCOMP_MD,2437,39.60025999,60.39974001,Median PLUS loan debt disbursed to non-completers at this institution
+PLUS_DEBT_ALL_NOCOMP_N,3903,63.42216445,36.57783555,Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions
+PLUS_DEBT_ALL_NOCOMP_MD,3416,55.50861228,44.49138772,Median PLUS loan debt disbursed to non-completers at all institutions
+PLUS_DEBT_INST_MALE_N,2655,43.14267143,56.85732857,Student recipient count for median PLUS loan debt disbursed to males at this institution
+PLUS_DEBT_INST_MALE_MD,2302,37.40656484,62.59343516,Median PLUS loan debt disbursed to males at this institution
+PLUS_DEBT_ALL_MALE_N,3684,59.86350341,40.13649659,Student recipient count for median PLUS loan debt disbursed to males at all institutions
+PLUS_DEBT_ALL_MALE_MD,3320,53.94865128,46.05134872,Median PLUS loan debt disbursed to males at all institutions
+PLUS_DEBT_INST_NOMALE_N,2655,43.14267143,56.85732857,Student recipient count for median PLUS loan debt disbursed to non-males at this institution
+PLUS_DEBT_INST_NOMALE_MD,2302,37.40656484,62.59343516,Median PLUS loan debt disbursed to non-males at this institution
+PLUS_DEBT_ALL_NOMALE_N,3684,59.86350341,40.13649659,Student recipient count for median PLUS loan debt disbursed to non-males at all institutions
+PLUS_DEBT_ALL_NOMALE_MD,3320,53.94865128,46.05134872,Median PLUS loan debt disbursed to non-males at all institutions
+PLUS_DEBT_INST_PELL_N,3040,49.39876503,50.60123497,Student recipient count for median PLUS loan debt disbursed to Pell recipients at this institution
+PLUS_DEBT_INST_PELL_MD,2550,41.43646409,58.56353591,Median PLUS loan debt disbursed to Pell recipients at this institution
+PLUS_DEBT_ALL_PELL_N,4062,66.00584985,33.99415015,Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_ALL_PELL_MD,3576,58.10854729,41.89145271,Median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_INST_NOPELL_N,3040,49.39876503,50.60123497,Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at this institution
+PLUS_DEBT_INST_NOPELL_MD,2550,41.43646409,58.56353591,Median PLUS loan debt disbursed to non-Pell-recipients at this institution
+PLUS_DEBT_ALL_NOPELL_N,4062,66.00584985,33.99415015,Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+PLUS_DEBT_ALL_NOPELL_MD,3576,58.10854729,41.89145271,Median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+PLUS_DEBT_INST_STAFFTHIS_N,1108,18.00454989,81.99545011,Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+PLUS_DEBT_INST_STAFFTHIS_MD,626,10.17224569,89.82775431,Median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+PLUS_DEBT_ALL_STAFFTHIS_N,3013,48.960026,51.039974,Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+PLUS_DEBT_ALL_STAFFTHIS_MD,2503,40.67273318,59.32726682,Median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+PLUS_DEBT_INST_NOSTAFFTHIS_N,1108,18.00454989,81.99545011,Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_INST_NOSTAFFTHIS_MD,626,10.17224569,89.82775431,Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_ALL_NOSTAFFTHIS_N,3013,48.960026,51.039974,Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_ALL_NOSTAFFTHIS_MD,2503,40.67273318,59.32726682,Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_INST_STAFFANY_N,886,14.39714007,85.60285993,Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+PLUS_DEBT_INST_STAFFANY_MD,512,8.319792005,91.68020799,Median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+PLUS_DEBT_ALL_STAFFANY_N,1522,24.7318817,75.2681183,Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+PLUS_DEBT_ALL_STAFFANY_MD,935,15.19337017,84.80662983,Median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+PLUS_DEBT_INST_NOSTAFFANY_N,886,14.39714007,85.60285993,Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_INST_NOSTAFFANY_MD,512,8.319792005,91.68020799,Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_ALL_NOSTAFFANY_N,1522,24.7318817,75.2681183,Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_ALL_NOSTAFFANY_MD,935,15.19337017,84.80662983,Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+DBRR1_FED_UG_N,5218,84.79038024,15.20961976,Undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UG_NUM,5218,84.79038024,15.20961976,Undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UG_DEN,5218,84.79038024,15.20961976,Undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UG_RT,5218,84.79038024,15.20961976,Undergraduate federal student loan dollar-based 1-year repayment rate
+DBRR1_FED_GR_N,1877,30.50048749,69.49951251,Graduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_GR_NUM,1877,30.50048749,69.49951251,Graduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_GR_DEN,1877,30.50048749,69.49951251,Graduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_GR_RT,1877,30.50048749,69.49951251,Graduate federal student loan dollar-based 1-year repayment rate
+DBRR1_FED_UGCOMP_N,4721,76.71433214,23.28566786,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UGCOMP_NUM,4721,76.71433214,23.28566786,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UGCOMP_DEN,4721,76.71433214,23.28566786,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UGCOMP_RT,4721,76.71433214,23.28566786,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate
+DBRR1_FED_UGNOCOMP_N,3319,53.93240169,46.06759831,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UGNOCOMP_NUM,3319,53.93240169,46.06759831,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UGNOCOMP_DEN,3319,53.93240169,46.06759831,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UGNOCOMP_RT,3319,53.93240169,46.06759831,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate repayment rate
+DBRR1_FED_UGUNK_N,3095,50.29249269,49.70750731,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UGUNK_NUM,3095,50.29249269,49.70750731,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UGUNK_DEN,3095,50.29249269,49.70750731,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UGUNK_RT,3095,50.29249269,49.70750731,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate repayment rate
+DBRR1_FED_GRCOMP_N,1689,27.44556386,72.55443614,Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_GRCOMP_NUM,1689,27.44556386,72.55443614,Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_GRCOMP_DEN,1689,27.44556386,72.55443614,Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_GRCOMP_RT,1689,27.44556386,72.55443614,Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate
+DBRR1_FED_GRNOCOMP_N,1689,27.44556386,72.55443614,Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_GRNOCOMP_NUM,1689,27.44556386,72.55443614,Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_GRNOCOMP_DEN,1689,27.44556386,72.55443614,Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_GRNOCOMP_RT,1689,27.44556386,72.55443614,Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate repayment rate
+DBRR4_FED_UG_N,5042,81.93045174,18.06954826,Undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UG_NUM,5042,81.93045174,18.06954826,Undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UG_DEN,5042,81.93045174,18.06954826,Undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UG_RT,5042,81.93045174,18.06954826,Undergraduate federal student loan dollar-based 4-year repayment rate
+DBRR4_FED_GR_N,1946,31.62170946,68.37829054,Graduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_GR_NUM,1946,31.62170946,68.37829054,Graduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_GR_DEN,1946,31.62170946,68.37829054,Graduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_GR_RT,1946,31.62170946,68.37829054,Graduate federal student loan dollar-based 4-year repayment rate
+DBRR4_FED_UGCOMP_N,4764,77.41306467,22.58693533,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGCOMP_NUM,4764,77.41306467,22.58693533,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGCOMP_DEN,4764,77.41306467,22.58693533,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGCOMP_RT,4764,77.41306467,22.58693533,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate
+DBRR4_FED_UGNOCOMP_N,4304,69.93825154,30.06174846,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGNOCOMP_NUM,4304,69.93825154,30.06174846,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGNOCOMP_DEN,4304,69.93825154,30.06174846,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGNOCOMP_RT,4304,69.93825154,30.06174846,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+DBRR4_FED_UGUNK_N,4359,70.8319792,29.1680208,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGUNK_NUM,4359,70.8319792,29.1680208,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGUNK_DEN,4359,70.8319792,29.1680208,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGUNK_RT,4359,70.8319792,29.1680208,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+DBRR5_FED_UG_N,4994,81.15047124,18.84952876,Undergraduate federal student loan dollar-based 5-year repayment rate borrower count
+DBRR5_FED_UG_NUM,4994,81.15047124,18.84952876,Undergraduate federal student loan dollar-based 5-year repayment rate numerator
+DBRR5_FED_UG_DEN,4994,81.15047124,18.84952876,Undergraduate federal student loan dollar-based 5-year repayment rate denominator
+DBRR5_FED_UG_RT,4994,81.15047124,18.84952876,Undergraduate federal student loan dollar-based 5-year repayment rate
+DBRR5_FED_GR_N,2150,34.93662658,65.06337342,Graduate federal student loan dollar-based 5-year repayment rate borrower count
+DBRR5_FED_GR_NUM,2150,34.93662658,65.06337342,Graduate federal student loan dollar-based 5-year repayment rate numerator
+DBRR5_FED_GR_DEN,2150,34.93662658,65.06337342,Graduate federal student loan dollar-based 5-year repayment rate denominator
+DBRR5_FED_GR_RT,2150,34.93662658,65.06337342,Graduate federal student loan dollar-based 5-year repayment rate
+DBRR10_FED_UG_N,4455,72.3919402,27.6080598,Undergraduate federal student loan dollar-based 10-year repayment rate borrower count
+DBRR10_FED_UG_NUM,4455,72.3919402,27.6080598,Undergraduate federal student loan dollar-based 10-year repayment rate numerator
+DBRR10_FED_UG_DEN,4455,72.3919402,27.6080598,Undergraduate federal student loan dollar-based 10-year repayment rate denominator
+DBRR10_FED_UG_RT,4455,72.3919402,27.6080598,Undergraduate federal student loan dollar-based 10-year repayment rate
+DBRR10_FED_GR_N,2377,38.62528437,61.37471563,Graduate federal student loan dollar-based 10-year repayment rate borrower count
+DBRR10_FED_GR_NUM,2377,38.62528437,61.37471563,Graduate federal student loan dollar-based 10-year repayment rate numerator
+DBRR10_FED_GR_DEN,2377,38.62528437,61.37471563,Graduate federal student loan dollar-based 10-year repayment rate denominator
+DBRR10_FED_GR_RT,2377,38.62528437,61.37471563,Graduate federal student loan dollar-based 10-year repayment rate
+DBRR20_FED_UG_N,4004,65.06337342,34.93662658,Undergraduate federal student loan dollar-based 20-year repayment rate borrower count
+DBRR20_FED_UG_NUM,4004,65.06337342,34.93662658,Undergraduate federal student loan dollar-based 20-year repayment rate numerator
+DBRR20_FED_UG_DEN,4004,65.06337342,34.93662658,Undergraduate federal student loan dollar-based 20-year repayment rate denominator
+DBRR20_FED_UG_RT,4004,65.06337342,34.93662658,Undergraduate federal student loan dollar-based 20-year repayment rate
+DBRR20_FED_GR_N,1832,29.76925577,70.23074423,Graduate federal student loan dollar-based 20-year repayment rate borrower count
+DBRR20_FED_GR_NUM,1832,29.76925577,70.23074423,Graduate federal student loan dollar-based 20-year repayment rate numerator
+DBRR20_FED_GR_DEN,1832,29.76925577,70.23074423,Graduate federal student loan dollar-based 20-year repayment rate denominator
+DBRR20_FED_GR_RT,1832,29.76925577,70.23074423,Graduate federal student loan dollar-based 20-year repayment rate
+DBRR1_PP_UG_N,3719,60.43223919,39.56776081,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UG_NUM,3719,60.43223919,39.56776081,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UG_DEN,3719,60.43223919,39.56776081,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UG_RT,3719,60.43223919,39.56776081,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate
+DBRR1_PP_UGCOMP_N,2459,39.95775106,60.04224894,Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UGCOMP_NUM,2459,39.95775106,60.04224894,Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UGCOMP_DEN,2459,39.95775106,60.04224894,Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UGCOMP_RT,2459,39.95775106,60.04224894,Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate
+DBRR1_PP_UGNOCOMP_N,1814,29.47676308,70.52323692,Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UGNOCOMP_NUM,1814,29.47676308,70.52323692,Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UGNOCOMP_DEN,1814,29.47676308,70.52323692,Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UGNOCOMP_RT,1814,29.47676308,70.52323692,Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate repayment rate
+DBRR1_PP_UGUNK_N,1488,24.17939552,75.82060448,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UGUNK_NUM,1488,24.17939552,75.82060448,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UGUNK_DEN,1488,24.17939552,75.82060448,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UGUNK_RT,1488,24.17939552,75.82060448,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate repayment rate
+DBRR4_PP_UG_N,3487,56.66233344,43.33766656,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UG_NUM,3487,56.66233344,43.33766656,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UG_DEN,3487,56.66233344,43.33766656,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UG_RT,3487,56.66233344,43.33766656,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate
+DBRR4_PP_UGCOMP_N,2351,38.20279493,61.79720507,Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UGCOMP_NUM,2351,38.20279493,61.79720507,Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UGCOMP_DEN,2351,38.20279493,61.79720507,Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UGCOMP_RT,2351,38.20279493,61.79720507,Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate
+DBRR4_PP_UGNOCOMP_N,1753,28.48553786,71.51446214,Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UGNOCOMP_NUM,1753,28.48553786,71.51446214,Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UGNOCOMP_DEN,1753,28.48553786,71.51446214,Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UGNOCOMP_RT,1753,28.48553786,71.51446214,Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate repayment rate
+DBRR4_PP_UGUNK_N,1986,32.27169321,67.72830679,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UGUNK_NUM,1986,32.27169321,67.72830679,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UGUNK_DEN,1986,32.27169321,67.72830679,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UGUNK_RT,1986,32.27169321,67.72830679,Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate repayment rate
+DBRR5_PP_UG_N,3552,57.71855704,42.28144296,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate borrower count
+DBRR5_PP_UG_NUM,3552,57.71855704,42.28144296,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate numerator
+DBRR5_PP_UG_DEN,3552,57.71855704,42.28144296,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate denominator
+DBRR5_PP_UG_RT,3552,57.71855704,42.28144296,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate
+DBRR10_PP_UG_N,3285,53.3799155,46.6200845,Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate borrower count
+DBRR10_PP_UG_NUM,3285,53.3799155,46.6200845,Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate numerator
+DBRR10_PP_UG_DEN,3285,53.3799155,46.6200845,Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate denominator
+DBRR10_PP_UG_RT,3285,53.3799155,46.6200845,Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate
+DBRR20_PP_UG_N,2553,41.48521287,58.51478713,Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate borrower count
+DBRR20_PP_UG_NUM,2553,41.48521287,58.51478713,Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate numerator
+DBRR20_PP_UG_DEN,2553,41.48521287,58.51478713,Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate denominator
+DBRR20_PP_UG_RT,2553,41.48521287,58.51478713,Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate
+BBRR2_FED_UG_N,5132,83.39291518,16.60708482,Undergraduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_UG_DFLT,3819,62.05719857,37.94280143,Percentage of undergraduate federal student loan borrowers in default after 2 years
+BBRR2_FED_UG_DLNQ,3014,48.97627559,51.02372441,Percentage of undergraduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_UG_FBR,4769,77.49431264,22.50568736,Percentage of undergraduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_UG_DFR,4061,65.98960026,34.01039974,Percentage of undergraduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_UG_NOPROG,4753,77.23431914,22.76568086,Percentage of undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UG_MAKEPROG,4737,76.97432564,23.02567436,Percentage of undergraduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_UG_PAIDINFULL,3037,49.35001625,50.64998375,Percentage of undergraduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_UG_DISCHARGE,1639,26.63308417,73.36691583,Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_UGCOMP_N,4722,76.73058174,23.26941826,Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_UGCOMP_DFLT,1536,24.95937602,75.04062398,Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years
+BBRR2_FED_UGCOMP_DLNQ,1562,25.38186545,74.61813455,Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_UGCOMP_FBR,3600,58.49853754,41.50146246,Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_UGCOMP_DFR,2904,47.18882028,52.81117972,Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_UGCOMP_NOPROG,3765,61.17972051,38.82027949,Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UGCOMP_MAKEPROG,3283,53.34741631,46.65258369,Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_UGCOMP_PAIDINFULL,2034,33.05167371,66.94832629,Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_UGCOMP_DISCHARGE,242,3.93240169,96.06759831,Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_UGNOCOMP_N,3519,57.18232044,42.81767956,Undergraduate non-completer undergraduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_UGNOCOMP_DFLT,2385,38.75528112,61.24471888,Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 2 years
+BBRR2_FED_UGNOCOMP_DLNQ,1567,25.46311342,74.53688658,Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_UGNOCOMP_FBR,2872,46.66883328,53.33116672,Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_UGNOCOMP_DFR,2643,42.94767631,57.05232369,Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_UGNOCOMP_NOPROG,2895,47.04257394,52.95742606,Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UGNOCOMP_MAKEPROG,2330,37.86155346,62.13844654,Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_UGNOCOMP_PAIDINFULL,1579,25.65810855,74.34189145,Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_UGNOCOMP_DISCHARGE,620,10.07474813,89.92525187,Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_UGUNK_N,3369,54.74488138,45.25511862,Undergraduate unknown completion status undergraduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_UGUNK_DFLT,1007,16.36334092,83.63665908,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 2 years
+BBRR2_FED_UGUNK_DLNQ,576,9.359766006,90.64023399,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_UGUNK_FBR,2376,38.60903477,61.39096523,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_UGUNK_DFR,2112,34.31914202,65.68085798,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_UGUNK_NOPROG,2732,44.39389015,55.60610985,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UGUNK_MAKEPROG,2020,32.8241794,67.1758206,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_UGUNK_PAIDINFULL,1047,17.01332467,82.98667533,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_UGUNK_DISCHARGE,166,2.697432564,97.30256744,Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_GR_N,1832,29.76925577,70.23074423,Graduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_GR_DFLT,522,8.482287943,91.51771206,Percentage of graduate federal student loan borrowers in default after 2 years
+BBRR2_FED_GR_DLNQ,717,11.65095873,88.34904127,Percentage of graduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_GR_FBR,1505,24.45563861,75.54436139,Percentage of graduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_GR_DFR,1266,20.5719857,79.4280143,Percentage of graduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_GR_NOPROG,1709,27.77055574,72.22944426,Percentage of graduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_GR_MAKEPROG,1502,24.40688983,75.59311017,Percentage of graduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_GR_PAIDINFULL,1269,20.62073448,79.37926552,Percentage of graduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_GR_DISCHARGE,331,5.378615535,94.62138447,Percentage of graduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_GRCOMP_N,1188,19.30451739,80.69548261,Graduate completer graduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_GRCOMP_DFLT,93,1.51121222,98.48878778,Percentage of graduate completer graduate federal student loan borrowers in default after 2 years
+BBRR2_FED_GRCOMP_DLNQ,113,1.836204095,98.16379591,Percentage of graduate completer graduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_GRCOMP_FBR,478,7.767305817,92.23269418,Percentage of graduate completer graduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_GRCOMP_DFR,225,3.656158596,96.3438414,Percentage of graduate completer graduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_GRCOMP_NOPROG,803,13.04842379,86.95157621,Percentage of graduate completer graduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_GRCOMP_MAKEPROG,189,3.071173221,96.92882678,Percentage of graduate completer graduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_GRCOMP_PAIDINFULL,208,3.379915502,96.6200845,Percentage of graduate completer graduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_GRCOMP_DISCHARGE,59,0.958726032,99.04127397,Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_FED_GRNOCOMP_N,1188,19.30451739,80.69548261,Graduate non-completer graduate federal student loan borrower-based 2-year borrower count
+BBRR2_FED_GRNOCOMP_DFLT,152,2.469938252,97.53006175,Percentage of graduate non-completer graduate federal student loan borrowers in default after 2 years
+BBRR2_FED_GRNOCOMP_DLNQ,90,1.462463438,98.53753656,Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 2 years
+BBRR2_FED_GRNOCOMP_FBR,477,7.751056224,92.24894378,Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 2 years
+BBRR2_FED_GRNOCOMP_DFR,225,3.656158596,96.3438414,Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 2 years
+BBRR2_FED_GRNOCOMP_NOPROG,803,13.04842379,86.95157621,Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_GRNOCOMP_MAKEPROG,189,3.071173221,96.92882678,Percentage of graduate non-completer graduate federal student loan borrowers making progress after 2 years
+BBRR2_FED_GRNOCOMP_PAIDINFULL,208,3.379915502,96.6200845,Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 2 years
+BBRR2_FED_GRNOCOMP_DISCHARGE,59,0.958726032,99.04127397,Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 2 years
+BBRR2_PP_UG_N,3532,57.39356516,42.60643484,Undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_PP_UG_DFLT,1621,26.34059149,73.65940851,Percentage of undergraduate student Parent PLUS Loan borrowers in default after 2 years
+BBRR2_PP_UG_DLNQ,950,15.43711407,84.56288593,Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+BBRR2_PP_UG_FBR,2243,36.4478388,63.5521612,Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+BBRR2_PP_UG_DFR,1723,27.99805005,72.00194995,Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+BBRR2_PP_UG_NOPROG,2324,37.7640559,62.2359441,Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+BBRR2_PP_UG_MAKEPROG,2684,43.61390965,56.38609035,Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+BBRR2_PP_UG_PAIDINFULL,2005,32.58043549,67.41956451,Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+BBRR2_PP_UG_DISCHARGE,745,12.10594735,87.89405265,Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+BBRR2_PP_UGCOMP_N,2418,39.29151771,60.70848229,Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_PP_UGCOMP_DFLT,652,10.59473513,89.40526487,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 2 years
+BBRR2_PP_UGCOMP_DLNQ,314,5.102372441,94.89762756,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+BBRR2_PP_UGCOMP_FBR,1093,17.76080598,82.23919402,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+BBRR2_PP_UGCOMP_DFR,593,9.6360091,90.3639909,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+BBRR2_PP_UGCOMP_NOPROG,1427,23.1881703,76.8118297,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+BBRR2_PP_UGCOMP_MAKEPROG,1453,23.61065973,76.38934027,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+BBRR2_PP_UGCOMP_PAIDINFULL,1129,18.34579136,81.65420864,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+BBRR2_PP_UGCOMP_DISCHARGE,234,3.80240494,96.19759506,Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+BBRR2_PP_UGNOCOMP_N,1840,29.89925252,70.10074748,Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_PP_UGNOCOMP_DFLT,400,6.499837504,93.5001625,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 2 years
+BBRR2_PP_UGNOCOMP_DLNQ,118,1.917452064,98.08254794,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+BBRR2_PP_UGNOCOMP_FBR,690,11.21221969,88.78778031,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+BBRR2_PP_UGNOCOMP_DFR,745,12.10594735,87.89405265,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+BBRR2_PP_UGNOCOMP_NOPROG,872,14.16964576,85.83035424,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+BBRR2_PP_UGNOCOMP_MAKEPROG,712,11.56971076,88.43028924,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+BBRR2_PP_UGNOCOMP_PAIDINFULL,514,8.352291193,91.64770881,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+BBRR2_PP_UGNOCOMP_DISCHARGE,56,0.909977251,99.09002275,Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+BBRR2_PP_UGUNK_N,1636,26.58433539,73.41566461,Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_PP_UGUNK_DFLT,136,2.209944751,97.79005525,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 2 years
+BBRR2_PP_UGUNK_FBR,415,6.74358141,93.25641859,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+BBRR2_PP_UGUNK_DFR,308,5.004874878,94.99512512,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+BBRR2_PP_UGUNK_NOPROG,743,12.07344816,87.92655184,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+BBRR2_PP_UGUNK_MAKEPROG,479,7.783555411,92.21644459,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+BBRR2_PP_UGUNK_PAIDINFULL,462,7.507312317,92.49268768,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+BBRR2_PP_UGUNK_DISCHARGE,13,0.211244719,99.78875528,Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+BBRR2_FED_UG_N_SUPP,4978,80.89047774,19.10952226,"Undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30"
+BBRR2_FED_UG_DFLT_SUPP,3818,62.04094898,37.95905102,"Percentage of undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30"
+BBRR2_FED_UG_DLNQ_SUPP,3014,48.97627559,51.02372441,"Percentage of undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30"
+BBRR2_FED_UG_FBR_SUPP,4762,77.38056549,22.61943451,"Percentage of undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30"
+BBRR2_FED_UG_DFR_SUPP,4060,65.97335067,34.02664933,"Percentage of undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30"
+BBRR2_FED_UG_NOPROG_SUPP,4747,77.13682158,22.86317842,"Percentage of undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30"
+BBRR2_FED_UG_MAKEPROG_SUPP,4723,76.74683133,23.25316867,"Percentage of undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30"
+BBRR2_FED_UG_PAIDINFULL_SUPP,3037,49.35001625,50.64998375,"Percentage of undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30"
+BBRR2_FED_UG_DISCHARGE_SUPP,1639,26.63308417,73.36691583,"Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_N_SUPP,4594,74.65063373,25.34936627,"Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30"
+BBRR2_FED_UGCOMP_DFLT_SUPP,1536,24.95937602,75.04062398,"Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_DLNQ_SUPP,1562,25.38186545,74.61813455,"Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_FBR_SUPP,3600,58.49853754,41.50146246,"Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_DFR_SUPP,2904,47.18882028,52.81117972,"Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_NOPROG_SUPP,3762,61.13097173,38.86902827,"Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_MAKEPROG_SUPP,3281,53.31491713,46.68508287,"Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_PAIDINFULL_SUPP,2034,33.05167371,66.94832629,"Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30"
+BBRR2_FED_UGCOMP_DISCHARGE_SUPP,242,3.93240169,96.06759831,"Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30"
+LPSTAFFORD_CNT,5811,94.42638934,5.57361066,Number of borrowers with outstanding federal Direct Loan balances
+LPSTAFFORD_AMT,5811,94.42638934,5.57361066,Total outstanding federal Direct Loan balance
+LPPPLUS_CNT,4475,72.71693208,27.28306792,Number of students associated with outstanding Parent PLUS Loan balances
+LPPPLUS_AMT,4475,72.71693208,27.28306792,Total outstanding Parent PLUS Loan balance
+LPGPLUS_CNT,1574,25.57686058,74.42313942,Number of students associated with outstanding Grad PLUS Loan balances
+LPGPLUS_AMT,1574,25.57686058,74.42313942,Total outstanding Grad PLUS Loan balance
+FEDSCHCD,6135,99.69125772,0.308742281,Federal School Code

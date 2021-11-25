@@ -1,0 +1,193 @@
+Variable,n,nmiss,n_pct,nmiss_pct,Type,dev_cat,Definition
+UNITID,5879,0,1,0,character,root,Unit ID for institution
+OPEID,5879,0,1,0,character,root,8-digit OPE ID for institution
+OPEID6,5879,0,1,0,character,root,6-digit OPE ID for institution
+INSTNM,5879,0,1,0,character,school,Institution name
+CITY,5879,0,1,0,character,school,City
+STABBR,5879,0,1,0,character,school,State postcode
+ZIP,5879,0,1,0,character,school,ZIP code
+HCM2,5879,0,1,0,factor,school,Schools that are on Heightened Cash Monitoring 2 by the Department of Education
+MAIN,5879,0,1,0,factor,school,Flag for main campus
+PREDDEG,5879,0,1,0,factor,school,"Predominant undergraduate degree awarded
+ 0 Not classified
+ 1 Predominantly certificate-degree granting
+ 2 Predominantly associate's-degree granting
+ 3 Predominantly bachelor's-degree granting
+ 4 Entirely graduate-degree granting"
+HIGHDEG,5879,0,1,0,factor,school,"Highest degree awarded
+ 0 Non-degree-granting
+ 1 Certificate degree
+ 2 Associate degree
+ 3 Bachelor's degree
+ 4 Graduate degree"
+CONTROL,5879,0,1,0,factor,school,Control of institution
+ST_FIPS,5879,0,1,0,factor,school,FIPS code for state
+REGION,5879,0,1,0,factor,school,Region (IPEDS)
+LOCALE,5879,0,1,0,factor,school,Locale of institution
+LATITUDE,5879,0,1,0,num,root,Latitude
+LONGITUDE,5879,0,1,0,num,root,Longitude
+CCBASIC,5879,0,1,0,factor,school,Carnegie Classification -- basic
+CCUGPROF,5879,0,1,0,factor,school,Carnegie Classification -- undergraduate profile
+CCSIZSET,5879,0,1,0,factor,school,Carnegie Classification -- size and setting
+HBCU,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Historically Black College and University
+PBI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for predominantly black institution
+ANNHI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Alaska Native Native Hawaiian serving institution
+TRIBAL,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for tribal college and university
+AANAPII,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Asian American Native American Pacific Islander-serving institution
+HSI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Hispanic-serving institution
+"NANTI",5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Native American non-tribal institution
+MENONLY,5879,0,1,0,factor,school,Flag for men-only college
+WOMENONLY,5879,0,1,0,factor,school,Flag for women-only college
+RELAFFIL,795,5084,0.13522707943527812,0.8647729205647219,factor,school,Religous affiliation of the institution
+ADM_RATE,1953,3926,0.33219935363157,0.66780064636843,num,admissions,Admission rate
+ADM_RATE_ALL,2032,3847,0.34563701309746553,0.6543629869025345,num,admissions,Admission rate for all campuses rolled up to the 6-digit OPE ID
+SATVR25,1232,4647,0.20955944888586495,0.790440551114135,num,admissions,25th percentile of SAT scores at the institution (critical reading)
+SATVR75,1232,4647,0.20955944888586495,0.790440551114135,num,admissions,75th percentile of SAT scores at the institution (critical reading)
+SATMT25,1235,4644,0.21006973975165844,0.7899302602483416,num,admissions,25th percentile of SAT scores at the institution (math)
+SATMT75,1235,4644,0.21006973975165844,0.7899302602483416,num,admissions,75th percentile of SAT scores at the institution (math)
+SATVRMID,1232,4647,0.20955944888586495,0.790440551114135,num,admissions,Midpoint of SAT scores at the institution (critical reading)
+SATMTMID,1235,4644,0.21006973975165844,0.7899302602483416,num,admissions,Midpoint of SAT scores at the institution (math)
+ACTCM25,1269,4610,0.21585303623065147,0.7841469637693486,num,admissions,25th percentile of the ACT cumulative score
+ACTCM75,1269,4610,0.21585303623065147,0.7841469637693486,num,admissions,75th percentile of the ACT cumulative score
+ACTEN25,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,25th percentile of the ACT English score
+ACTEN75,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,75th percentile of the ACT English score
+ACTMT25,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,25th percentile of the ACT math score
+ACTMT75,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,75th percentile of the ACT math score
+ACTCMMID,1269,4610,0.21585303623065147,0.7841469637693486,num,admissions,Midpoint of the ACT cumulative score
+ACTENMID,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,Midpoint of the ACT English score
+ACTMTMID,1195,4684,0.2032658615410784,0.7967341384589216,num,admissions,Midpoint of the ACT math score
+SAT_AVG,1291,4588,0.2195951692464705,0.7804048307535295,num,admissions,Average SAT equivalent score of students admitted
+SAT_AVG_ALL,1355,4524,0.23048137438339852,0.7695186256166014,num,admissions,Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID
+DISTANCEONLY,5879,0,1,0,factor,school,Flag for distance-education-only education
+UGDS,5878,1,0.9998299030447356,1.7009695526450075e-4,integer,student,Enrollment of undergraduate certificate/degree-seeking students
+UGDS_WHITE,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are white
+UGDS_BLACK,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are black
+UGDS_HISP,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+UGDS_ASIAN,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Asian
+UGDS_AIAN,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+UGDS_NHPI,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander
+UGDS_2MOR,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are two or more races
+UGDS_NRA,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens
+UGDS_UNKN,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students whose race is unknown
+PPTUG_EF,5865,14,0.997618642626297,0.00238135737370301,num,student,"Share of undergraduate, degree-/certificate-seeking students who are part-time"
+CURROPER,5879,0,1,0,factor,school,"Flag for currently operating institution, 0=closed, 1=operating"
+COSTT4_A,3335,2544,0.5672733458071101,0.43272665419289,integer,cost,Average cost of attendance (academic year institutions)
+COSTT4_P,2138,3741,0.36366729035550266,0.6363327096444974,integer,cost,Average cost of attendance (program-year institutions)
+TUITIONFEE_IN,3452,2427,0.5871746895730566,0.41282531042694337,integer,cost,In-state tuition and fees
+TUITIONFEE_OUT,3452,2427,0.5871746895730566,0.41282531042694337,integer,cost,Out-of-state tuition and fees
+TUITIONFEE_PROG,2238,3641,0.3806769858819527,0.6193230141180472,integer,cost,Tuition and fees for program-year institutions
+TUITFTE,5869,10,0.998299030447355,0.001700969552645,integer,school,Net tuition revenue per full-time equivalent student
+INEXPFTE,5869,10,0.998299030447355,0.001700969552645,integer,school,Instructional expenditures per full-time equivalent student
+AVGFACSAL,3674,2205,0.6249362136417758,0.3750637863582242,integer,school,Average faculty salary
+PFTFAC,3331,2548,0.566592957986052,0.433407042013948,num,school,Proportion of faculty that is full-time
+PCTPELL,5879,0,1,0,num,aid,Percentage of undergraduates who receive a Pell Grant
+PFTFTUG1_EF,5561,318,0.9459091682258888,0.05409083177411124,num,student,"Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students"
+PCTFLOAN,5879,0,1,0,num,aid,Percent of all undergraduate students receiving a federal student loan
+CDR3,5093,786,0.8663037931621024,0.1336962068378976,num,repayment,Three-year cohort default rate
+DEBT_MDN,5202,677,0.884844361285933,0.11515563871406702,num,aid,The median original amount of the loan principal upon entering repayment
+GRAD_DEBT_MDN,4786,1093,0.8140840278959006,0.18591597210409933,num,aid,The median debt for students who have completed
+WDRAW_DEBT_MDN,4637,1242,0.78873958156149,0.21126041843850996,num,aid,The median debt for students who have not completed
+LO_INC_DEBT_MDN,4705,1174,0.800306174519476,0.1996938254805239,num,aid,"The median debt for students with family income between $0-$30,000"
+MD_INC_DEBT_MDN,3991,1888,0.6788569484606225,0.32114305153937744,num,aid,"The median debt for students with family income between $30,001-$75,000"
+HI_INC_DEBT_MDN,3985,1894,0.6778363667290356,0.3221636332709644,num,aid,"The median debt for students with family income $75,001+"
+DEP_DEBT_MDN,4539,1340,0.772070079945569,0.22792992005443105,num,aid,The median debt for dependent students
+IND_DEBT_MDN,4539,1340,0.772070079945569,0.22792992005443105,num,aid,The median debt for independent students
+PELL_DEBT_MDN,4360,1519,0.7416227249532233,0.25837727504677666,num,aid,The median debt for Pell students
+NOPELL_DEBT_MDN,4360,1519,0.7416227249532233,0.25837727504677666,num,aid,The median debt for no-Pell students
+FEMALE_DEBT_MDN,4110,1769,0.6990984861370981,0.30090151386290187,num,aid,The median debt for female students
+MALE_DEBT_MDN,4110,1769,0.6990984861370981,0.30090151386290187,num,aid,The median debt for male students
+FIRSTGEN_DEBT_MDN,4238,1641,0.7208708964109543,0.27912910358904575,num,aid,The median debt for first-generation students
+NOTFIRSTGEN_DEBT_MDN,4238,1641,0.7208708964109543,0.27912910358904575,num,aid,The median debt for not-first-generation students
+DEBT_N,5297,582,0.9010035720360604,0.09899642796393944,integer,aid,The number of students in the median debt cohort
+GRAD_DEBT_N,4882,997,0.8304133356012927,0.16958666439870726,integer,aid,The number of students in the median debt completers cohort
+WDRAW_DEBT_N,4882,997,0.8304133356012927,0.16958666439870726,integer,aid,The number of students in the median debt withdrawn cohort
+LO_INC_DEBT_N,4966,913,0.8447014798435108,0.1552985201564892,integer,aid,"The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort"
+MD_INC_DEBT_N,4382,1497,0.7453648579690424,0.25463514203095766,integer,aid,"The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
+HI_INC_DEBT_N,4379,1500,0.7448545671032488,0.2551454328967511,integer,aid,"The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort"
+DEP_DEBT_N,4870,1009,0.8283721721381188,0.17162782786188127,integer,aid,The number of students in the median debt dependent students cohort
+IND_DEBT_N,4870,1009,0.8283721721381188,0.17162782786188127,integer,aid,The number of students in the median debt independent students cohort
+PELL_DEBT_N,4685,1194,0.7969042354141861,0.2030957645858139,integer,aid,The number of students in the median debt Pell students cohort
+NOPELL_DEBT_N,4685,1194,0.7969042354141861,0.2030957645858139,integer,aid,The number of students in the median debt no-Pell students cohort
+FEMALE_DEBT_N,4401,1478,0.7485967001190679,0.25140329988093213,integer,aid,The number of students in the median debt female students cohort
+MALE_DEBT_N,4401,1478,0.7485967001190679,0.25140329988093213,integer,aid,The number of students in the median debt male students cohort
+FIRSTGEN_DEBT_N,4613,1266,0.784657254635142,0.215342745364858,integer,aid,The number of students in the median debt first-generation students cohort
+NOTFIRSTGEN_DEBT_N,4613,1266,0.784657254635142,0.215342745364858,integer,aid,The number of students in the median debt not-first-generation students cohort
+GRAD_DEBT_MDN10YR,4786,1093,0.8140840278959006,0.18591597210409933,num,aid,Median loan debt of completers in monthly payments (10-year amortization plan)
+ICLEVEL,5879,0,1,0,factor,school,Level of institution
+UGDS_MEN,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are men
+UGDS_WOMEN,5878,1,0.9998299030447356,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are women
+CDR3_DENOM,5093,786,0.8663037931621024,0.1336962068378976,integer,repayment,Number of students in the cohort for the three-year cohort default rate
+T4APPROVALDATE,5878,1,0.9998299030447356,1.7009695526450075e-4,character,school,Date that institution was first approved to participate in Title IV aid programs
+D_PCTPELL_PCTFLOAN,5879,0,1,0,integer,student,Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)
+OPENADMP,5728,151,0.9743153597550605,0.02568464024493961,factor,school,Open admissions policy indicator
+UGNONDS,2818,3061,0.4793332199353631,0.5206667800646368,integer,student,Number of non-degree-seeking undergraduate students
+GRADS,1731,4148,0.2944378295628508,0.7055621704371492,integer,student,Number of graduate students
+SCHTYPE,5566,313,0.9467596530022112,0.05324034699778874,factor,school,"Control of institution, per PEPS"
+OPEFLAG,5879,0,1,0,factor,school,Title IV eligibility type
+PRGMOFR,2278,3601,0.38748086409253274,0.6125191359074672,integer,academics,Number of programs offered
+MTHCMP1,2278,3601,0.38748086409253274,0.6125191359074672,integer,academics,Average number of months needed to complete largest program
+MTHCMP2,1868,4011,0.3177411124340874,0.6822588875659126,integer,academics,Average number of months needed to complete program #2
+MTHCMP3,1478,4401,0.25140329988093213,0.7485967001190679,integer,academics,Average number of months needed to complete program #3
+MTHCMP4,1127,4752,0.19169926858309236,0.8083007314169076,integer,academics,Average number of months needed to complete program #4
+MTHCMP5,811,5068,0.1379486307195101,0.8620513692804899,integer,academics,Average number of months needed to complete program #5
+MTHCMP6,614,5265,0.10443953053240349,0.8955604694675965,integer,academics,Average number of months needed to complete program #6
+FTFTPCTPELL,5605,274,0.9533934342575268,0.04660656574247321,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant"
+FTFTPCTFLOAN,5605,274,0.9533934342575268,0.04660656574247321,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan"
+UG12MN,5876,3,0.9994897091342064,5.102908657935023e-4,integer,student,Unduplicated count of undergraduate students enrolled during a 12 month period
+G12MN,1731,4148,0.2944378295628508,0.7055621704371492,integer,student,Unduplicated count of graduate students enrolled during a 12 month period
+SCUGFFN,5879,0,1,0,integer,student,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
+PPLUS_PCT_LOW,5290,589,0.899812893349209,0.10018710665079096,integer,aid,Lower bound of estimated percentage range of students whose parents took out a PLUS loan
+PPLUS_PCT_HIGH,5290,589,0.899812893349209,0.10018710665079096,integer,aid,Upper bound of estimated percentage range of students whose parents took out a PLUS loan
+PLUS_DEBT_INST_N,3776,2103,0.6422861030787549,0.3577138969212451,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution
+PLUS_DEBT_INST_MD,3364,2515,0.5722061575097805,0.4277938424902194,integer,aid,Median PLUS loan debt disbursed at this institution
+PLUS_DEBT_ALL_N,4690,1189,0.7977547201905086,0.20224527980949145,integer,aid,Student recipient count for median PLUS loan debt disbursed at all institutions
+PLUS_DEBT_ALL_MD,4319,1560,0.7346487497873788,0.2653512502126212,integer,aid,Median PLUS loan debt disbursed at all institutions
+PLUS_DEBT_INST_COMP_N,2785,3094,0.47372002041163463,0.5262799795883654,integer,aid,Student recipient count for median PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_INST_COMP_MD,2426,3453,0.4126552134716789,0.5873447865283211,integer,aid,Median PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_INST_COMP_MDPAY10,2426,3453,0.4126552134716789,0.5873447865283211,num,aid,Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution
+PLUS_DEBT_ALL_COMP_N,3820,2059,0.6497703691103929,0.35022963088960707,integer,aid,Student recipient count for median PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_COMP_MD,3358,2521,0.5711855757781936,0.4288144242218064,integer,aid,Median PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_ALL_COMP_MDPAY10,3358,2521,0.5711855757781936,0.4288144242218064,num,aid,Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions
+PLUS_DEBT_INST_NOCOMP_N,2785,3094,0.47372002041163463,0.5262799795883654,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-completers at this institution
+PLUS_DEBT_INST_NOCOMP_MD,2426,3453,0.4126552134716789,0.5873447865283211,integer,aid,Median PLUS loan debt disbursed to non-completers at this institution
+PLUS_DEBT_ALL_NOCOMP_N,3820,2059,0.6497703691103929,0.35022963088960707,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions
+PLUS_DEBT_ALL_NOCOMP_MD,3358,2521,0.5711855757781936,0.4288144242218064,integer,aid,Median PLUS loan debt disbursed to non-completers at all institutions
+PLUS_DEBT_INST_MALE_N,2643,3236,0.4495662527640755,0.5504337472359245,integer,aid,Student recipient count for median PLUS loan debt disbursed to males at this institution
+PLUS_DEBT_INST_MALE_MD,2291,3588,0.3896921245109712,0.6103078754890288,integer,aid,Median PLUS loan debt disbursed to males at this institution
+PLUS_DEBT_ALL_MALE_N,3589,2290,0.6104779724442932,0.3895220275557067,integer,aid,Student recipient count for median PLUS loan debt disbursed to males at all institutions
+PLUS_DEBT_ALL_MALE_MD,3244,2635,0.5517945228780404,0.4482054771219595,integer,aid,Median PLUS loan debt disbursed to males at all institutions
+PLUS_DEBT_INST_NOMALE_N,2643,3236,0.4495662527640755,0.5504337472359245,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-males at this institution
+PLUS_DEBT_INST_NOMALE_MD,2291,3588,0.3896921245109712,0.6103078754890288,integer,aid,Median PLUS loan debt disbursed to non-males at this institution
+PLUS_DEBT_ALL_NOMALE_N,3589,2290,0.6104779724442932,0.3895220275557067,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-males at all institutions
+PLUS_DEBT_ALL_NOMALE_MD,3244,2635,0.5517945228780404,0.4482054771219595,integer,aid,Median PLUS loan debt disbursed to non-males at all institutions
+PLUS_DEBT_INST_PELL_N,3031,2848,0.5155638714067018,0.48443612859329815,integer,aid,Student recipient count for median PLUS loan debt disbursed to Pell recipients at this institution
+PLUS_DEBT_INST_PELL_MD,2540,3339,0.432046266371832,0.567953733628168,integer,aid,Median PLUS loan debt disbursed to Pell recipients at this institution
+PLUS_DEBT_ALL_PELL_N,3958,1921,0.673243748936894,0.32675625106310596,integer,aid,Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_ALL_PELL_MD,3498,2381,0.5949991495152237,0.4050008504847763,integer,aid,Median PLUS loan debt disbursed to Pell recipients at all institutions
+PLUS_DEBT_INST_NOPELL_N,3031,2848,0.5155638714067018,0.48443612859329815,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at this institution
+PLUS_DEBT_INST_NOPELL_MD,2540,3339,0.432046266371832,0.567953733628168,integer,aid,Median PLUS loan debt disbursed to non-Pell-recipients at this institution
+PLUS_DEBT_ALL_NOPELL_N,3958,1921,0.673243748936894,0.32675625106310596,integer,aid,Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+PLUS_DEBT_ALL_NOPELL_MD,3498,2381,0.5949991495152237,0.4050008504847763,integer,aid,Median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+PLUS_DEBT_INST_STAFFTHIS_N,1100,4779,0.18710665079095085,0.8128933492090492,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+PLUS_DEBT_INST_STAFFTHIS_MD,620,5259,0.10546011226399048,0.8945398877360096,integer,aid,Median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+PLUS_DEBT_ALL_STAFFTHIS_N,2952,2927,0.5021262119408063,0.49787378805919374,integer,aid,Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+PLUS_DEBT_ALL_STAFFTHIS_MD,2468,3411,0.4197992855927879,0.5802007144072121,integer,aid,Median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+PLUS_DEBT_INST_NOSTAFFTHIS_N,1100,4779,0.18710665079095085,0.8128933492090492,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_INST_NOSTAFFTHIS_MD,620,5259,0.10546011226399048,0.8945398877360096,integer,aid,Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_ALL_NOSTAFFTHIS_N,2952,2927,0.5021262119408063,0.49787378805919374,integer,aid,Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_ALL_NOSTAFFTHIS_MD,2468,3411,0.4197992855927879,0.5802007144072121,integer,aid,Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+PLUS_DEBT_INST_STAFFANY_N,879,5000,0.14951522367749617,0.8504847763225039,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+PLUS_DEBT_INST_STAFFANY_MD,506,5373,0.0860690593638374,0.9139309406361626,integer,aid,Median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+PLUS_DEBT_ALL_STAFFANY_N,1516,4363,0.25786698418098314,0.7421330158190168,integer,aid,Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+PLUS_DEBT_ALL_STAFFANY_MD,928,4951,0.1578499744854567,0.8421500255145433,integer,aid,Median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+PLUS_DEBT_INST_NOSTAFFANY_N,879,5000,0.14951522367749617,0.8504847763225039,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_INST_NOSTAFFANY_MD,506,5373,0.0860690593638374,0.9139309406361626,integer,aid,Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_ALL_NOSTAFFANY_N,1516,4363,0.25786698418098314,0.7421330158190168,integer,aid,Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+PLUS_DEBT_ALL_NOSTAFFANY_MD,928,4951,0.1578499744854567,0.8421500255145433,integer,aid,Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+LPSTAFFORD_CNT,5559,320,0.9455689743153598,0.05443102568464025,integer,aid,Number of borrowers with outstanding federal Direct Loan balances
+LPSTAFFORD_AMT,5559,320,0.9455689743153598,0.05443102568464025,num,aid,Total outstanding federal Direct Loan balance
+LPPPLUS_CNT,4465,1414,0.7594829052559959,0.2405170947440041,integer,aid,Number of students associated with outstanding Parent PLUS Loan balances
+LPPPLUS_AMT,4465,1414,0.7594829052559959,0.2405170947440041,num,aid,Total outstanding Parent PLUS Loan balance
+LPGPLUS_CNT,1377,4502,0.23422350739921757,0.7657764926007824,integer,aid,Number of students associated with outstanding Grad PLUS Loan balances
+LPGPLUS_AMT,1377,4502,0.23422350739921757,0.7657764926007824,num,aid,Total outstanding Grad PLUS Loan balance
+PELLCAT,5879,0,1,0,factor,created,NA

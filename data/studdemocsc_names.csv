@@ -1,0 +1,13 @@
+Variable,n,nmiss,n_pct,nmiss_pct,Type,dev_cat,Definition
+UNITID,5879,0,1,0,character,root,Unit ID for institution
+INSTNM,5879,0,1,0,character,school,Institution name
+HSI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Hispanic-serving institution
+HBCU,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Historically Black College and University
+ANNHI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Alaska Native Native Hawaiian serving institution
+PBI,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for predominantly black institution
+TRIBAL,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for tribal college and university
+MENONLY,5879,0,1,0,factor,school,Flag for men-only college
+"NANTI",5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Native American non-tribal institution
+WOMENONLY,5879,0,1,0,factor,school,Flag for women-only college
+AANAPII,5875,4,0.999319612178942,6.80387821058003e-4,factor,school,Flag for Asian American Native American Pacific Islander-serving institution
+DISTANCEONLY,5879,0,1,0,factor,school,Flag for distance-education-only education

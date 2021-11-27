@@ -1,0 +1,164 @@
+Variable,n,nmiss,n_pct,nmiss_pct,Type,dev_cat,Definition
+UNITID,5879,0,1,0,character,root,Unit ID for institution
+INSTNM,5879,0,1,0,character,school,Institution name
+NUMBRANCH,5879,0,1,0,integer,school,Number of branch campuses
+PCTFLOAN,5879,0,1,0,num,aid,Percent of all undergraduate students receiving a federal student loan
+D_PCTPELL_PCTFLOAN,5879,0,1,0,integer,student,Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)
+SCUGFFN,5879,0,1,0,integer,student,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
+UGDS,5878,1,0.9998299030447355,1.7009695526450075e-4,integer,student,Enrollment of undergraduate certificate/degree-seeking students
+UGDS_WHITE,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are white
+UGDS_BLACK,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are black
+UGDS_HISP,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+UGDS_ASIAN,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Asian
+UGDS_AIAN,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+UGDS_NHPI,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander
+UGDS_2MOR,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are two or more races
+UGDS_NRA,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens
+UGDS_UNKN,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students whose race is unknown
+UGDS_MEN,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are men
+UGDS_WOMEN,5878,1,0.9998299030447355,1.7009695526450075e-4,num,student,Total share of enrollment of undergraduate degree-seeking students who are women
+UG12MN,5876,3,0.9994897091342065,5.102908657935023e-4,integer,student,Unduplicated count of undergraduate students enrolled during a 12 month period
+TUITFTE,5869,10,0.998299030447355,0.0017009695526450078,integer,school,Net tuition revenue per full-time equivalent student
+INEXPFTE,5869,10,0.998299030447355,0.0017009695526450078,integer,school,Instructional expenditures per full-time equivalent student
+PPTUG_EF,5865,14,0.997618642626297,0.0023813573737030106,num,student,"Share of undergraduate, degree-/certificate-seeking students who are part-time"
+FTFTPCTPELL,5605,274,0.9533934342575268,0.04660656574247321,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant"
+FTFTPCTFLOAN,5605,274,0.9533934342575268,0.04660656574247321,num,aid,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan"
+PFTFTUG1_EF,5561,318,0.9459091682258888,0.054090831774111246,num,student,"Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students"
+LPSTAFFORD_CNT,5559,320,0.9455689743153598,0.05443102568464025,integer,aid,Number of borrowers with outstanding federal Direct Loan balances
+LPSTAFFORD_AMT,5559,320,0.9455689743153598,0.05443102568464025,num,aid,Total outstanding federal Direct Loan balance
+DEBT_N,5297,582,0.9010035720360605,0.09899642796393944,integer,aid,The number of students in the median debt cohort
+PPLUS_PCT_LOW,5290,589,0.899812893349209,0.10018710665079095,integer,aid,Lower bound of estimated percentage range of students whose parents took out a PLUS loan
+PPLUS_PCT_HIGH,5290,589,0.899812893349209,0.10018710665079095,integer,aid,Upper bound of estimated percentage range of students whose parents took out a PLUS loan
+DEBT_MDN,5202,677,0.884844361285933,0.11515563871406702,num,aid,The median original amount of the loan principal upon entering repayment
+DBRR1_FED_UG_N,5201,678,0.8846742643306685,0.11532573566933152,integer,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UG_NUM,5201,678,0.8846742643306685,0.11532573566933152,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UG_DEN,5201,678,0.8846742643306685,0.11532573566933152,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UG_RT,5201,678,0.8846742643306685,0.11532573566933152,num,repayment,Undergraduate federal student loan dollar-based 1-year repayment rate
+BBRR2_FED_UG_N,5114,765,0.8698758292226569,0.1301241707773431,integer,repayment,Undergraduate federal student loan borrower-based 2-year borrower count
+CDR3,5093,786,0.8663037931621024,0.1336962068378976,num,repayment,Three-year cohort default rate
+CDR3_DENOM,5093,786,0.8663037931621024,0.1336962068378976,integer,repayment,Number of students in the cohort for the three-year cohort default rate
+DBRR4_FED_UG_N,5017,862,0.8533764245620004,0.14662357543799967,integer,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UG_NUM,5017,862,0.8533764245620004,0.14662357543799967,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UG_DEN,5017,862,0.8533764245620004,0.14662357543799967,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UG_RT,5017,862,0.8533764245620004,0.14662357543799967,num,repayment,Undergraduate federal student loan dollar-based 4-year repayment rate
+LO_INC_DEBT_N,4966,913,0.8447014798435108,0.1552985201564892,integer,aid,"The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort"
+DBRR5_FED_UG_N,4960,919,0.8436808981119238,0.1563191018880762,integer,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate borrower count
+DBRR5_FED_UG_NUM,4960,919,0.8436808981119238,0.1563191018880762,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate numerator
+DBRR5_FED_UG_DEN,4960,919,0.8436808981119238,0.1563191018880762,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate denominator
+DBRR5_FED_UG_RT,4960,919,0.8436808981119238,0.1563191018880762,num,repayment,Undergraduate federal student loan dollar-based 5-year repayment rate
+GRAD_DEBT_N,4882,997,0.8304133356012927,0.16958666439870726,integer,aid,The number of students in the median debt completers cohort
+WDRAW_DEBT_N,4882,997,0.8304133356012927,0.16958666439870726,integer,aid,The number of students in the median debt withdrawn cohort
+DEP_DEBT_N,4870,1009,0.8283721721381188,0.17162782786188127,integer,aid,The number of students in the median debt dependent students cohort
+IND_DEBT_N,4870,1009,0.8283721721381188,0.17162782786188127,integer,aid,The number of students in the median debt independent students cohort
+GRAD_DEBT_MDN,4786,1093,0.8140840278959006,0.18591597210409933,num,aid,The median debt for students who have completed
+GRAD_DEBT_MDN10YR,4786,1093,0.8140840278959006,0.18591597210409933,num,aid,Median loan debt of completers in monthly payments (10-year amortization plan)
+BBRR2_FED_UG_FBR,4761,1118,0.8098316040142881,0.19016839598571186,num,repayment,Percentage of undergraduate federal student loan borrowers in forbearance after 2 years
+DBRR4_FED_UGCOMP_N,4756,1123,0.8089811192379657,0.19101888076203435,integer,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGCOMP_NUM,4756,1123,0.8089811192379657,0.19101888076203435,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGCOMP_DEN,4756,1123,0.8089811192379657,0.19101888076203435,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGCOMP_RT,4756,1123,0.8089811192379657,0.19101888076203435,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate
+BBRR2_FED_UG_NOPROG,4739,1140,0.8060894709984692,0.19391052900153088,num,repayment,Percentage of undergraduate federal student loan borrowers not making progress after 2 years
+BBRR2_FED_UG_MAKEPROG,4726,1153,0.8038782105800306,0.19612178941996938,num,repayment,Percentage of undergraduate federal student loan borrowers making progress after 2 years
+DBRR1_FED_UGCOMP_N,4713,1166,0.8016669501615921,0.19833304983840788,integer,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+DBRR1_FED_UGCOMP_NUM,4713,1166,0.8016669501615921,0.19833304983840788,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+DBRR1_FED_UGCOMP_DEN,4713,1166,0.8016669501615921,0.19833304983840788,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+DBRR1_FED_UGCOMP_RT,4713,1166,0.8016669501615921,0.19833304983840788,num,repayment,Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate
+BBRR2_FED_UGCOMP_N,4709,1170,0.8009865623405341,0.19901343765946589,integer,repayment,Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count
+LO_INC_DEBT_MDN,4705,1174,0.800306174519476,0.1996938254805239,num,aid,"The median debt for students with family income between $0-$30,000"
+PELL_DEBT_N,4685,1194,0.7969042354141861,0.2030957645858139,integer,aid,The number of students in the median debt Pell students cohort
+NOPELL_DEBT_N,4685,1194,0.7969042354141861,0.2030957645858139,integer,aid,The number of students in the median debt no-Pell students cohort
+WDRAW_DEBT_MDN,4637,1242,0.78873958156149,0.21126041843850996,num,aid,The median debt for students who have not completed
+FIRSTGEN_DEBT_N,4613,1266,0.784657254635142,0.21534274536485798,integer,aid,The number of students in the median debt first-generation students cohort
+NOTFIRSTGEN_DEBT_N,4613,1266,0.784657254635142,0.21534274536485798,integer,aid,The number of students in the median debt not-first-generation students cohort
+DEP_DEBT_MDN,4539,1340,0.772070079945569,0.22792992005443102,num,aid,The median debt for dependent students
+IND_DEBT_MDN,4539,1340,0.772070079945569,0.22792992005443102,num,aid,The median debt for independent students
+LPPPLUS_CNT,4465,1414,0.7594829052559959,0.2405170947440041,integer,aid,Number of students associated with outstanding Parent PLUS Loan balances
+LPPPLUS_AMT,4465,1414,0.7594829052559959,0.2405170947440041,num,aid,Total outstanding Parent PLUS Loan balance
+DBRR10_FED_UG_N,4436,1443,0.7545500935533254,0.2454499064466746,integer,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate borrower count
+DBRR10_FED_UG_NUM,4436,1443,0.7545500935533254,0.2454499064466746,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate numerator
+DBRR10_FED_UG_DEN,4436,1443,0.7545500935533254,0.2454499064466746,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate denominator
+DBRR10_FED_UG_RT,4436,1443,0.7545500935533254,0.2454499064466746,num,repayment,Undergraduate federal student loan dollar-based 10-year repayment rate
+FEMALE_DEBT_N,4401,1478,0.7485967001190679,0.25140329988093213,integer,aid,The number of students in the median debt female students cohort
+MALE_DEBT_N,4401,1478,0.7485967001190679,0.25140329988093213,integer,aid,The number of students in the median debt male students cohort
+MD_INC_DEBT_N,4382,1497,0.7453648579690424,0.25463514203095766,integer,aid,"The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
+HI_INC_DEBT_N,4379,1500,0.7448545671032488,0.2551454328967511,integer,aid,"The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort"
+PELL_DEBT_MDN,4360,1519,0.7416227249532233,0.25837727504677666,num,aid,The median debt for Pell students
+NOPELL_DEBT_MDN,4360,1519,0.7416227249532233,0.25837727504677666,num,aid,The median debt for no-Pell students
+DBRR4_FED_UGUNK_N,4358,1521,0.7412825310426944,0.2587174689573057,integer,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGUNK_NUM,4358,1521,0.7412825310426944,0.2587174689573057,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGUNK_DEN,4358,1521,0.7412825310426944,0.2587174689573057,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGUNK_RT,4358,1521,0.7412825310426944,0.2587174689573057,num,repayment,Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+DBRR4_FED_UGNOCOMP_N,4302,1577,0.7317571015478823,0.2682428984521177,integer,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+DBRR4_FED_UGNOCOMP_NUM,4302,1577,0.7317571015478823,0.2682428984521177,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+DBRR4_FED_UGNOCOMP_DEN,4302,1577,0.7317571015478823,0.2682428984521177,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+DBRR4_FED_UGNOCOMP_RT,4302,1577,0.7317571015478823,0.2682428984521177,num,repayment,Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+FIRSTGEN_DEBT_MDN,4238,1641,0.7208708964109543,0.27912910358904575,num,aid,The median debt for first-generation students
+NOTFIRSTGEN_DEBT_MDN,4238,1641,0.7208708964109543,0.27912910358904575,num,aid,The median debt for not-first-generation students
+FEMALE_DEBT_MDN,4110,1769,0.6990984861370981,0.30090151386290187,num,aid,The median debt for female students
+MALE_DEBT_MDN,4110,1769,0.6990984861370981,0.30090151386290187,num,aid,The median debt for male students
+BBRR2_FED_UG_DFR,4051,1828,0.6890627657764926,0.3109372342235074,num,repayment,Percentage of undergraduate federal student loan borrowers in deferment after 2 years
+MD_INC_DEBT_MDN,3991,1888,0.6788569484606225,0.32114305153937744,num,aid,"The median debt for students with family income between $30,001-$75,000"
+HI_INC_DEBT_MDN,3985,1894,0.6778363667290356,0.3221636332709644,num,aid,"The median debt for students with family income $75,001+"
+DBRR20_FED_UG_N,3980,1899,0.676985881952713,0.32301411804728697,integer,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate borrower count
+DBRR20_FED_UG_NUM,3980,1899,0.676985881952713,0.32301411804728697,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate numerator
+DBRR20_FED_UG_DEN,3980,1899,0.676985881952713,0.32301411804728697,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate denominator
+DBRR20_FED_UG_RT,3980,1899,0.676985881952713,0.32301411804728697,num,repayment,Undergraduate federal student loan dollar-based 20-year repayment rate
+BBRR2_FED_UG_DFLT,3819,2060,0.6496002721551284,0.35039972784487156,num,repayment,Percentage of undergraduate federal student loan borrowers in default after 2 years
+PLUS_DEBT_INST_N,3776,2103,0.6422861030787549,0.3577138969212451,integer,aid,Student recipient count for median PLUS loan debt disbursed at this institution
+BBRR2_FED_UGCOMP_NOPROG,3757,2122,0.6390542609287294,0.36094573907127064,num,repayment,Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years
+DBRR1_PP_UG_N,3708,2171,0.6307195101207689,0.3692804898792312,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+DBRR1_PP_UG_NUM,3708,2171,0.6307195101207689,0.3692804898792312,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate numerator
+DBRR1_PP_UG_DEN,3708,2171,0.6307195101207689,0.3692804898792312,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate denominator
+DBRR1_PP_UG_RT,3708,2171,0.6307195101207689,0.3692804898792312,num,repayment,Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate
+OMACHT6_FTFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_FTFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages)"
+OMACHT6_PTFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT6_FTNFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+OMACHT8_FTNFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages)"
+OMACHT6_PTNFT,3675,2204,0.6251063105970404,0.3748936894029597,integer,completion,"Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
+AVGFACSAL,3674,2205,0.6249362136417758,0.3750637863582242,integer,school,Average faculty salary
+OMENRYP_FULLTIME,3656,2223,0.6218744684470148,0.37812553155298523,num,completion,Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FULLTIME,3656,2223,0.6218744684470148,0.37812553155298523,num,completion,Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FULLTIME,3656,2223,0.6218744684470148,0.37812553155298523,num,completion,Percentage of full-time student receiving an award within 8 years of entry
+OMENRUP_FULLTIME,3656,2223,0.6218744684470148,0.37812553155298523,num,completion,Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+NUM4_PRIV,3622,2257,0.6160911719680218,0.38390882803197823,integer,cost,Number of Title IV students (private for-profit and nonprofit institutions)
+NPT4_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,Average net price for Title IV institutions (private for-profit and nonprofit institutions)
+NUM41_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,"Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)"
+NUM42_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,"Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
+NUM43_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,"Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
+NUM44_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,"Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
+NUM45_PRIV,3621,2258,0.6159210750127573,0.3840789249872427,integer,cost,"Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)"
+BBRR2_FED_UGCOMP_FBR,3596,2283,0.6116686511311448,0.38833134886885523,num,repayment,Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years
+NPT4_048_PRIV,3592,2287,0.6109882633100867,0.38901173668991323,integer,cost,"Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)"
+OMENRYP_FIRSTTIME,3573,2306,0.6077564211600612,0.39224357883993877,num,completion,Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_FIRSTTIME,3573,2306,0.6077564211600612,0.39224357883993877,num,completion,Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_FIRSTTIME,3573,2306,0.6077564211600612,0.39224357883993877,num,completion,Percentage of first-time student receiving an award within 8 years of entry
+OMENRUP_FIRSTTIME,3573,2306,0.6077564211600612,0.39224357883993877,num,completion,Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+OMENRYP_NOTFIRSTTIME,3568,2311,0.6069059363837387,0.39309406361626126,num,completion,Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+OMENRAP_NOTFIRSTTIME,3568,2311,0.6069059363837387,0.39309406361626126,num,completion,Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+OMAWDP8_NOTFIRSTTIME,3568,2311,0.6069059363837387,0.39309406361626126,num,completion,Percentage of not first-time student receiving an award within 8 years of entry
+OMENRUP_NOTFIRSTTIME,3568,2311,0.6069059363837387,0.39309406361626126,num,completion,Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+NPT41_PRIV,3555,2324,0.6046946759653002,0.39530532403469976,integer,cost,"Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)"
+OMAWDP6_FTFT,3541,2338,0.6023133185915972,0.3976866814084028,num,completion,"Percentage of full-time, first-time student receiving an award within 6 years of entry"
+OMAWDP8_FTFT,3541,2338,0.6023133185915972,0.3976866814084028,num,completion,"Percentage of full-time, first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTFT,3541,2338,0.6023133185915972,0.3976866814084028,num,completion,"Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTFT,3541,2338,0.6023133185915972,0.3976866814084028,num,completion,"Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTFT,3541,2338,0.6023133185915972,0.3976866814084028,num,completion,"Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+DBRR5_PP_UG_N,3541,2338,0.6023133185915972,0.3976866814084028,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate borrower count
+DBRR5_PP_UG_NUM,3541,2338,0.6023133185915972,0.3976866814084028,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate numerator
+DBRR5_PP_UG_DEN,3541,2338,0.6023133185915972,0.3976866814084028,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate denominator
+DBRR5_PP_UG_RT,3541,2338,0.6023133185915972,0.3976866814084028,num,repayment,Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate
+OMAWDP6_FTNFT,3538,2341,0.6018030277258037,0.3981969722741963,num,completion,"Percentage of full-time, not first-time student receiving an award within 6 years of entry"
+OMAWDP8_FTNFT,3538,2341,0.6018030277258037,0.3981969722741963,num,completion,"Percentage of full-time, not first-time student receiving an award within 8 years of entry"
+OMENRYP8_FTNFT,3538,2341,0.6018030277258037,0.3981969722741963,num,completion,"Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
+OMENRAP8_FTNFT,3538,2341,0.6018030277258037,0.3981969722741963,num,completion,"Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
+OMENRUP8_FTNFT,3538,2341,0.6018030277258037,0.3981969722741963,num,completion,"Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
+BBRR2_PP_UG_N,3525,2354,0.5995917673073652,0.4004082326926348,integer,repayment,Undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+BBRR2_FED_UGNOCOMP_N,3509,2370,0.5968702160231332,0.40312978397686683,integer,repayment,Undergraduate non-completer undergraduate federal student loan borrower-based 2-year borrower count
+DBRR4_PP_UG_N,3478,2401,0.5915972104099336,0.4084027895900663,integer,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+DBRR4_PP_UG_NUM,3478,2401,0.5915972104099336,0.4084027895900663,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate numerator
+DBRR4_PP_UG_DEN,3478,2401,0.5915972104099336,0.4084027895900663,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate denominator
+DBRR4_PP_UG_RT,3478,2401,0.5915972104099336,0.4084027895900663,num,repayment,Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate
+TUITIONFEE_IN,3452,2427,0.5871746895730566,0.41282531042694337,integer,cost,In-state tuition and fees
+TUITIONFEE_OUT,3452,2427,0.5871746895730566,0.41282531042694337,integer,cost,Out-of-state tuition and fees
+PLUS_DEBT_INST_MD,3364,2515,0.5722061575097805,0.4277938424902194,integer,aid,Median PLUS loan debt disbursed at this institution

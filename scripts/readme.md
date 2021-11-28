@@ -5,3 +5,25 @@ After finding the number of missing values for each column I dropped columns tha
 There was 801 variables left over, of which I dropped all debt variables thats name contained "PLUS_DEBT_ALL". These variables include all of the debt the students at that institutions has accumulated over all institutions. Since I am only using one school year, I dropped the variables thats name contained "POOLED" and "SUPP". The other variables I dropped were INSTURL, NPCURL, ALIAS, FEDSCHCD, CIPTITLE1, CIPTITLE2, CIPTITLE3, CIPTITLE4, CIPTITLE5, CIPTITLE6, CIPCODE1, CIPCODE2, CIPCODE3, CIPCODE4, CIPCODE5, and CIPCODE6 since they contain data that is not useful for this project.
 
 Next, I calculated the proportion of missing values and dropped the columns with 42.8% or more missing values. This process left 432 variables, of which 13 variables categorical or ordinal variables and 159 numeric variables needs to be imputed.
+
+
+## idcsc.csv:
+
+
+## cipcsc.csv:
+
+
+## geoloccsc.csv:
+
+
+## instdemocsc.csv:
+
+
+## studdemocsc.csv:
+
+
+## pcipcsc.csv:
+
+
+## numcsc.csv:
+

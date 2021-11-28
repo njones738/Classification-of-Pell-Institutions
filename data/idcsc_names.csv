@@ -1,8 +1,0 @@
-Variable,n,nmiss,n_pct,nmiss_pct,Type,dev_cat,Definition
-UNITID,5879,0,1,0,character,root,Unit ID for institution
-FEDSCHCD,5874,5,0.9991495152236775,8.504847763225039e-4,character,root,Federal School Code
-OPEID,5879,0,1,0,character,root,8-digit OPE ID for institution
-OPEID6,5879,0,1,0,character,root,6-digit OPE ID for institution
-INSTNM,5879,0,1,0,character,school,Institution name
-PELLCAT,5879,0,1,0,factor,created,NA
-PCTPELL,5879,0,1,0,num,aid,Percentage of undergraduates who receive a Pell Grant

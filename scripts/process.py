@@ -484,25 +484,95 @@ full_df = pd.merge(full_df, pcip_csc.drop(["INSTNM", "ids"], axis = 1), how = 'l
 full_df = pd.merge(full_df, num_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
                    left_on = "UNITID", right_on = "UNITID",
                    suffixes=("_cip", "_geo"))
+
+full_df["MDN_EST_TOTAL_DEBT"] = full_df["DEBT_MDN"] * full_df["DEBT_N"]
+full_df["MDN_EST_TOTAL_GRAD_DEBT"] = full_df["GRAD_DEBT_MDN"] * full_df["GRAD_DEBT_N"]
+full_df["MDN_EST_TOTAL_WDRAW_DEBT"] = full_df["WDRAW_DEBT_MDN"] * full_df["WDRAW_DEBT_N"]
+full_df["MDN_EST_TOTAL_LO_INC_DEBT"] = full_df["LO_INC_DEBT_MDN"] * full_df["LO_INC_DEBT_N"]
+full_df["MDN_EST_TOTAL_MD_INC_DEBT"] = full_df["MD_INC_DEBT_MDN"] * full_df["MD_INC_DEBT_N"]
+full_df["MDN_EST_TOTAL_HI_INC_DEBT"] = full_df["HI_INC_DEBT_MDN"] * full_df["HI_INC_DEBT_N"]
+full_df["MDN_EST_TOTAL_DEP_DEBT"] = full_df["DEP_DEBT_MDN"] * full_df["DEP_DEBT_N"]
+full_df["MDN_EST_TOTAL_IND_DEBT"] = full_df["IND_DEBT_MDN"] * full_df["IND_DEBT_N"]
+full_df["MDN_EST_TOTAL_PELL_DEBT"] = full_df["PELL_DEBT_MDN"] * full_df["PELL_DEBT_N"]
+full_df["MDN_EST_TOTAL_NOPELL_DEBT"] = full_df["NOPELL_DEBT_MDN"] * full_df["NOPELL_DEBT_N"]
+full_df["MDN_EST_TOTAL_FEMALE_DEBT"] = full_df["FEMALE_DEBT_MDN"] * full_df["FEMALE_DEBT_N"]
+full_df["MDN_EST_TOTAL_MALE_DEBT"] = full_df["MALE_DEBT_MDN"] * full_df["MALE_DEBT_N"]
+full_df["MDN_EST_TOTAL_FIRSTGEN_DEBT"] = full_df["FIRSTGEN_DEBT_MDN"] * full_df["FIRSTGEN_DEBT_N"]
+full_df["MDN_EST_TOTAL_NOTFIRSTGEN_DEBT"] = full_df["NOTFIRSTGEN_DEBT_MDN"] * full_df["NOTFIRSTGEN_DEBT_N"]
+full_df["MDN_EST_TOTAL_PLUS_DEBT_INST"] = full_df["PLUS_DEBT_INST_MD"] * full_df["PLUS_DEBT_INST_N"]
+full_df["DEFAULT_3YR"] = full_df["CDR3"] * full_df["CDR3_DENOM"]
+full_df["NUM_LOAN_STUDENT"] = full_df["PCTFLOAN"] * full_df["D_PCTPELL_PCTFLOAN"]
+full_df["NUM_FTFT_PELL_STUDENT"] = full_df["FTFTPCTPELL"] * full_df["SCUGFFN"]
+full_df["NUM_FTFT_LOAN_STUDENT"] = full_df["FTFTPCTFLOAN"] * full_df["SCUGFFN"]
+full_df["NUM_GRAD6_FTFT"] = full_df["OMACHT6_FTFT"] * full_df["OMAWDP6_FTFT"]
+full_df["NUM_GRAD6_FTNFT"] = full_df["OMACHT6_FTNFT"] * full_df["OMAWDP6_FTNFT"]
+full_df["NUM_GRAD8_FTFT"] = full_df["OMAWDP8_FTFT"] * full_df["OMACHT8_FTFT"]
+full_df["NUM_STILL_ENRL8_FTFT"] = full_df["OMENRYP8_FTFT"] * full_df["OMACHT8_FTFT"]
+full_df["NUM_TRANSFER8_FTFT"] = full_df["OMENRAP8_FTFT"] * full_df["OMACHT8_FTFT"]
+full_df["NUM_STATUS_UNKN_FTFT"] = full_df["OMENRUP8_FTFT"] * full_df["OMACHT8_FTFT"]
+full_df["NUM_GRAD8_FTNFT"] = full_df["OMAWDP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
+full_df["NUM_STILL_ENRL8_FTNFT"] = full_df["OMENRYP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
+full_df["NUM_TRANSFER8_FTNFT"] = full_df["OMENRAP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
+full_df["NUM_STATUS_UNKN_FTNFT"] = full_df["OMENRUP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
+full_df["NUM_FTFT_STUDENT"] = full_df["NUM_GRAD8_FTFT"] + full_df["NUM_STILL_ENRL8_FTFT"] + full_df["NUM_TRANSFER8_FTFT"] + full_df["NUM_STATUS_UNKN_FTFT"]
+full_df["NUM_FTNFT_STUDENT"] = full_df["NUM_GRAD8_FTNFT"] + full_df["NUM_STILL_ENRL8_FTNFT"] + full_df["NUM_TRANSFER8_FTNFT"] + full_df["NUM_STATUS_UNKN_FTNFT"]
+full_df["NUM_FULLTIME_STUDENT"] = full_df["NUM_FTFT_STUDENT"] + full_df["NUM_FTNFT_STUDENT"]
+full_df["NUM_GRAD11_FULLTIME"] = full_df["OMAWDP8_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
+full_df["NUM_STILL_ENRL11_FULLTIME"] = full_df["OMENRYP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
+full_df["NUM_TRANSFER11_FULLTIME"] = full_df["OMENRAP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
+full_df["NUM_STATUS_UNKN_FULLTIME"] = full_df["OMENRUP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
+full_df["DBRR1_FED_UG_BALANCE_REMAINING"] = full_df["DBRR1_FED_UG_DEN"] - full_df["DBRR1_FED_UG_NUM"]
+full_df["DBRR1_FED_UGCOMP_BALANCE_REMAINING"] = full_df["DBRR1_FED_UGCOMP_DEN"] - full_df["DBRR1_FED_UGCOMP_NUM"]
+full_df["DBRR4_FED_UG_BALANCE_REMAINING"] = full_df["DBRR4_FED_UG_DEN"] - full_df["DBRR4_FED_UG_NUM"]
+full_df["DBRR4_FED_UGCOMP_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGCOMP_DEN"] - full_df["DBRR4_FED_UGCOMP_NUM"]
+full_df["DBRR4_FED_UGNOCOMP_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGNOCOMP_DEN"] - full_df["DBRR4_FED_UGNOCOMP_NUM"]
+full_df["DBRR4_FED_UGUNK_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGUNK_DEN"] - full_df["DBRR4_FED_UGUNK_NUM"]
+full_df["DBRR5_FED_UG_BALANCE_REMAINING"] = full_df["DBRR5_FED_UG_DEN"] - full_df["DBRR5_FED_UG_NUM"]
+full_df["DBRR10_FED_UG_BALANCE_REMAINING"] = full_df["DBRR10_FED_UG_DEN"] - full_df["DBRR10_FED_UG_NUM"]
+full_df["DBRR20_FED_UG_BALANCE_REMAINING"] = full_df["DBRR20_FED_UG_DEN"] - full_df["DBRR20_FED_UG_NUM"]
+full_df["DBRR1_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_FED_UG_NUM"] / full_df["DBRR1_FED_UG_N"]
+full_df["DBRR1_FED_UGCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_FED_UGCOMP_NUM"] / full_df["DBRR1_FED_UGCOMP_N"]
+full_df["DBRR4_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UG_NUM"] / full_df["DBRR4_FED_UG_N"]
+full_df["DBRR4_FED_UGCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGCOMP_NUM"] / full_df["DBRR4_FED_UGCOMP_N"]
+full_df["DBRR4_FED_UGNOCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGNOCOMP_NUM"] / full_df["DBRR4_FED_UGNOCOMP_N"]
+full_df["DBRR4_FED_UGUNK_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGUNK_NUM"] / full_df["DBRR4_FED_UGUNK_N"]
+full_df["DBRR5_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR5_FED_UG_NUM"] / full_df["DBRR5_FED_UG_N"]
+full_df["DBRR10_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR10_FED_UG_NUM"] / full_df["DBRR10_FED_UG_N"]
+full_df["DBRR20_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR20_FED_UG_NUM"] / full_df["DBRR20_FED_UG_N"]
+full_df["NUM_ALL_UNDERGRADS_DFLT_in2yr"] = full_df["BBRR2_FED_UG_DFLT"] * full_df["BBRR2_FED_UG_N"]
+full_df["NUM_ALL_UNDERGRADS_FBR_in2yr"] = full_df["BBRR2_FED_UG_FBR"] * full_df["BBRR2_FED_UG_N"]
+full_df["NUM_ALL_UNDERGRADS_DFR_in2yr"] = full_df["BBRR2_FED_UG_DFR"] * full_df["BBRR2_FED_UG_N"]
+full_df["NUM_ALL_UNDERGRADS_NOPROG_in2yr"] = full_df["BBRR2_FED_UG_NOPROG"] * full_df["BBRR2_FED_UG_N"]
+full_df["NUM_ALL_UNDERGRADS_MAKEPROG_in2yr"] = full_df["BBRR2_FED_UG_MAKEPROG"] * full_df["BBRR2_FED_UG_N"]
+full_df["NUM_COMPLETERS_FBR_in2yr"] = full_df["BBRR2_FED_UGCOMP_FBR"] * full_df["BBRR2_FED_UGCOMP_N"]
+full_df["NUM_COMPLETERS_NOPROG_in2yr"] = full_df["BBRR2_FED_UGCOMP_NOPROG"] * full_df["BBRR2_FED_UGCOMP_N"]
+full_df["DBRR1_PP_UG_BALANCE_REMAINING"] = full_df["DBRR1_PP_UG_DEN"] - full_df["DBRR1_PP_UG_NUM"]
+full_df["DBRR4_PP_UG_BALANCE_REMAINING"] = full_df["DBRR4_PP_UG_DEN"] - full_df["DBRR4_PP_UG_NUM"]
+full_df["DBRR5_PP_UG_BALANCE_REMAINING"] = full_df["DBRR5_PP_UG_DEN"] - full_df["DBRR5_PP_UG_NUM"]
+full_df["DBRR1_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_PP_UG_NUM"] / full_df["DBRR1_PP_UG_N"]
+full_df["DBRR4_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_PP_UG_NUM"] / full_df["DBRR4_PP_UG_N"]
+full_df["DBRR5_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR5_PP_UG_NUM"] / full_df["DBRR5_PP_UG_N"]
+full_df.drop("D_PCTPELL_PCTFLOAN", axis = 1)
 full_df.to_csv("full_df.csv")
-# %%
-
-
 
 #%%
-id_csc.to_csv("idcsc.csv")
-cip_csc.to_csv("cipcsc.csv")
-geolocation_csc.to_csv("geoloccsc.csv")
-inst_demographic_csc.to_csv("instdemocsc.csv")
-stud_demographic_csc.to_csv("studdemocsc.csv")
-pcip_csc.to_csv("pcipcsc.csv")
-num_csc.to_csv("numcsc.csv")
-tar_csc.to_csv("tarcsc.csv")
-target_variable
+id_csc.to_feather("postprocess/idcsc.feather")
+cip_csc.to_feather("postprocess/cipcsc.feather")
+geolocation_csc.to_feather("postprocess/geoloccsc.feather")
+inst_demographic_csc.to_feather("postprocess/instdemocsc.feather")
+stud_demographic_csc.to_feather("postprocess/studdemocsc.feather")
+pcip_csc.to_feather("postprocess/pcipcsc.feather")
+num_csc.to_feather("postprocess/numcsc.feather")
+target_variable.to_feather("postprocess/tarcsc.feather")
+full_df.to_feather("postprocess/fulldf.feather")
 
 # %%
 drop_rows = inst_demographic_csc.query("CONTROL != 1").query("CONTROL != 2").query("CONTROL != 3").ids
 drop_rows
 # inst_demographic_csc = inst_demographic_csc.drop(index = drop_rows)
+
+# %%
+
+
 
 # %%

@@ -140,6 +140,16 @@ CollegeScorecard18 <- read_csv(csc_pth,
                              CIP51CERT4, CIP52ASSOC, CIP52BACHL, CIP52CERT1, CIP52CERT2, CIP52CERT4, CIP54ASSOC, CIP54BACHL, CIP54CERT1,  # nolint
                              CIP54CERT2, CIP54CERT4)
 #######################################################################
+names(CollegeScorecard18)
+CollegeScorecard18 %>%
+        group_by(PELLCAT) %>%
+        summarise(count = n())
+
+CollegeScorecard18 %>%
+        see_missing() %>%
+        filter(n_pct != 1)
+        view()
+
 #######################################################################
 
 #### DATA SUBSETTING
@@ -204,13 +214,13 @@ write_feather(num_csc, numcsc)
 # pcipcsc <- "data/datasubsets/csc_variable_subsets/pcip_csc.feather"
 # numcsc <- "data/datasubsets/csc_variable_subsets/num_csc.feather"
 
-idcsc <- read_feather(idcsc)
-cipcsc <- read_feather(cipcsc)
-geoloccsc <- read_feather(geoloccsc)
-instdemocsc <- read_feather(instdemocsc)
-studdemocsc <- read_feather(studdemocsc)
-pcipcsc <- read_feather(pcipcsc)
-numcsc <- read_feather(numcsc)
+# idcsc <- read_feather(idcsc)
+# cipcsc <- read_feather(cipcsc)
+# geoloccsc <- read_feather(geoloccsc)
+# instdemocsc <- read_feather(instdemocsc)
+# studdemocsc <- read_feather(studdemocsc)
+# pcipcsc <- read_feather(pcipcsc)
+# numcsc <- read_feather(numcsc)
 
 see_missing(idcsc) %>%
         left_join(data_dict %>% select(Variable, Type, dev_cat, Definition),
@@ -247,3 +257,40 @@ see_missing(numcsc) %>%
                   by = "Variable") %>%
         view(title = "numcsc")
         # write_csv("data/numcsc_names.csv")
+
+fdf <- read_csv("scripts/full_df.csv")
+
+lst <- fdf %>%
+        select(-contains("encoded"), -contains("desc"),
+               -contains("CERT"), -contains("ASSOC"),
+               -contains("BACHL"), -contains("FIPS"),
+               -contains("REGION"), -contains("CCB_"),
+               -contains("LOC_"), -contains("CCPROF_"),
+               -contains("ZIP"), -contains("OPEFLAG"),
+               -contains("HCM2"), -contains("Season"),
+               -starts_with("T4"), -contains("ICLEVEL"), 
+               -contains("PREDDEG"), -contains("HIGHDEG"),
+               -contains("CONTROL"), -contains("CUR"),
+               -contains("ACCRED"), -contains("CUR"),
+               -contains("HSI"), -contains("MENONLY"),
+               -contains("HBCU"), -contains("TRIBAL"),
+               -contains("ANNHI"), -contains("PBI"),
+               -contains("CCSS"), -contains("MAIN"),
+               -contains("OPENADMP"), -contains("NANTI"),
+               -contains("ccss"), -contains("AANAPII"),
+               -INSTNM, -CITY, -STABBR, -LOCALE, -CCBASIC,
+               -CCSIZSET, -CCUGPROF, -DISTANCEONLY, -D_PCTPELL_PCTFLOAN,
+               -"...1", -"ids", "CITY Encoded", "INSTNM Encoded",
+               "ZIP2 Encoded", "ZIP3 Encoded", "ZIP4 Encoded", "ZIP5 Encoded",
+               "Season Encoded", contains("BALANCE_REMAINING")
+               ) %>%
+        # write_csv("numeric_only.csv")
+        # see_missing() %>%
+        # select(Variable) %>%
+        # as.list()
+        view()
+
+fdf %>%
+        select(-any_of(lst$Variable)) %>%
+        # see_missing() %>%
+        write_csv("categorical_only.csv")

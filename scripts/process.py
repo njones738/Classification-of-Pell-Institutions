@@ -12,6 +12,7 @@ from sklearn import svm
 import time
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
+from sklearn.decomposition import PCA
 
 # %%
 from sklearn.ensemble import RandomForestClassifier
@@ -171,6 +172,53 @@ af_num_csc = num_csc.shape
 print("AFTER: ", af_num_csc)
 
 # %%
+colums = ['cipPC01','cipPC02','cipPC03','cipPC04','cipPC05','cipPC06','cipPC07','cipPC08','cipPC09','cipPC10','cipPC11','cipPC12',"cipPC13","cipPC14","cipPC15","cipPC16","cipPC17","cipPC18","cipPC19","cipPC20","cipPC21","cipPC22","cipPC23","cipPC24","cipPC25","cipPC26","cipPC27","cipPC28","cipPC29","cipPC30","cipPC31","cipPC32","cipPC33","cipPC34","cipPC35","cipPC36","cipPC37"]
+
+pca = PCA(n_components = 37)
+pc = pca.fit_transform(cip_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1)) 
+pca_cip = pd.DataFrame(data=pc, columns=colums) 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(cip_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1)) 
+pca_cip = pd.DataFrame(comp, columns=colums)
+
+pca_cip["ids"] = np.array(range(len(pca_cip)))
+
+full_PCA = pd.merge(cip_csc[["ids", "UNITID", "INSTNM"]], pca_cip, how = "left",
+         left_on="ids", right_on="ids")
+# pcip_csc["ids"] = np.array(range(len(pcip_csc)))
+colums = ['pcipPC01','pcipPC02','pcipPC03','pcipPC04','pcipPC05','pcipPC06']
+
+pca = PCA(n_components = 6)
+pc = pca.fit_transform(pcip_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1)) 
+pca_pcip = pd.DataFrame(data=pc, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(pcip_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1)) 
+pca_pcip = pd.DataFrame(comp, columns=colums) # , columns=colums
+
+pca_pcip["ids"] = np.array(range(len(pca_pcip)))
+
+full_PCA = pd.merge(full_PCA, pca_pcip, how = "left",
+         left_on="ids", right_on="ids")
+# geolocation_csc["ids"] = np.array(range(len(geolocation_csc)))
+colums = ['geoPC01','geoPC02','geoPC03','geoPC04','geoPC05','geoPC06']
+
+pca = PCA(n_components = 6)
+pc = pca.fit_transform(geolocation_csc.drop(["ids", "UNITID", "INSTNM", "LATITUDE", "LONGITUDE", "CITY", "STABBR", "ZIP"], axis = 1)) 
+pca_geo = pd.DataFrame(data=pc, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(geolocation_csc.drop(["ids", "UNITID", "INSTNM", "LATITUDE", "LONGITUDE", "CITY", "STABBR", "ZIP"], axis = 1)) 
+pca_geo = pd.DataFrame(comp, columns=colums) # , columns=colums
+
+pca_geo["ids"] = np.array(range(len(pca_geo)))
+
+geolocation_csc = geolocation_csc[["ids", "UNITID", "INSTNM", "LATITUDE", "LONGITUDE", "CITY", "ST_FIPS", "STABBR", "ZIP"]]
+full_PCA = pd.merge(full_PCA, pca_geo, how = "left",
+         left_on="ids", right_on="ids")
+
+# %%
 num_csc.drop(columns = ["ids", "UNITID", "INSTNM"], axis = 1).head(5)
 
 num_vars = num_csc.drop(columns = ["ids", "UNITID", "INSTNM"], axis = 1)
@@ -184,6 +232,119 @@ missing.reset_index(inplace=True)
 print(missing[missing[0] == 0].shape)
 missing[missing[0] != 0]
 
+# %%
+df1 = num_csc[["NUMBRANCH", "PCTFLOAN", "SCUGFFN",
+         "TUITFTE", "INEXPFTE", "PPTUG_EF", "FTFTPCTFLOAN",
+         "PFTFTUG1_EF", "AVGFACSAL", "NUM4_PRIV", "NPT4_PRIV",
+         "NUM41_PRIV", "NUM42_PRIV", "NUM43_PRIV", "NUM44_PRIV",
+         "NUM45_PRIV", "NPT4_048_PRIV", "NPT41_PRIV",
+         "TUITIONFEE_IN", "TUITIONFEE_OUT", "UGDS", 
+         "UGDS_WHITE", "UGDS_BLACK", "UGDS_HISP", 
+         "UGDS_ASIAN", "UGDS_AIAN", "UGDS_NHPI",
+         "UGDS_2MOR", "UGDS_NRA", "UGDS_UNKN",
+         "UGDS_MEN", "UGDS_WOMEN", "UG12MN"]]
+df2 = num_csc[["OMACHT6_FTFT", "OMACHT8_FTFT", "OMACHT6_PTFT",
+         "OMACHT6_FTNFT", "OMACHT8_FTNFT", "OMACHT6_PTNFT",
+         "OMENRYP_FULLTIME", "OMENRAP_FULLTIME", "OMAWDP8_FULLTIME",
+         "OMENRUP_FULLTIME", "OMENRYP_FIRSTTIME", "OMENRAP_FIRSTTIME",
+         "OMAWDP8_FIRSTTIME", "OMENRUP_FIRSTTIME", "OMENRYP_NOTFIRSTTIME",
+         "OMENRAP_NOTFIRSTTIME", "OMAWDP8_NOTFIRSTTIME", "OMENRUP_NOTFIRSTTIME",
+         "OMAWDP6_FTFT", "OMAWDP8_FTFT", "OMENRYP8_FTFT", "OMENRAP8_FTFT",
+         "OMENRUP8_FTFT", "OMAWDP6_FTNFT", "OMAWDP8_FTNFT", "OMENRYP8_FTNFT",
+         "OMENRAP8_FTNFT", "OMENRUP8_FTNFT"]]
+
+
+df5 = num_csc[["LO_INC_DEBT_MDN", "PELL_DEBT_N", "NOPELL_DEBT_N", "WDRAW_DEBT_MDN",
+         "FIRSTGEN_DEBT_N", "NOTFIRSTGEN_DEBT_N", "DEP_DEBT_MDN", "IND_DEBT_MDN",
+         "GRAD_DEBT_N", "WDRAW_DEBT_N", "DEP_DEBT_N", "IND_DEBT_N", "GRAD_DEBT_MDN",
+         "GRAD_DEBT_MDN10YR", "LO_INC_DEBT_N", "DEBT_N", "DEBT_MDN", "FEMALE_DEBT_N",
+         "MALE_DEBT_N", "MD_INC_DEBT_N", "HI_INC_DEBT_N", "PELL_DEBT_MDN",
+         "NOPELL_DEBT_MDN", "FIRSTGEN_DEBT_MDN", "NOTFIRSTGEN_DEBT_MDN",
+         "FEMALE_DEBT_MDN", "MALE_DEBT_MDN", "MD_INC_DEBT_MDN", "HI_INC_DEBT_MDN",
+         "PPLUS_PCT_LOW", "PPLUS_PCT_HIGH", "PLUS_DEBT_INST_N", "PLUS_DEBT_INST_MD",
+         "PLUS_DEBT_INST_N", "PLUS_DEBT_INST_MD"]]
+
+num_csc = num_csc[["ids", "UNITID", "INSTNM", "BBRR2_FED_UG_N",
+               "BBRR2_FED_UG_FBR","BBRR2_FED_UG_NOPROG","BBRR2_FED_UG_MAKEPROG",
+               "BBRR2_FED_UGCOMP_N","BBRR2_FED_UG_DFR",
+               "BBRR2_FED_UG_DFLT","BBRR2_FED_UGCOMP_NOPROG",
+               "BBRR2_FED_UGCOMP_FBR","BBRR2_PP_UG_N","BBRR2_FED_UGNOCOMP_N",
+               "DBRR1_FED_UG_N","DBRR1_FED_UG_NUM","DBRR1_FED_UG_DEN","DBRR1_FED_UG_RT",
+               "DBRR4_FED_UG_N","DBRR4_FED_UG_NUM","DBRR4_FED_UG_DEN",
+               "DBRR4_FED_UG_RT","DBRR5_FED_UG_N","DBRR5_FED_UG_NUM",
+               "DBRR5_FED_UG_DEN","DBRR5_FED_UG_RT","DBRR4_FED_UGCOMP_RT",
+               "DBRR4_FED_UGCOMP_N","DBRR4_FED_UGCOMP_NUM","DBRR4_FED_UGCOMP_DEN",
+               "DBRR1_FED_UGCOMP_N","DBRR1_FED_UGCOMP_NUM","DBRR1_FED_UGCOMP_DEN",
+               "DBRR1_FED_UGCOMP_RT","DBRR10_FED_UG_N","DBRR20_FED_UG_DEN",
+               "DBRR10_FED_UG_NUM","DBRR10_FED_UG_DEN","DBRR10_FED_UG_RT",
+               "DBRR4_FED_UGUNK_N","DBRR4_FED_UGUNK_NUM","DBRR4_FED_UGUNK_DEN",
+               "DBRR4_FED_UGUNK_RT","DBRR4_FED_UGNOCOMP_N","DBRR4_FED_UGNOCOMP_NUM",
+               "DBRR4_FED_UGNOCOMP_DEN","DBRR4_FED_UGNOCOMP_RT",
+               "DBRR20_FED_UG_RT","DBRR20_FED_UG_N","DBRR20_FED_UG_NUM",
+               "DBRR1_PP_UG_N","DBRR1_PP_UG_NUM","DBRR1_PP_UG_DEN","DBRR1_PP_UG_RT",
+               "DBRR5_PP_UG_N","DBRR5_PP_UG_NUM","DBRR5_PP_UG_DEN","DBRR5_PP_UG_RT",
+               "DBRR4_PP_UG_DEN","DBRR4_PP_UG_RT","DBRR4_PP_UG_N","DBRR4_PP_UG_NUM",
+               "LPSTAFFORD_CNT", "LPSTAFFORD_AMT","LPPPLUS_CNT","LPPPLUS_AMT"]]
+
+
+
+
+# %%
+import seaborn as sns
+%matplotlib inline
+
+colums = ['num1PC01','num1PC02','num1PC03','num1PC04']
+
+pca = PCA(n_components = 4)
+pc = pca.fit_transform(df1) 
+pca_num = pd.DataFrame(data=pc, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(df1)
+pca_num = pd.DataFrame(comp, columns=colums) # , columns=colums
+
+pca_num["ids"] = np.array(range(len(pca_num)))
+
+full_PCA = pd.merge(full_PCA, pca_num, how = "left",
+         left_on="ids", right_on="ids")
+# sns.scatterplot(x=range(1, pca_num.shape[1]), y="var", data=df, color="c");
+# print("SUM of first 4 components", pca.explained_variance_ratio_[0:4].sum())
+
+colums = ['num2PC01','num2PC02']
+
+pca = PCA(n_components = 2)
+pc = pca.fit_transform(df2) 
+pca_num = pd.DataFrame(data=pc, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(df2)
+pca_num = pd.DataFrame(comp, columns=colums) # , columns=colums
+
+pca_num["ids"] = np.array(range(len(pca_num)))
+
+full_PCA = pd.merge(full_PCA, pca_num, how = "left",
+         left_on="ids", right_on="ids")
+# sns.scatterplot(x=range(1, pca_num.shape[1]), y="var", data=df, color="c");
+# print("SUM of first 2 components", pca.explained_variance_ratio_[0:2].sum())
+
+colums = ['num5PC01','num5PC02']
+
+pca = PCA(n_components = 2)
+pc = pca.fit_transform(df5) 
+pca_num = pd.DataFrame(data=pc, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(df5)
+pca_num = pd.DataFrame(comp, columns=colums) # , columns=colums
+
+pca_num["ids"] = np.array(range(len(pca_num)))
+
+full_PCA = pd.merge(full_PCA, pca_num, how = "left",
+         left_on="ids", right_on="ids")
+# sns.scatterplot(x=range(1, pca_num.shape[1]), y="var", data=df, color="c");
+# print("SUM of first 2 components", pca.explained_variance_ratio_[0:2].sum())
+
+# %%
 inst_demographic_csc["OPENADMP"].fillna(9, inplace=True)
 inst_demographic_csc.ACCREDCODE = inst_demographic_csc.ACCREDCODE.replace("COE | WASCCS", "WASCCS", regex = True)
 inst_demographic_csc.ACCREDCODE = inst_demographic_csc.ACCREDCODE.replace("WASCCS|WASCCS", "WASCCS", regex = True)
@@ -199,34 +360,34 @@ stud_demographic_csc["TRIBAL"].fillna(0, inplace=True)
 stud_demographic_csc["NANTI"].fillna(0, inplace=True)
 stud_demographic_csc["AANAPII"].fillna(0, inplace=True)
 
-var_names = cip_csc.drop(columns = ["ids", "UNITID", "INSTNM"], axis = 1)
+# var_names = cip_csc.drop(columns = ["ids", "UNITID", "INSTNM"], axis = 1)
 
-print("Original shape:", cip_csc.shape) # Original shape: (5879, 193)
-print("Number of variables that will be encoded:", var_names.shape) # (5879, 190)
+# print("Original shape:", cip_csc.shape) # Original shape: (5879, 193)
+# print("Number of variables that will be encoded:", var_names.shape) # (5879, 190)
 
-nber = 0
-for x in list(var_names):
-    enc = OneHotEncoder(handle_unknown="ignore")
-    enc.fit(np.array(cip_csc[x]).reshape(-1, 1))
-    num_category = len(np.array(enc.categories_).transpose())
-    nber = nber + num_category
+# nber = 0
+# for x in list(var_names):
+#     enc = OneHotEncoder(handle_unknown="ignore")
+#     enc.fit(np.array(cip_csc[x]).reshape(-1, 1))
+#     num_category = len(np.array(enc.categories_).transpose())
+#     nber = nber + num_category
 
-print("Number of variables to expect:", cip_csc.shape[1] + nber)
+# print("Number of variables to expect:", cip_csc.shape[1] + nber)
 
-for x in list(var_names):
-    enc = OneHotEncoder(handle_unknown="ignore")
+# for x in list(var_names):
+#     enc = OneHotEncoder(handle_unknown="ignore")
 
-    enc.fit(np.array(cip_csc[x]).reshape(-1, 1))
-    labels = np.array(cip_csc[x])
-    encoded = enc.transform(labels.reshape(-1,1)).toarray()
+#     enc.fit(np.array(cip_csc[x]).reshape(-1, 1))
+#     labels = np.array(cip_csc[x])
+#     encoded = enc.transform(labels.reshape(-1,1)).toarray()
 
-    num_category = len(np.array(enc.categories_).transpose())
-    var_name = np.array([(x + "_encoded{}").format(i) for i in range(num_category)])
+#     num_category = len(np.array(enc.categories_).transpose())
+#     var_name = np.array([(x + "_encoded{}").format(i) for i in range(num_category)])
 
-    for i in range(len(var_name)):
-        cip_csc[var_name[i]] = encoded[:, i]
+#     for i in range(len(var_name)):
+#         cip_csc[var_name[i]] = encoded[:, i]
 
-print(cip_csc.shape)
+# print(cip_csc.shape)
 
 encoder = TargetEncoder()
 encoder.fit(geolocation_csc["CITY"], id_csc["PELLCAT"])
@@ -240,28 +401,28 @@ geolocation_csc = pd.concat([geolocation_csc,
                              pd.get_dummies(geolocation_csc["ST_FIPS"].astype(int), prefix = "FIPS")],
                              axis = 1)
 
-geolocation_csc = pd.concat([geolocation_csc,
-                             pd.get_dummies(geolocation_csc["REGION"].astype(int), prefix = "REGION")],
-                             axis = 1)
+# geolocation_csc = pd.concat([geolocation_csc,
+#                              pd.get_dummies(geolocation_csc["REGION"].astype(int), prefix = "REGION")],
+#                              axis = 1)
 
-geolocation_csc = pd.concat([geolocation_csc,
-                             pd.get_dummies(geolocation_csc["LOCALE"].astype(int), prefix = "LOC")],
-                             axis = 1)
-####
-geolocation_csc.loc[geolocation_csc["CCBASIC"] == 99, "CCBASIC"] = 99
-geolocation_csc = pd.concat([geolocation_csc,
-                             pd.get_dummies(geolocation_csc["CCBASIC"].astype(int), prefix = "CCB")],
-                             axis = 1)
-####
-geolocation_csc.loc[geolocation_csc["CCSIZSET"] == 99, "CCSIZSET"] = 99
-geolocation_csc = pd.concat([geolocation_csc,
-                             pd.get_dummies(geolocation_csc["CCSIZSET"].astype(int), prefix = "CCSS")],
-                             axis = 1)
-####
-geolocation_csc.loc[geolocation_csc["CCUGPROF"] == 99, "CCUGPROF"] = 99
-geolocation_csc = pd.concat([geolocation_csc,
-                             pd.get_dummies(geolocation_csc["CCUGPROF"].astype(int), prefix = "CCPROF")],
-                             axis = 1)
+# geolocation_csc = pd.concat([geolocation_csc,
+#                              pd.get_dummies(geolocation_csc["LOCALE"].astype(int), prefix = "LOC")],
+#                              axis = 1)
+# ####
+# geolocation_csc.loc[geolocation_csc["CCBASIC"] == 99, "CCBASIC"] = 99
+# geolocation_csc = pd.concat([geolocation_csc,
+#                              pd.get_dummies(geolocation_csc["CCBASIC"].astype(int), prefix = "CCB")],
+#                              axis = 1)
+# ####
+# geolocation_csc.loc[geolocation_csc["CCSIZSET"] == 99, "CCSIZSET"] = 99
+# geolocation_csc = pd.concat([geolocation_csc,
+#                              pd.get_dummies(geolocation_csc["CCSIZSET"].astype(int), prefix = "CCSS")],
+#                              axis = 1)
+# ####
+# geolocation_csc.loc[geolocation_csc["CCUGPROF"] == 99, "CCUGPROF"] = 99
+# geolocation_csc = pd.concat([geolocation_csc,
+#                              pd.get_dummies(geolocation_csc["CCUGPROF"].astype(int), prefix = "CCPROF")],
+#                              axis = 1)
 ####
 geolocation_csc["ZIP5"] = geolocation_csc["ZIP"].str.slice(0, 5)
 geolocation_csc["ZIP4"] = geolocation_csc["ZIP"].str.slice(0, 4)
@@ -388,45 +549,6 @@ stud_demographic_csc = pd.concat([stud_demographic_csc,
                                   axis = 1)
 
 # %%
-pcip_csc["PCIP01_desc"]=pd.cut(pcip_csc["PCIP01"], bins = [-1, 0, 0.125, 0.325, 0.525, 0.725, 0.925, 1], labels = [0, 0.125, 0.325, 0.525, 0.725, 0.925, 1])
-pcip_csc["PCIP03_desc"]=pd.cut(pcip_csc["PCIP03"], bins = [-1, 0, 0.007, 0.0175, 0.028, 0.0385, 0.049, 1], labels = [0, 0.007, 0.0175, 0.028, 0.0385, 0.049, 1])
-pcip_csc["PCIP04_desc"]=pd.cut(pcip_csc["PCIP04"], bins = [-1, 0, 0.005, 0.0125, 0.02, 0.0275, 0.035, 1], labels = [0, 0.005, 0.0125, 0.02, 0.0275, 0.035, 1])
-pcip_csc["PCIP05_desc"]=pd.cut(pcip_csc["PCIP05"], bins = [-1, 0, 0.002, 0.0035, 0.005, 0.0065, 0.008, 1], labels = [0, 0.002, 0.0035, 0.005, 0.0065, 0.008, 1])
-pcip_csc["PCIP09_desc"]=pd.cut(pcip_csc["PCIP09"], bins = [-1, 0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 1], labels = [0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 1])
-pcip_csc["PCIP10_desc"]=pd.cut(pcip_csc["PCIP10"], bins = [-1, 0, 0.0011, 0.0018, 0.00235, 0.0029, 0.00345, 0.004, 1], labels = [0, 0.0011, 0.0018, 0.00235, 0.0029, 0.00345, 0.004, 1])
-pcip_csc["PCIP11_desc"]=pd.cut(pcip_csc["PCIP11"], bins = [-1, 0, 0.03, 0.05, 0.07, 0.09, 0.11, 1], labels = [0, 0.03, 0.05, 0.07, 0.09, 0.11, 1])
-pcip_csc["PCIP12_desc"]=pd.cut(pcip_csc["PCIP12"], bins = [-1, 0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 1], labels = [0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 1])
-pcip_csc["PCIP13_desc"]=pd.cut(pcip_csc["PCIP13"], bins = [-1, 0, 0.0010, 0.001625, 0.002225, 0.00285, 0.003475, 1], labels = [0, 0.0010, 0.001625, 0.002225, 0.00285, 0.003475, 1])
-pcip_csc["PCIP14_desc"]=pd.cut(pcip_csc["PCIP14"], bins = [-1, 0, 0.00001, 0.03801, 0.07601, 0.11401, 0.15201, 0.19001, 1], labels = [0, 0.00001, 0.03801, 0.07601, 0.11401, 0.15201, 0.19001, 1])
-pcip_csc["PCIP15_desc"]=pd.cut(pcip_csc["PCIP15"], bins = [-1, 0, 0.00001, 0.03801, 0.07601, 0.11401, 0.15201, 0.19001, 1], labels = [0, 0.00001, 0.03801, 0.07601, 0.11401, 0.15201, 0.19001, 1])
-pcip_csc["PCIP16_desc"]=pd.cut(pcip_csc["PCIP16"], bins = [-1, 0, 0.001, 0.004, 0.007, 0.01, 1], labels = [0, 0.001, 0.004, 0.007, 0.01, 1])
-pcip_csc["PCIP19_desc"]=pd.cut(pcip_csc["PCIP19"], bins = [-1, 0, 0.005, 0.035, 0.065, 0.095, 1], labels = [0, 0.005, 0.035, 0.065, 0.095, 1])
-pcip_csc["PCIP22_desc"]=pd.cut(pcip_csc["PCIP22"], bins = [-1, 0, 0.01, 0.035, 0.065, 0.095, 1], labels = [0, 0.01, 0.035, 0.065, 0.095, 1])
-pcip_csc["PCIP23_desc"]=pd.cut(pcip_csc["PCIP23"], bins = [-1, 0, 0.001, 0.012, 0.023, 0.034, 1], labels = [0, 0.001, 0.012, 0.023, 0.034, 1])
-pcip_csc["PCIP24_desc"]=pd.cut(pcip_csc["PCIP24"], bins = [-1, 0, 0.001, 0.0121, 0.0241, 0.0361, 0.0481, 1], labels = [0, 0.001, 0.0121, 0.0241, 0.0361, 0.0481, 1])
-pcip_csc["PCIP25_desc"]=pd.cut(pcip_csc["PCIP25"], bins = [-1, 0, 0.001, 0.0035, 0.006, 0.0085, 0.011, 0.0135, 1], labels = [0, 0.001, 0.0035, 0.006, 0.0085, 0.011, 0.0135, 1])
-pcip_csc["PCIP26_desc"]=pd.cut(pcip_csc["PCIP26"], bins = [-1, 0, 0.01, 0.04, 0.07, 0.1, 0.13, 1], labels = [0, 0.01, 0.04, 0.07, 0.1, 0.13, 1])
-pcip_csc["PCIP27_desc"]=pd.cut(pcip_csc["PCIP27"], bins = [-1, 0, 0.0025, 0.01, 0.0175, 0.025, 0.0325, 1], labels = [0, 0.0025, 0.01, 0.0175, 0.025, 0.0325, 1])
-pcip_csc["PCIP30_desc"]=pd.cut(pcip_csc["PCIP30"], bins = [-1, 0, 0.001, 0.01, 0.019, 0.028, 0.037, 0.046, 1], labels = [0, 0.001, 0.01, 0.019, 0.028, 0.037, 0.046, 1])
-pcip_csc["PCIP31_desc"]=pd.cut(pcip_csc["PCIP31"], bins = [-1, 0, 0.001, 0.01, 0.019, 0.028, 0.037, 0.046, 1], labels = [0, 0.001, 0.01, 0.019, 0.028, 0.037, 0.046, 1])
-pcip_csc["PCIP38_desc"]=pd.cut(pcip_csc["PCIP38"], bins = [-1, 0, 0.001, 0.008, 0.015, 0.022, 0.029, 0.036, 1], labels = [0, 0.001, 0.008, 0.015, 0.022, 0.029, 0.036, 1])
-pcip_csc["PCIP39_desc"]=pd.cut(pcip_csc["PCIP39"], bins = [-1, 0, 0.00075, 0.00625, 0.01175, 0.01725, 0.02275, 1], labels = [0, 0.00075, 0.00625, 0.01175, 0.01725, 0.02275, 1])
-pcip_csc["PCIP40_desc"]=pd.cut(pcip_csc["PCIP40"], bins = [-1, 0, 0.001, 0.006, 0.011, 0.016, 0.021, 1], labels = [0, 0.001, 0.006, 0.011, 0.016, 0.021, 1])
-pcip_csc["PCIP41_desc"]=pd.cut(pcip_csc["PCIP41"], bins = [-1, 0, 0.0005, 0.003, 0.0055, 0.008, 0.0105, 1], labels = [0, 0.0005, 0.003, 0.0055, 0.008, 0.0105, 1])
-pcip_csc["PCIP42_desc"]=pd.cut(pcip_csc["PCIP42"], bins = [-1, 0, 0.035, 0.0475, 0.06, 0.0725, 0.085, 0.0975, 0.11, 1], labels = [0, 0.035, 0.0475, 0.06, 0.0725, 0.085, 0.0975, 0.11, 1])
-pcip_csc["PCIP43_desc"]=pd.cut(pcip_csc["PCIP43"], bins = [-1, 0, 0.01, 0.03, 0.05, 0.07, 0.09, 1], labels = [0, 0.01, 0.03, 0.05, 0.07, 0.09, 1])
-pcip_csc["PCIP44_desc"]=pd.cut(pcip_csc["PCIP44"], bins = [-1, 0, 0.005, 0.02, 0.035, 0.05, 0.065, 1], labels = [0, 0.005, 0.02, 0.035, 0.05, 0.065, 1])
-pcip_csc["PCIP45_desc"]=pd.cut(pcip_csc["PCIP45"], bins = [-1, 0, 0.005, 0.02, 0.035, 0.05, 0.065, 1], labels = [0, 0.005, 0.02, 0.035, 0.05, 0.065, 1])
-pcip_csc["PCIP46_desc"]=pd.cut(pcip_csc["PCIP46"], bins = [-1, 0, 0.0103, 0.037796, 0.125, 1], labels = [0, 0.0103, 0.037796, 0.125, 1])
-pcip_csc["PCIP47_desc"]=pd.cut(pcip_csc["PCIP47"], bins = [-1, 0, 0.0005, 0.0165, 0.0315, 0.0465, 0.0615, 1], labels = [0, 0.0005, 0.0165, 0.0315, 0.0465, 0.0615, 1])
-pcip_csc["PCIP48_desc"]=pd.cut(pcip_csc["PCIP48"], bins = [-1, 0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 0.1005, 1], labels = [0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 0.1005, 1])
-pcip_csc["PCIP49_desc"]=pd.cut(pcip_csc["PCIP49"], bins = [-1, 0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 0.1005, 1], labels = [0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 0.1005, 1])
-pcip_csc["PCIP50_desc"]=pd.cut(pcip_csc["PCIP50"], bins = [-1, 0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 1], labels = [0, 0.0005, 0.0205, 0.0405, 0.0605, 0.0805, 1])
-pcip_csc["PCIP51_desc"]=pd.cut(pcip_csc["PCIP51"], bins = [-1, 0, 0.125, 0.325, 0.525, 0.725, 0.925, 1], labels = [0, 0.125, 0.325, 0.525, 0.725, 0.925, 1])
-pcip_csc["PCIP52_desc"]=pd.cut(pcip_csc["PCIP52"], bins = [-1, 0, 0.125, 0.325, 0.525, 0.725, 0.925, 1], labels = [0, 0.125, 0.325, 0.525, 0.725, 0.925, 1])
-pcip_csc["PCIP54_desc"]=pd.cut(pcip_csc["PCIP54"], bins = [-1, 0, 0.125, 0.325, 0.525, 0.725, 0.925, 1], labels = [0, 0.125, 0.325, 0.525, 0.725, 0.925, 1])
-
-# %%
 print("cip_csc")
 print("INITIAL BEFORE:", b4_cip)
 print("INITIAL AFTER: ", af_cip)
@@ -458,18 +580,7 @@ print("INITIAL AFTER: ", af_num_csc)
 print("POST-ENCODING: ", num_csc.shape)
 
 # %%
-# cip_csc
-# geolocation_csc
-# inst_demographic_csc
-# stud_demographic_csc
-# pcip_csc
-# num_csc
-
-full_df = pd.merge(cip_csc, geolocation_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
-                   left_on = "UNITID", right_on = "UNITID",
-                   suffixes=("_cip", "_geo"))
-
-full_df = pd.merge(full_df, inst_demographic_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
+full_df = pd.merge(geolocation_csc, inst_demographic_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
                    left_on = "UNITID", right_on = "UNITID",
                    suffixes=("_cip", "_geo"))
 
@@ -477,82 +588,13 @@ full_df = pd.merge(full_df, stud_demographic_csc.drop(["INSTNM", "ids"], axis = 
                    left_on = "UNITID", right_on = "UNITID",
                    suffixes=("_cip", "_geo"))
 
-full_df = pd.merge(full_df, pcip_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
-                   left_on = "UNITID", right_on = "UNITID",
-                   suffixes=("_cip", "_geo"))
-
 full_df = pd.merge(full_df, num_csc.drop(["INSTNM", "ids"], axis = 1), how = 'left',
                    left_on = "UNITID", right_on = "UNITID",
                    suffixes=("_cip", "_geo"))
 
-full_df["MDN_EST_TOTAL_DEBT"] = full_df["DEBT_MDN"] * full_df["DEBT_N"]
-full_df["MDN_EST_TOTAL_GRAD_DEBT"] = full_df["GRAD_DEBT_MDN"] * full_df["GRAD_DEBT_N"]
-full_df["MDN_EST_TOTAL_WDRAW_DEBT"] = full_df["WDRAW_DEBT_MDN"] * full_df["WDRAW_DEBT_N"]
-full_df["MDN_EST_TOTAL_LO_INC_DEBT"] = full_df["LO_INC_DEBT_MDN"] * full_df["LO_INC_DEBT_N"]
-full_df["MDN_EST_TOTAL_MD_INC_DEBT"] = full_df["MD_INC_DEBT_MDN"] * full_df["MD_INC_DEBT_N"]
-full_df["MDN_EST_TOTAL_HI_INC_DEBT"] = full_df["HI_INC_DEBT_MDN"] * full_df["HI_INC_DEBT_N"]
-full_df["MDN_EST_TOTAL_DEP_DEBT"] = full_df["DEP_DEBT_MDN"] * full_df["DEP_DEBT_N"]
-full_df["MDN_EST_TOTAL_IND_DEBT"] = full_df["IND_DEBT_MDN"] * full_df["IND_DEBT_N"]
-full_df["MDN_EST_TOTAL_PELL_DEBT"] = full_df["PELL_DEBT_MDN"] * full_df["PELL_DEBT_N"]
-full_df["MDN_EST_TOTAL_NOPELL_DEBT"] = full_df["NOPELL_DEBT_MDN"] * full_df["NOPELL_DEBT_N"]
-full_df["MDN_EST_TOTAL_FEMALE_DEBT"] = full_df["FEMALE_DEBT_MDN"] * full_df["FEMALE_DEBT_N"]
-full_df["MDN_EST_TOTAL_MALE_DEBT"] = full_df["MALE_DEBT_MDN"] * full_df["MALE_DEBT_N"]
-full_df["MDN_EST_TOTAL_FIRSTGEN_DEBT"] = full_df["FIRSTGEN_DEBT_MDN"] * full_df["FIRSTGEN_DEBT_N"]
-full_df["MDN_EST_TOTAL_NOTFIRSTGEN_DEBT"] = full_df["NOTFIRSTGEN_DEBT_MDN"] * full_df["NOTFIRSTGEN_DEBT_N"]
-full_df["MDN_EST_TOTAL_PLUS_DEBT_INST"] = full_df["PLUS_DEBT_INST_MD"] * full_df["PLUS_DEBT_INST_N"]
-full_df["DEFAULT_3YR"] = full_df["CDR3"] * full_df["CDR3_DENOM"]
-full_df["NUM_LOAN_STUDENT"] = full_df["PCTFLOAN"] * full_df["D_PCTPELL_PCTFLOAN"]
-full_df["NUM_FTFT_PELL_STUDENT"] = full_df["FTFTPCTPELL"] * full_df["SCUGFFN"]
-full_df["NUM_FTFT_LOAN_STUDENT"] = full_df["FTFTPCTFLOAN"] * full_df["SCUGFFN"]
-full_df["NUM_GRAD6_FTFT"] = full_df["OMACHT6_FTFT"] * full_df["OMAWDP6_FTFT"]
-full_df["NUM_GRAD6_FTNFT"] = full_df["OMACHT6_FTNFT"] * full_df["OMAWDP6_FTNFT"]
-full_df["NUM_GRAD8_FTFT"] = full_df["OMAWDP8_FTFT"] * full_df["OMACHT8_FTFT"]
-full_df["NUM_STILL_ENRL8_FTFT"] = full_df["OMENRYP8_FTFT"] * full_df["OMACHT8_FTFT"]
-full_df["NUM_TRANSFER8_FTFT"] = full_df["OMENRAP8_FTFT"] * full_df["OMACHT8_FTFT"]
-full_df["NUM_STATUS_UNKN_FTFT"] = full_df["OMENRUP8_FTFT"] * full_df["OMACHT8_FTFT"]
-full_df["NUM_GRAD8_FTNFT"] = full_df["OMAWDP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
-full_df["NUM_STILL_ENRL8_FTNFT"] = full_df["OMENRYP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
-full_df["NUM_TRANSFER8_FTNFT"] = full_df["OMENRAP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
-full_df["NUM_STATUS_UNKN_FTNFT"] = full_df["OMENRUP8_FTNFT"] * full_df["OMACHT8_FTNFT"]
-full_df["NUM_FTFT_STUDENT"] = full_df["NUM_GRAD8_FTFT"] + full_df["NUM_STILL_ENRL8_FTFT"] + full_df["NUM_TRANSFER8_FTFT"] + full_df["NUM_STATUS_UNKN_FTFT"]
-full_df["NUM_FTNFT_STUDENT"] = full_df["NUM_GRAD8_FTNFT"] + full_df["NUM_STILL_ENRL8_FTNFT"] + full_df["NUM_TRANSFER8_FTNFT"] + full_df["NUM_STATUS_UNKN_FTNFT"]
-full_df["NUM_FULLTIME_STUDENT"] = full_df["NUM_FTFT_STUDENT"] + full_df["NUM_FTNFT_STUDENT"]
-full_df["NUM_GRAD11_FULLTIME"] = full_df["OMAWDP8_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
-full_df["NUM_STILL_ENRL11_FULLTIME"] = full_df["OMENRYP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
-full_df["NUM_TRANSFER11_FULLTIME"] = full_df["OMENRAP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
-full_df["NUM_STATUS_UNKN_FULLTIME"] = full_df["OMENRUP_FULLTIME"] * full_df["NUM_FULLTIME_STUDENT"]
-full_df["DBRR1_FED_UG_BALANCE_REMAINING"] = full_df["DBRR1_FED_UG_DEN"] - full_df["DBRR1_FED_UG_NUM"]
-full_df["DBRR1_FED_UGCOMP_BALANCE_REMAINING"] = full_df["DBRR1_FED_UGCOMP_DEN"] - full_df["DBRR1_FED_UGCOMP_NUM"]
-full_df["DBRR4_FED_UG_BALANCE_REMAINING"] = full_df["DBRR4_FED_UG_DEN"] - full_df["DBRR4_FED_UG_NUM"]
-full_df["DBRR4_FED_UGCOMP_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGCOMP_DEN"] - full_df["DBRR4_FED_UGCOMP_NUM"]
-full_df["DBRR4_FED_UGNOCOMP_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGNOCOMP_DEN"] - full_df["DBRR4_FED_UGNOCOMP_NUM"]
-full_df["DBRR4_FED_UGUNK_BALANCE_REMAINING"] = full_df["DBRR4_FED_UGUNK_DEN"] - full_df["DBRR4_FED_UGUNK_NUM"]
-full_df["DBRR5_FED_UG_BALANCE_REMAINING"] = full_df["DBRR5_FED_UG_DEN"] - full_df["DBRR5_FED_UG_NUM"]
-full_df["DBRR10_FED_UG_BALANCE_REMAINING"] = full_df["DBRR10_FED_UG_DEN"] - full_df["DBRR10_FED_UG_NUM"]
-full_df["DBRR20_FED_UG_BALANCE_REMAINING"] = full_df["DBRR20_FED_UG_DEN"] - full_df["DBRR20_FED_UG_NUM"]
-full_df["DBRR1_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_FED_UG_NUM"] / full_df["DBRR1_FED_UG_N"]
-full_df["DBRR1_FED_UGCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_FED_UGCOMP_NUM"] / full_df["DBRR1_FED_UGCOMP_N"]
-full_df["DBRR4_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UG_NUM"] / full_df["DBRR4_FED_UG_N"]
-full_df["DBRR4_FED_UGCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGCOMP_NUM"] / full_df["DBRR4_FED_UGCOMP_N"]
-full_df["DBRR4_FED_UGNOCOMP_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGNOCOMP_NUM"] / full_df["DBRR4_FED_UGNOCOMP_N"]
-full_df["DBRR4_FED_UGUNK_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_FED_UGUNK_NUM"] / full_df["DBRR4_FED_UGUNK_N"]
-full_df["DBRR5_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR5_FED_UG_NUM"] / full_df["DBRR5_FED_UG_N"]
-full_df["DBRR10_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR10_FED_UG_NUM"] / full_df["DBRR10_FED_UG_N"]
-full_df["DBRR20_FED_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR20_FED_UG_NUM"] / full_df["DBRR20_FED_UG_N"]
-full_df["NUM_ALL_UNDERGRADS_DFLT_in2yr"] = full_df["BBRR2_FED_UG_DFLT"] * full_df["BBRR2_FED_UG_N"]
-full_df["NUM_ALL_UNDERGRADS_FBR_in2yr"] = full_df["BBRR2_FED_UG_FBR"] * full_df["BBRR2_FED_UG_N"]
-full_df["NUM_ALL_UNDERGRADS_DFR_in2yr"] = full_df["BBRR2_FED_UG_DFR"] * full_df["BBRR2_FED_UG_N"]
-full_df["NUM_ALL_UNDERGRADS_NOPROG_in2yr"] = full_df["BBRR2_FED_UG_NOPROG"] * full_df["BBRR2_FED_UG_N"]
-full_df["NUM_ALL_UNDERGRADS_MAKEPROG_in2yr"] = full_df["BBRR2_FED_UG_MAKEPROG"] * full_df["BBRR2_FED_UG_N"]
-full_df["NUM_COMPLETERS_FBR_in2yr"] = full_df["BBRR2_FED_UGCOMP_FBR"] * full_df["BBRR2_FED_UGCOMP_N"]
-full_df["NUM_COMPLETERS_NOPROG_in2yr"] = full_df["BBRR2_FED_UGCOMP_NOPROG"] * full_df["BBRR2_FED_UGCOMP_N"]
-full_df["DBRR1_PP_UG_BALANCE_REMAINING"] = full_df["DBRR1_PP_UG_DEN"] - full_df["DBRR1_PP_UG_NUM"]
-full_df["DBRR4_PP_UG_BALANCE_REMAINING"] = full_df["DBRR4_PP_UG_DEN"] - full_df["DBRR4_PP_UG_NUM"]
-full_df["DBRR5_PP_UG_BALANCE_REMAINING"] = full_df["DBRR5_PP_UG_DEN"] - full_df["DBRR5_PP_UG_NUM"]
-full_df["DBRR1_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR1_PP_UG_NUM"] / full_df["DBRR1_PP_UG_N"]
-full_df["DBRR4_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR4_PP_UG_NUM"] / full_df["DBRR4_PP_UG_N"]
-full_df["DBRR5_PP_UG_AVG_OUTSTANDING_BALANCE_PERBORROWER"] = full_df["DBRR5_PP_UG_NUM"] / full_df["DBRR5_PP_UG_N"]
-full_df.drop("D_PCTPELL_PCTFLOAN", axis = 1)
+full_df = pd.merge(full_df, full_PCA.drop(["INSTNM", "ids"], axis = 1), how = 'left',
+                   left_on = "UNITID", right_on = "UNITID",
+                   suffixes=("_cip", "_geo"))
 full_df.to_csv("full_df.csv")
 
 #%%
@@ -573,6 +615,7 @@ drop_rows
 
 # %%
 
-
+list(full_df.columns)
 
 # %%
+full_df

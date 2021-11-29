@@ -13,7 +13,7 @@ csc_pth <- "data/datasubsets/MERGED2018_19_PP.csv"
 csc_dict_pth <- "data/datasubsets/csc_dict.csv"
 data_dict_pth <- "data/datasubsets/data_dict.csv"
 data_def_pth <- "data/datasubsets/data_definitions.csv"
-
+cen_var_path <- "C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/data/datasubsets/subsubsets/cen_var_smaller_list.csv" # nolint
 data_type_pth <- "data/datasubsets/full_data_dict.csv"
 
 #######################################################################
@@ -37,24 +37,40 @@ see_missing <- function(df) {
 #######################################################################
 
 #### DATA IMPORT, CREATION of PELL CATEGORY, and ROW & COLUMN EXCLUSION
-v19 <- load_variables(2019, "acs1", cache = TRUE)
+desired_fips <- read_csv(fip_pth) %>%
+                    filter(Mainland_plus == 1) %>% # Mainland USA + Alaska and Hawaii # nolint
+                    rename(region = "Postal Code")
 
-v19 %>%
-    filter(substr(name, 1, 1) == "B") %>%
-    filter(!substr(name, 1, 3) %in% c("B05", "B06", "B29", "B99", "B98")) %>%
-    # filter(grepl("MEDIAN INCOME| TOTAL POPULATION", concept)) %>%
-    filter(grepl("", concept)) %>%
-    filter(!grepl("PLACE OF BIRTH|FOREIGN-BORN|IN PUERTO RICO", concept)) %>%
-    group_by(top3 = substr(name, 1, 3)) %>%
-    group_by(middle3 = substr(name, 1, 6)) %>%
-    group_by(top3, middle3, concept) %>%
-    summarise(count = n()) %>%
-    # write_csv("data/df.csv")
-    view()
+cen_var <- read_csv(cen_var_path) %>%
+                filter(Variable != "B17022_001")
 
-cen_data <- get_acs(geography = "county",
-                    variables = "B29001_001",
-                    year = 2019)
+cen_data <- get_acs(geography = "tract",
+                    variables = "B17022_001",
+                    state = desired_fips$FIPS[1])# %>%
+        #     pivot_wider(names_from = variable,
+        #             values_from = c(estimate, moe))
+
+for (i in desired_fips$FIPS) {
+        temp <- get_acs(geography = "tract",
+                            variables = "B17022_001",
+                            state = i)# %>%
+                # pivot_wider(names_from = variable,
+                #             values_from = c(estimate, moe))
+        cen_data <- rbind(cen_data, temp)
+}
+for (i in cen_var$Variable) {
+        for (j in desired_fips$FIPS) {
+                temp <- get_acs(geography = "tract",
+                                variables = i,
+                                state = j) #%>%
+                        # pivot_wider(names_from = variable,
+                        #         values_from = c(estimate, moe))
+                cen_data <- rbind(cen_data, temp)
+        }
+        # cen_data <- left_join(cen_data, temp %>% select(-NAME), by = "GEOID")
+}
+# write_csv(cen_data, "census_data_countylvl.csv")
+write_csv(cen_data, "census_data_ziplvl")
 
 data_def <- read_csv(data_def_pth)
 data_type <- read_csv(data_type_pth) %>%

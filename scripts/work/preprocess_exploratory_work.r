@@ -8,7 +8,7 @@ csc_pth <- "data/MERGED2018_19_PP.csv"
 csc_dict_pth <- "documents/csc_dict.csv"
 data_dict_pth <- "data/data_dict.csv"
 data_def_pth <- "data/data_definitions.csv"
-
+cen_var_path <- "C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/data/datasubsets/subsubsets/cen_var.csv" # nolint
 data_type_pth <- "data/full_data_dict.csv"
 
 #######################################################################
@@ -33,6 +33,21 @@ see_missing <- function(df) {
 #######################################################################
 
 #### DATA IMPORT, CREATION of PELL CATEGORY, and ROW & COLUMN EXCLUSION
+v19 <- load_variables(2019, "acs1", cache = TRUE)
+
+v19 %>%
+    filter(substr(name, 1, 1) == "B") %>%
+    filter(!substr(name, 1, 3) %in% c("B05", "B06", "B29", "B99", "B98")) %>%
+    # filter(grepl("MEDIAN INCOME| TOTAL POPULATION", concept)) %>%
+    filter(grepl("", concept)) %>%
+    filter(!grepl("PLACE OF BIRTH|FOREIGN-BORN|IN PUERTO RICO", concept)) %>%
+    group_by(top3 = substr(name, 1, 3)) %>%
+    group_by(middle3 = substr(name, 1, 6)) %>%
+    group_by(top3, middle3, concept) %>%
+    summarise(count = n()) %>%
+    # write_csv("data/df.csv")
+    view()
+
 
 data_def <- read_csv(data_def_pth)
 data_type <- read_csv(data_type_pth) %>%

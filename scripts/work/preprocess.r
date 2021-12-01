@@ -8,13 +8,13 @@ library(ggplot2)
 # census_api_key("d439f48f31fb83d7e880dd9cd9c4212e94fd0acb", install = TRUE)
 options(tigris_use_cache = TRUE)
 
-fip_pth <- "data/datasubsets/state_fp_codes.csv" # nolint
-csc_pth <- "data/datasubsets/MERGED2018_19_PP.csv"
-csc_dict_pth <- "data/datasubsets/csc_dict.csv"
-data_dict_pth <- "data/datasubsets/data_dict.csv"
-data_def_pth <- "data/datasubsets/data_definitions.csv"
+fip_pth <- "Classification-of-Pell-Institutions/data/datasubsets/state_fp_codes.csv" # nolint
+csc_pth <- "Classification-of-Pell-Institutions/data/datasubsets/MERGED2018_19_PP.csv"
+csc_dict_pth <- "Classification-of-Pell-Institutions/data/datasubsets/csc_dict.csv"
+data_dict_pth <- "Classification-of-Pell-Institutions/data/datasubsets/data_dict.csv"
+data_def_pth <- "Classification-of-Pell-Institutions/data/datasubsets/data_definitions.csv"
 cen_var_path <- "C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/data/datasubsets/subsubsets/cen_var_smaller_list.csv" # nolint
-data_type_pth <- "data/datasubsets/full_data_dict.csv"
+data_type_pth <- "Classification-of-Pell-Institutions/data/datasubsets/full_data_dict.csv"
 
 #######################################################################
 #######################################################################

@@ -205,7 +205,7 @@ full_PCA = pd.merge(full_PCA, pca_pcip, how = "left",
 colums = ['geoPC01','geoPC02','geoPC03','geoPC04','geoPC05','geoPC06']
 
 pca = PCA(n_components = 6)
-pc = pca.fit_transform(geolocation_csc.drop(["ids", "UNITID", "INSTNM", "LATITUDE", "LONGITUDE", "CITY", "STABBR", "ZIP"], axis = 1)) 
+pc = pca.fit_transform(geolocation_csc.drop(["ids", "UNITID", "INSTNM", "LATITUDE", "LONGITUDE", "CITY", "STABBR", "REGION", "ZIP"], axis = 1)) 
 pca_geo = pd.DataFrame(data=pc, columns=colums) # 
 
 df = pd.DataFrame({'var':pca.explained_variance_ratio_})
@@ -343,6 +343,25 @@ full_PCA = pd.merge(full_PCA, pca_num, how = "left",
          left_on="ids", right_on="ids")
 # sns.scatterplot(x=range(1, pca_num.shape[1]), y="var", data=df, color="c");
 # print("SUM of first 2 components", pca.explained_variance_ratio_[0:2].sum())
+
+# %%
+colums = ['num5PC01','num5PC02']
+
+pca = PCA(n_components = 10)
+pc = pca.fit_transform(num_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1)) 
+
+pca_num = pd.DataFrame(data=pc)#, columns=colums) # 
+
+df = pd.DataFrame({'var':pca.explained_variance_ratio_})
+comp = pca.fit_transform(num_csc.drop(["ids", "UNITID", "INSTNM"], axis = 1))
+pca_num = pd.DataFrame(comp)#, columns=colums) # , columns=colums
+
+pca_num["ids"] = np.array(range(len(pca_num)))
+
+full_PCA = pd.merge(full_PCA, pca_num, how = "left",
+         left_on="ids", right_on="ids")
+sns.scatterplot(x=range(1, pca_num.shape[1]), y="var", data=df, color="c");
+print("SUM of first 2 components", pca.explained_variance_ratio_[0:2].sum())
 
 # %%
 inst_demographic_csc["OPENADMP"].fillna(9, inplace=True)

@@ -183,6 +183,12 @@ full_PCA = cip_csc[["ids", "UNITID"]]
 # full_PCA = pd.merge(full_PCA, pca_pcip, how = "left",
 #          left_on="ids", right_on="ids")
 #########################################################
+# from sklearn import metrics
+# from dalex._explainer.yhat import yhat_proba_default
+# import dalex as dx
+# import shapely as shap
+# %%
+
 %matplotlib inline
 
 frame = pd.merge(cip_csc.drop(["UNITID", "INSTNM"], axis = 1),
@@ -190,7 +196,7 @@ frame = pd.merge(cip_csc.drop(["UNITID", "INSTNM"], axis = 1),
          left_on="ids", right_on="ids").drop("ids", axis = 1)
 initial_feature_names = list(frame.columns)
 
-pca = PCA(n_components = 38,
+pca = PCA(#n_components = 38,
           random_state = rand_state) #  
 principalComponents = pca.fit_transform(frame)
 
@@ -210,7 +216,9 @@ pca_df["ids"] = np.array(range(len(pca_df)))
 
 interest_variable = pd.DataFrame([most_important_names,
                                   pca.explained_variance_ratio_]).T
-interest_variable.sort_values([1], ascending = False).head(50)
+interest_variable.sort_values([1], ascending = False).to_csv("C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/documents/cip_PCAevr.csv")
+
+best_vars = np.unique(interest_variable[0])
 
 skplt.decomposition.plot_pca_component_variance(pca,
                             title='PCA Component Explained Variances of Program offerings',
@@ -219,9 +227,13 @@ skplt.decomposition.plot_pca_component_variance(pca,
                             figsize=None,
                             title_fontsize='large',
                             text_fontsize='medium')
-# %%
-full_PCA = pd.merge(full_PCA, pca_df, how = "left",
+
+rtn_frame = frame[best_vars]
+rtn_frame["ids"] = np.array(range(len(rtn_frame)))
+
+full_PCA = pd.merge(full_PCA, rtn_frame, how = "left",
          left_on="ids", right_on="ids")
+# %%
 #########################################################
 # colums = ['geoPC01','geoPC02','geoPC03']
 # pca = PCA(n_components = 3)
@@ -235,6 +247,11 @@ full_PCA = pd.merge(full_PCA, pca_df, how = "left",
 # full_PCA = pd.merge(full_PCA, pca_geo, how = "left",
 #          left_on="ids", right_on="ids")
 #########################################################  
+
+
+
+
+#%%
 #########################################################
 ## IMPUTATION
 #########################################################
@@ -259,6 +276,7 @@ stud_demographic_csc["PBI"].fillna(0, inplace=True)
 stud_demographic_csc["TRIBAL"].fillna(0, inplace=True)
 stud_demographic_csc["NANTI"].fillna(0, inplace=True)
 stud_demographic_csc["AANAPII"].fillna(0, inplace=True)
+# %%
 #########################################################
 # POST-IMPUTATION PCA
 #########################################################
@@ -300,21 +318,42 @@ skplt.decomposition.plot_pca_component_variance(pca,
                             figsize=None,
                             title_fontsize='large',
                             text_fontsize='medium')
-full_PCA = pd.merge(full_PCA, pca_df, how = "left",
-         left_on="ids", right_on="ids")
+# full_PCA = pd.merge(full_PCA, pca_df, how = "left",
+#          left_on="ids", right_on="ids")
 # LPSTAFFORD_CNT, LPPPLUS_AMT
+# %%
 #########################################################
 scaler = StandardScaler()
 poly = PolynomialFeatures(3)
 
-frame = num_csc[['DBRR1_FED_UG_N','DBRR1_FED_UG_NUM','DBRR1_FED_UG_DEN','DBRR1_FED_UG_RT','BBRR2_FED_UG_N','DBRR4_FED_UG_N','DBRR4_FED_UG_NUM','DBRR4_FED_UG_DEN','DBRR4_FED_UG_RT','DBRR5_FED_UG_N','DBRR5_FED_UG_NUM','DBRR5_FED_UG_DEN','DBRR5_FED_UG_RT','BBRR2_FED_UG_FBR','DBRR4_FED_UGCOMP_N','DBRR4_FED_UGCOMP_NUM','DBRR4_FED_UGCOMP_DEN','DBRR4_FED_UGCOMP_RT','BBRR2_FED_UG_NOPROG','BBRR2_FED_UG_MAKEPROG','DBRR1_FED_UGCOMP_N','DBRR1_FED_UGCOMP_NUM','DBRR1_FED_UGCOMP_DEN','DBRR1_FED_UGCOMP_RT','BBRR2_FED_UGCOMP_N','DBRR10_FED_UG_N','DBRR10_FED_UG_NUM','DBRR10_FED_UG_DEN','DBRR10_FED_UG_RT','DBRR4_FED_UGUNK_N','DBRR4_FED_UGUNK_NUM','DBRR4_FED_UGUNK_DEN','DBRR4_FED_UGUNK_RT','DBRR4_FED_UGNOCOMP_N','DBRR4_FED_UGNOCOMP_NUM','DBRR4_FED_UGNOCOMP_DEN','DBRR4_FED_UGNOCOMP_RT','BBRR2_FED_UG_DFR','DBRR20_FED_UG_N','DBRR20_FED_UG_NUM','DBRR20_FED_UG_DEN','DBRR20_FED_UG_RT','BBRR2_FED_UG_DFLT','BBRR2_FED_UGCOMP_NOPROG','DBRR1_PP_UG_N','DBRR1_PP_UG_NUM','DBRR1_PP_UG_DEN','DBRR1_PP_UG_RT','BBRR2_FED_UGCOMP_FBR','BBRR2_PP_UG_N','BBRR2_FED_UGNOCOMP_N','DBRR4_PP_UG_N','DBRR4_PP_UG_NUM','DBRR4_PP_UG_DEN','DBRR4_PP_UG_RT','DBRR5_PP_UG_N','DBRR5_PP_UG_NUM','DBRR5_PP_UG_DEN','DBRR5_PP_UG_RT']]
+frame = num_csc[['DBRR1_FED_UG_N','DBRR1_FED_UG_NUM','DBRR1_FED_UG_DEN',
+                 'DBRR1_FED_UG_RT','BBRR2_FED_UG_N','DBRR4_FED_UG_N',
+                 'DBRR4_FED_UG_NUM','DBRR4_FED_UG_DEN','DBRR4_FED_UG_RT',
+                 'DBRR5_FED_UG_N','DBRR5_FED_UG_NUM','DBRR5_FED_UG_DEN',
+                 'DBRR5_FED_UG_RT','BBRR2_FED_UG_FBR','DBRR4_FED_UGCOMP_N',
+                 'DBRR4_FED_UGCOMP_NUM','DBRR4_FED_UGCOMP_DEN','DBRR4_FED_UGCOMP_RT',
+                 'BBRR2_FED_UG_NOPROG','BBRR2_FED_UG_MAKEPROG','DBRR1_FED_UGCOMP_N',
+                 'DBRR1_FED_UGCOMP_NUM','DBRR1_FED_UGCOMP_DEN','DBRR1_FED_UGCOMP_RT',
+                 'BBRR2_FED_UGCOMP_N','DBRR10_FED_UG_N','DBRR10_FED_UG_NUM',
+                 'DBRR10_FED_UG_DEN','DBRR10_FED_UG_RT','DBRR4_FED_UGUNK_N',
+                 'DBRR4_FED_UGUNK_NUM','DBRR4_FED_UGUNK_DEN','DBRR4_FED_UGUNK_RT',
+                 'DBRR4_FED_UGNOCOMP_N','DBRR4_FED_UGNOCOMP_NUM',
+                 'DBRR4_FED_UGNOCOMP_DEN','DBRR4_FED_UGNOCOMP_RT',
+                 'BBRR2_FED_UG_DFR','DBRR20_FED_UG_N','DBRR20_FED_UG_NUM',
+                 'DBRR20_FED_UG_DEN','DBRR20_FED_UG_RT','BBRR2_FED_UG_DFLT',
+                 'BBRR2_FED_UGCOMP_NOPROG','DBRR1_PP_UG_N','DBRR1_PP_UG_NUM',
+                 'DBRR1_PP_UG_DEN','DBRR1_PP_UG_RT','BBRR2_FED_UGCOMP_FBR',
+                 'BBRR2_PP_UG_N','BBRR2_FED_UGNOCOMP_N','DBRR4_PP_UG_N',
+                 'DBRR4_PP_UG_NUM','DBRR4_PP_UG_DEN','DBRR4_PP_UG_RT',
+                 'DBRR5_PP_UG_N','DBRR5_PP_UG_NUM','DBRR5_PP_UG_DEN',
+                 'DBRR5_PP_UG_RT']]
 
 scaler.fit(frame)
 frame = pd.DataFrame(scaler.transform(frame), columns = list(frame.columns))
 
 initial_feature_names = list(frame.columns)
 
-pca = PCA(#n_components = 3,
+pca = PCA(n_components = 5,
           random_state = rand_state) #  
 principalComponents = pca.fit_transform(frame)
 
@@ -336,16 +375,16 @@ interest_variable = pd.DataFrame([most_important_names,
                                   pca.explained_variance_ratio_]).T
 interest_variable.sort_values([1], ascending = False).head(10)
 skplt.decomposition.plot_pca_component_variance(pca,
-                            title='PCA Component Explained Variances of Program offerings',
+                            title='PCA Component Explained Variances of Loan Outcomes',
                             target_explained_variance=0.8,
                             ax=None,
                             figsize=None,
                             title_fontsize='large',
                             text_fontsize='medium')
-full_PCA = pd.merge(full_PCA, pca_df, how = "left",
-         left_on="ids", right_on="ids")
+# full_PCA = pd.merge(full_PCA, pca_df, how = "left",
+#          left_on="ids", right_on="ids")
 # DBRR1_FED_UGCOMP_DEN, DBRR4_FED_UGCOMP_RT, DBRR1_PP_UG_NUM
-
+# %%
 #########################################################
 scaler = StandardScaler()
 poly = PolynomialFeatures(3)
@@ -388,18 +427,18 @@ interest_variable = pd.DataFrame([most_important_names,
                                   pca.explained_variance_ratio_]).T
 interest_variable.sort_values([1], ascending = False).head(5)
 skplt.decomposition.plot_pca_component_variance(pca,
-                            title='PCA Component Explained Variances of Program offerings',
+                            title='PCA Component Explained Variances of Academic Outcomes',
                             target_explained_variance=0.8,
                             ax=None,
                             figsize=None,
                             title_fontsize='large',
                             text_fontsize='medium')
-full_PCA = pd.merge(full_PCA, pca_df, how = "left",
-         left_on="ids", right_on="ids")
+# full_PCA = pd.merge(full_PCA, pca_df, how = "left",
+#          left_on="ids", right_on="ids")
 # OMAWDP8_FULLTIME, OMENRAP_FULLTIME, OMACHT8_FTFT, OMENRYP_FULLTIME, OMAWDP8_FTFT
 #########################################################
 #########################################################
-
+# %%
 inst_demographic_csc = pd.concat((inst_demographic_csc,
                                   pd.DataFrame(np.array(list(inst_demographic_csc["T4APPROVALDATE"].str.split("/"))),
                                                columns = ["T4_month", "T4_day", "T4_year"])), axis = 1)
@@ -592,12 +631,20 @@ full_df = pd.merge(full_df, num_csc.drop(["INSTNM", "ids"], axis = 1), how = 'le
 full_df = pd.merge(full_df, full_PCA.drop(["ids"], axis = 1), how = 'left',
                    left_on = "UNITID", right_on = "UNITID",
                    suffixes=("_cip", "_geo"))
-full_df.drop(["D_PCTPELL_PCTFLOAN", "SCHTYPE", "ACCREDCODE"], axis = 1)
+
+num_lst = ["UNITID","LPSTAFFORD_CNT", "LPPPLUS_AMT", "DBRR1_FED_UGCOMP_DEN", "DBRR4_FED_UGCOMP_RT", "DBRR1_PP_UG_NUM", "OMAWDP8_FULLTIME", "OMENRAP_FULLTIME", "OMACHT8_FTFT", "OMENRYP_FULLTIME", "OMAWDP8_FTFT"]
+
+full_df = pd.merge(full_df, num_csc[num_lst], how = 'left',
+                   left_on = "UNITID", right_on = "UNITID")
+
+full_df = full_df.drop(["D_PCTPELL_PCTFLOAN", "SCHTYPE", "ACCREDCODE"], axis = 1)
 
 full_df["T4_month"] = full_df["T4_month"].astype(int)
 full_df["T4_day"] = full_df["T4_day"].astype(int)
 full_df["T4_year"] = full_df["T4_year"].astype(int)
 full_df["ST_FIPS"] = full_df["ST_FIPS"].astype(int)
+target_variable["PELLCAT"] = abs(1 - target_variable["PELLCAT"])
+
 # %%
 id_csc.to_feather("C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/scripts/here_we_are/idcsc.feather")
 target_variable.to_feather("C:/Code/GITHUB/csc/Classification-of-Pell-Institutions/scripts/here_we_are/tarcsc.feather")

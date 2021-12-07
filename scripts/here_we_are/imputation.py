@@ -52,6 +52,9 @@ stud_demographic_csc = feather.read_feather(studdemocsc)
 pcip_csc = feather.read_feather(pcipcsc)
 num_csc = feather.read_feather(numcsc)
 
+id_csc
+
+
 
 month_dict = {"4":"Spring", "8":"Summer", "12": "Winter",
               "2": "Winter", "1": "Winter", "7": "Summer",

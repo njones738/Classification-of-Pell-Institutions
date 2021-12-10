@@ -53,7 +53,7 @@ By answering this question, we can better understand the most prevalent attribut
 
 ## Key findings
 
-Best Model: {Accuracy/AUC – Training: 97.8%/99.9%, Testing: 86.2%/93.5%, Validation: 88.1%/93.4%}
+**Best Model:** {Accuracy/AUC – Training: 97.8%/99.9%, Testing: 86.2%/93.5%, Validation: 88.1%/93.4%}
 The model I determined to be the best was a random forest on the standardized dataset that was reduced to the top 10 most independent variables. Figure one displays the features that were most important in classifying. The most important of these features to this model was the percentage of Federal Loan Borrowers at the institution, and the next most important was the agency that accredits the institution. With only 138 incorrect classifications in total (Figure 2), this model correctly classified:
 
 - 537 majority Pell institutions
@@ -63,7 +63,7 @@ The following figures display the important features to this model:
 
 ![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic.jpg)
 
-Next Best Model: {Accuracy/AUC – Training: 86.2%/93.9%, Testing: 85.5%/92.2%, Validation: 86%/92.9%}
+**Next Best Model:** {Accuracy/AUC – Training: 86.2%/93.9%, Testing: 85.5%/92.2%, Validation: 86%/92.9%}
 The next best model used the method k-nearest neighbors on the standardized-transformed dataset. This model correctly classified 511 majority Pell institutions and 320 minority Pell institutions, while misclassifying a total of 169 incorrect classifications across both groups. Figure 3 displays the results of this classifier using the validation dataset. The red and blue dots are the correctly classified Majority and Minority Pell schools while the black and dark brown dots are the incorrect classifications.
 
 ![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic2.jpg)

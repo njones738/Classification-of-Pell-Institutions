@@ -28,7 +28,12 @@ see_missing <- function(df) {
                    nmiss_pct = nmiss / max(n))
                             }
 
+debtoutcomes_data %>% filter(INSTNM == "Kennesaw State University") %>% see_missing() %>% arrange(desc(n)) %>% view()
 
+ksu <- debtoutcomes_data %>% filter(INSTNM == "Kennesaw State University")
+
+ ksu %>% 
+    select(BBRR2_PP_UG_DFLT, BBRR2_PP_UG_DLNQ, BBRR2_FED_UG_DFLT, BBRR2_FED_UG_DLNQ) 
 #######################################################################
 #######################################################################
 

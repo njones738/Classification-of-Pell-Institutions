@@ -63,8 +63,8 @@ CollegeScorecard18 <- read_csv(csc_pth,
                                       "Privacy Suppressed",
                                       "PrivacySuppressed") # nolint
                               ) %>%
-                      mutate(PELLCAT = case_when(PCTPELL < .5 ~ 0,  # Majority percentage of the student population recieving a Pell grant # nolint
-                                                 PCTPELL >= .5 ~ 1) # Minoirty percentage of the student population recieving a Pell grant # nolint
+                      mutate(PELLCAT = case_when(PCTPELL > .5 ~ 0,  # Majority percentage of the student population recieving a Pell grant # nolint
+                                                 PCTPELL <= .5 ~ 1) # Minoirty percentage of the student population recieving a Pell grant # nolint
                             ) %>% # I do not need the schools url's # nolint
                       filter(STABBR %in% desired_fips$region) %>%
                       filter(!is.na(PCTPELL)) %>%

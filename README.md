@@ -1,12 +1,46 @@
-# Personal data projects
+# Classification of Pell Institutions
 
-Use this template repo for your personal data projects. Would you please use the following format for your repository? Please name your repository in your personal space using the following naming structure `[title]-[lastname]-[languagesused]`.  You will then complete a pull request to move your personal data projects into our organization.
+Today, a student may be eligible for a portion of the Pell grant if their income, or their parents’ income, in the case of dependent students, is less than $50,000. The portion the student receives increases as the amount of income decreases. A maximum amount of $6495 is granted to those students whose household income is less than or equal to $20,000. For these reasons, receiving a Pell grant is associated with low-income students. I researched into the CollegeScorecard dataset and created the indicator variable, “PELL_CAT,” by using the proportion of Pell-receiving students (“PCTPELL”) to categorize institutions as either “majority Pell” (>50% of students receiving a Pell grant) or “minority Pell” (≤50% of students receiving a Pell grant). I created this indicator variable to determine where lower-income students attended more frequently and the outcomes at these institutions. This project will seek to continue in this pursuit by classifying the institutions using the method XGBoost, k-nearest neighbors, random forest, principal component analysis, and Logistic Regression. 
 
-- __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
-- __Tools used:__ Provide an overview of the programming languages and packages you leveraged for this work.  You could provide links to the pertinent reading material that you leveraged to complete the job. Provide links to your final scripts stored in your repository.
-- __Results:__ This is your conclusion.  Explain why your work matters.  How could others use it?  What are your next steps? Show some key findings.
+Out of 6,806 observations across 2,384 variables, 3,439 Majority Pell institutions, 2,575 Minority Pell institutions, and 792 other institutions had missing values for the variable, “PCTPELL.” Institutions with missing “PCTPELL” values were dropped from the dataset, along with institutions located anywhere other than a U.S. state or Washington D.C. This left the dataset with 5,789 observations, of which 3,435 institutions were labelled “Majority Pell” and 2,444 were labelled “Minority Pell.” The final dataset contained a total of 5,789 observations across 446 variables. Of the variables, 3 were institutional IDs, 225 were categorical data, and 221 were numeric values.
 
-## Folder structure
+## Question
+
+The goal of this project is to create a model that classifies institutions as either “Majority Pell” or “Minority Pell”. Explicitly, I want to answer the question, 
+
+- “Which institutional features are associated with the majority Pell schools?”
+
+By answering this question, we can better understand the most prevalent attributes of schools with a high proportion of students receiving a Pell grant. Gaining the understanding of these attributes will aid in detecting problems, trends, and stratifications at institutions where low-income students are in high attendance.
+
+## Tools and script process
+This project I used Python and R in VScode to clean and structure the data, to process the data for modelling, and to build models that classify Pell institutions. During the process, the packages used were Tidyverse, magrittr, feather, and ggplot2 in R and sklearn, scipy, scikitplot, xgboost, category encoders, feather, matplotlib, plotnine, numpy and pandas. 
+
+To run reproduce this project:  
+1. Run [preprocess.r](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/scripts/preprocess.r)  
+2. Run [imputation_exploration.py](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/scripts/imputation_exploration.py)    
+3. Run [model.ipynpb](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/scripts/model.ipynb)
+
+A report of my full process and findings can be found in this [document](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/documents/Nathaniel.Jones.Classification.Project.Report.FALL21.pdf).
+
+## Key Findings
+
+**Best Model:** {Accuracy/AUC – Training: 97.8%/99.9%, Testing: 86.2%/93.5%, Validation: 88.1%/93.4%}
+The model I determined to be the best was a random forest on the standardized dataset that was reduced to the top 10 most independent variables. Figure one displays the features that were most important in classifying. The most important of these features to this model was the percentage of Federal Loan Borrowers at the institution, and the next most important was the agency that accredits the institution. With only 138 incorrect classifications in total (Figure 2), this model correctly classified:
+
+- 537 majority Pell institutions
+- 325 minority Pell institutions
+
+The following figures display the important features to this model:
+
+![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic.jpg)
+
+**Next Best Model:** {Accuracy/AUC – Training: 86.2%/93.9%, Testing: 85.5%/92.2%, Validation: 86%/92.9%}
+The next best model used the method k-nearest neighbors on the standardized-transformed dataset. This model correctly classified 511 majority Pell institutions and 320 minority Pell institutions, while misclassifying a total of 169 incorrect classifications across both groups. Figure 3 displays the results of this classifier using the validation dataset. The red and blue dots are the correctly classified Majority and Minority Pell schools while the black and dark brown dots are the incorrect classifications.
+
+![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic2.jpg)
+
+
+## Folder Structure
 
 ```
 - readme.md
@@ -30,43 +64,15 @@ Use this template repo for your personal data projects. Would you please use the
 ---- Nathaniel.Jones.Classification.Project.STAT4310.FALL21.pptx
 ```
 
-## Data sources
-
-Today, a student may be eligible for a portion of the Pell grant if their income, or their parents’ income, in the case of dependent students, is less than $50,000. The portion the student receives increases as the amount of income decreases. A maximum amount of $6495 is granted to those students whose household income is less than or equal to $20,000. For these reasons, receiving a Pell grant is associated with low-income students. I researched into the CollegeScorecard dataset and created the indicator variable, “PELL_CAT,” by using the proportion of Pell-receiving students (“PCTPELL”) to categorize institutions as either “majority Pell” (>50% of students receiving a Pell grant) or “minority Pell” (≤50% of students receiving a Pell grant). I created this indicator variable to determine where lower-income students attended more frequently and the outcomes at these institutions.
+## Data Sources
 
 - [The CollegeScorecard dataset](https://collegescorecard.ed.gov/data/)
 - [The CollegeScorecard data Dictionary](https://data.ed.gov/dataset/college-scorecard-all-data-files-through-6-2020/resources?resource=658b5b83-ac9f-4e41-913e-9ba9411d7967)
 
-## Github pages
+## Github Pages
 
 - ["Does the Pell grant come with a price?"](https://github.com/njones738/Does-the-Pell-grant-come-with-a-price-)
 - ["Access to Higher Education"](https://github.com/njones738/Access-to-Higher-Education)
-
-
-## Question
-
-The goal of this project is to create a model that classifies institutions as either “Majority Pell” or “Minority Pell”. Explicitly, I want to answer the question, 
-
-- “Which institutional features are associated with the majority Pell schools?”
-
-By answering this question, we can better understand the most prevalent attributes of schools with a high proportion of students receiving a Pell grant. Gaining the understanding of these attributes will aid in detecting problems, trends, and stratifications at institutions where low-income students are in high attendance.
-
-## Key findings
-
-**Best Model:** {Accuracy/AUC – Training: 97.8%/99.9%, Testing: 86.2%/93.5%, Validation: 88.1%/93.4%}
-The model I determined to be the best was a random forest on the standardized dataset that was reduced to the top 10 most independent variables. Figure one displays the features that were most important in classifying. The most important of these features to this model was the percentage of Federal Loan Borrowers at the institution, and the next most important was the agency that accredits the institution. With only 138 incorrect classifications in total (Figure 2), this model correctly classified:
-
-- 537 majority Pell institutions
-- 325 minority Pell institutions
-
-The following figures display the important features to this model:
-
-![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic.jpg)
-
-**Next Best Model:** {Accuracy/AUC – Training: 86.2%/93.9%, Testing: 85.5%/92.2%, Validation: 86%/92.9%}
-The next best model used the method k-nearest neighbors on the standardized-transformed dataset. This model correctly classified 511 majority Pell institutions and 320 minority Pell institutions, while misclassifying a total of 169 incorrect classifications across both groups. Figure 3 displays the results of this classifier using the validation dataset. The red and blue dots are the correctly classified Majority and Minority Pell schools while the black and dark brown dots are the incorrect classifications.
-
-![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic2.jpg)
 
 ## Influential Articles
 

@@ -59,7 +59,7 @@ The model I determined to be the best was a random forest on the standardized da
 - 537 majority Pell institutions
 - 325 minority Pell institutions
 
-
+![](https://github.com/njones738/Classification-of-Pell-Institutions/blob/main/images/STAND/REDUC/RanFor/githubpic.jpg)
 
 ## Influential Articles
 
